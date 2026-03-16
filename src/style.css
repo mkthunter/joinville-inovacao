@@ -1370,6 +1370,519 @@ strong {
 }
 
 /* ============================================
+   ACOES IMEDIATAS
+   ============================================ */
+.acoes__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.acao-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.acao-card:hover {
+  border-color: var(--accent-green);
+  transform: translateY(-2px);
+}
+
+.acao-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+}
+
+.acao-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--accent-green-dim);
+  color: var(--accent-green);
+  margin-bottom: var(--space-md);
+}
+
+.acao-card__instrument {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3em 0.8em;
+  border-radius: 100px;
+  background: var(--accent-blue-dim);
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+}
+
+.acao-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.acao-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.acao-card__action {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-green);
+  padding: var(--space-sm);
+  background: var(--accent-green-dim);
+  border-radius: var(--radius-sm);
+  line-height: 1.4;
+}
+
+.acao-card__action svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ============================================
+   VERSOES FUTURAS
+   ============================================ */
+.futuro__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.futuro-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.futuro-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-2px);
+}
+
+.futuro-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-blue), transparent);
+}
+
+.futuro-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--accent-blue-dim);
+  color: var(--accent-blue);
+  margin-bottom: var(--space-md);
+}
+
+.futuro-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.futuro-card p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.futuro-card__dep {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ============================================
+   GOVERNANCA
+   ============================================ */
+.governanca {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.governanca__diagram {
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.governanca__level {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.governanca__level::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 12px;
+  background: var(--text-muted);
+}
+
+.governanca__level:last-child::after {
+  display: none;
+}
+
+.governanca__box {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.governanca__box--prefeito {
+  background: rgba(234, 179, 8, 0.1);
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  color: var(--accent-yellow);
+}
+
+.governanca__box--sde {
+  background: var(--accent-blue-dim);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--accent-blue);
+}
+
+.governanca__branches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.governanca__branches::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background: var(--border-medium);
+}
+
+.governanca__branch {
+  text-align: center;
+  padding: var(--space-md) var(--space-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.governanca__branch::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 12px;
+  background: var(--border-medium);
+}
+
+.governanca__branch-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3em;
+}
+
+.governanca__branch-role {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.governanca__flow {
+  background: var(--accent-green-dim);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.governanca__flow-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-sm);
+}
+
+.governanca__flow-steps {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.governanca__flow-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.3em 0.7em;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.governanca__flow-arrow {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   ESTRUTURA SDE
+   ============================================ */
+.sde__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.sde__header-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.sde__header-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+}
+
+.sde__header-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.sde__header-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.sde__header-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.sde__header-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-width: 80px;
+}
+
+.sde__units {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.sde__unit {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  transition: border-color var(--transition-fast);
+}
+
+.sde__unit:hover {
+  border-color: var(--border-medium);
+}
+
+.sde__unit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
+
+.sde__unit-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.sde__unit-resp {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent-green);
+  font-weight: 500;
+}
+
+.sde__unit-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ============================================
+   DADOS ECONOMICOS
+   ============================================ */
+.dados__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.dado-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  transition: border-color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.dado-card:hover {
+  border-color: var(--accent-green);
+  transform: translateY(-2px);
+}
+
+.dado-card__value {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 0.3em;
+}
+
+.dado-card__value--accent {
+  color: var(--accent-green);
+}
+
+.dado-card__label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.dado-card__sub {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.3em;
+}
+
+.dados__award {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(59, 130, 246, 0.05));
+  border: 1px solid rgba(34, 197, 94, 0.15);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.dados__award-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3em 0.8em;
+  border-radius: 100px;
+  background: var(--accent-green-dim);
+  color: var(--accent-green);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+}
+
+.dados__award-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.dados__award-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* ============================================
    FOCUS VISIBLE (Acessibilidade)
    ============================================ */
 :focus-visible {
@@ -1745,6 +2258,27 @@ strong {
   .smartcity__grid {
     grid-template-columns: 1fr;
   }
+
+  .acoes__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .futuro__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .governanca__branches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sde__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .dados__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1779,6 +2313,24 @@ strong {
 
   .regiao__incentivos {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .futuro__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .governanca__branches {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xs);
+  }
+
+  .governanca__flow-steps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dados__grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .compare__table {
