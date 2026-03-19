@@ -764,6 +764,32 @@ strong {
   opacity: 0.7;
 }
 
+.pedem__restritivo--resolved {
+  opacity: 0.6;
+  text-decoration: line-through;
+  text-decoration-color: var(--accent-green);
+}
+
+.pedem__restritivo--resolved svg {
+  color: var(--accent-green);
+  opacity: 1;
+}
+
+.pedem__resolved-tag {
+  display: inline-block;
+  font-style: normal;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15em 0.5em;
+  border-radius: 100px;
+  background: var(--accent-green-dim);
+  color: var(--accent-green);
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+
 .pedem__numeros {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
