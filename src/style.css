@@ -1874,6 +1874,416 @@ strong {
 }
 
 /* ============================================
+   CELTA — PROVA DE CONCEITO
+   ============================================ */
+.celta__intro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-xl);
+  align-items: start;
+  margin-bottom: var(--space-xl);
+}
+
+.celta__intro-text p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.celta__intro-badge {
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  text-align: center;
+  min-width: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.celta__intro-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+}
+
+.celta__badge-year {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  line-height: 1.1;
+  margin-bottom: 0.3em;
+}
+
+.celta__badge-title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3em;
+}
+
+.celta__badge-org {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.celta__numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.celta__numero {
+  text-align: center;
+  padding: var(--space-lg) var(--space-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.celta__numero--destaque {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(34, 197, 94, 0.05) 100%);
+  border-color: rgba(34, 197, 94, 0.2);
+}
+
+.celta__numero-value {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.celta__numero--destaque .celta__numero-value {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--accent-green);
+}
+
+.celta__numero-unit {
+  font-size: 0.55em;
+  color: var(--accent-green);
+}
+
+.celta__numero-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.3em;
+}
+
+.celta__numero-fonte {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  color: var(--text-muted);
+  opacity: 0.5;
+  margin-top: 0.3em;
+}
+
+/* Comparativo barras */
+.celta__comparativo {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.celta__comparativo h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.celta__barras {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.celta__barra {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.celta__barra-fill {
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  min-width: 60px;
+}
+
+.celta__barra-fill--celta {
+  background: linear-gradient(90deg, var(--accent-green), #16a34a);
+}
+
+.celta__barra-fill--media {
+  background: linear-gradient(90deg, var(--accent-red), #b91c1c);
+  opacity: 0.7;
+}
+
+.celta__barra-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.celta__comparativo-nota {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Vale da morte */
+.celta__vale-morte {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.celta__vale-morte h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.celta__vale-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+.celta__vale-step {
+  text-align: center;
+  padding: var(--space-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  min-width: 140px;
+  position: relative;
+}
+
+.celta__vale-step--morte {
+  border-color: var(--accent-red);
+  background: var(--accent-red-dim);
+}
+
+.celta__vale-step--consolidada {
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.celta__vale-step--referencia {
+  border-color: var(--accent-green);
+  background: var(--accent-green-dim);
+}
+
+.celta__vale-step-icon {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.3em;
+}
+
+.celta__vale-step-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.celta__vale-step-sub {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.2em;
+}
+
+.celta__vale-tag {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  background: var(--accent-green-dim);
+  padding: 0.3em 0.6em;
+  border-radius: 100px;
+  margin-top: 0.5em;
+}
+
+.celta__vale-arrow {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.celta__vale-nota {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Argumento Joinville */
+.celta__argumento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+  margin-bottom: var(--space-xl);
+}
+
+.celta__argumento-left h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.celta__argumento-left p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.celta__argumento-calc {
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.celta__argumento-calc-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-green);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+  font-weight: 600;
+}
+
+.celta__argumento-calc-item {
+  padding: var(--space-xs) var(--space-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.celta__argumento-calc-item--total {
+  background: var(--accent-green-dim);
+  border-color: rgba(34, 197, 94, 0.2);
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.celta__argumento-premissa {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Fonte box */
+.celta__fonte-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.celta__fonte-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.celta__fonte-box p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* CELTA responsive */
+@media (max-width: 1024px) {
+  .celta__intro {
+    grid-template-columns: 1fr;
+  }
+
+  .celta__numeros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .celta__numero--destaque {
+    grid-column: 1 / -1;
+  }
+
+  .celta__argumento {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .celta__numeros {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .celta__vale-flow {
+    flex-direction: column;
+  }
+
+  .celta__vale-arrow {
+    transform: rotate(90deg);
+  }
+
+  .celta__vale-step {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+/* ============================================
    PII (COMO FUNCIONA)
    ============================================ */
 .pii__flow {
