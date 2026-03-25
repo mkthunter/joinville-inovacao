@@ -45,6 +45,10 @@
           <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"/></svg>
           <span class="sidebar__label">Rotas</span>
         </a>
+        <a class="sidebar__item" data-page="benchmark" href="#">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span class="sidebar__label">Benchmark</span>
+        </a>
         <a class="sidebar__item" data-page="programa" href="#">
           <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <span class="sidebar__label">Programa de Inovação</span>
@@ -95,8 +99,14 @@
               <p class="home-nav-card__desc">Caminhos legislativos para viabilizar o Programa de Incentivo à Inovação</p>
               <span class="home-nav-card__arrow">→</span>
             </a>
-            <a class="home-nav-card home-nav-card--wip" data-page="programa" href="#">
+            <a class="home-nav-card" data-page="benchmark" href="#">
               <span class="home-nav-card__number">05</span>
+              <h3 class="home-nav-card__title">Benchmark</h3>
+              <p class="home-nav-card__desc">Comparativo de leis de inovação em 7 cidades brasileiras — mecanismos, resultados e lições</p>
+              <span class="home-nav-card__arrow">→</span>
+            </a>
+            <a class="home-nav-card home-nav-card--wip" data-page="programa" href="#">
+              <span class="home-nav-card__number">06</span>
               <h3 class="home-nav-card__title">Programa de Inovação</h3>
               <p class="home-nav-card__desc">Construção do programa de incentivo fiscal — em desenvolvimento</p>
               <span class="home-nav-card__badge">Em construção</span>
@@ -2993,6 +3003,425 @@
         </div>
       </div>
     </div><!-- /page-rotas -->
+
+    <!-- ==================== PAGE: BENCHMARK ==================== -->
+    <div class="page" id="page-benchmark">
+      <div class="page-header">
+        <div class="container">
+          <span class="page-header__label">05 — Referências Nacionais</span>
+          <h1 class="page-header__title">Benchmark</h1>
+          <p class="page-header__subtitle">Comparativo de leis e programas de inovação em 7 cidades brasileiras</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <nav class="lei-toc" aria-label="Sumário do Benchmark">
+          <div class="lei-toc__title">Cidades</div>
+          <div class="lei-toc__list">
+            <a class="lei-toc__link" href="#bench-fln">Florianópolis</a>
+            <a class="lei-toc__link" href="#bench-cwb">Curitiba</a>
+            <a class="lei-toc__link" href="#bench-poa">Porto Alegre</a>
+            <a class="lei-toc__link" href="#bench-bh">Belo Horizonte</a>
+            <a class="lei-toc__link" href="#bench-sp">São Paulo</a>
+            <a class="lei-toc__link" href="#bench-lon">Londrina</a>
+            <a class="lei-toc__link" href="#bench-bsb">Brasília</a>
+            <a class="lei-toc__link" href="#bench-comparativo">Comparativo</a>
+            <a class="lei-toc__link" href="#bench-parecer">Parecer</a>
+          </div>
+        </nav>
+
+        <div class="disclaimer">
+          <strong>Nota:</strong> Pesquisa realizada em mar/2026 via fontes oficiais (LeisMunicipais, Diários Oficiais, portais das Prefeituras e Câmaras). Dados sujeitos a atualizações legislativas posteriores. Onde o texto integral não foi acessível por bloqueio de scraping, utilizamos fontes secundárias verificadas.
+        </div>
+
+        <!-- FLORIANÓPOLIS -->
+        <div class="bench-city" id="bench-fln">
+          <div class="bench-city__header bench-city__header--destaque">
+            <div>
+              <h2 class="bench-city__name">Florianópolis/SC</h2>
+              <span class="bench-city__pop">~510 mil hab. | PIB ~R$ 30 bi</span>
+            </div>
+            <span class="bench-city__badge bench-city__badge--referencia">Referência principal</span>
+          </div>
+          <div class="bench-city__body">
+            <div class="bench-city__lei">
+              <h3>LC 432/2012 — Lei Municipal de Inovação</h3>
+              <p class="bench-city__ementa">Cria o Sistema Municipal de Inovação: SMI, CMI (Conselho), FMI (Fundo), PII (Programa de Incentivo), APIs, Rede de Inovação.</p>
+              <div class="bench-city__tags">
+                <span class="lei-card__tag lei-card__tag--ok">Operacional</span>
+                <span class="lei-card__tag">71 artigos</span>
+                <span class="lei-card__tag">PII ativo</span>
+              </div>
+              <a href="https://leismunicipais.com.br/a/sc/f/florianopolis/lei-complementar/2012/43/432" target="_blank" rel="noopener noreferrer" class="lei-card__link">Texto integral ↗</a>
+            </div>
+            <div class="bench-city__mecanismo">
+              <h4>Mecanismo de financiamento</h4>
+              <p><strong>Redirecionamento fiscal (PII)</strong> — Contribuinte redireciona até 20% do ISS e até 20% do IPTU para projetos de inovação aprovados. Total possível: 40% do imposto redirecionado (20% inovação + 20% cultura municipal). Recurso a fundo perdido, máx R$ 180k/projeto. Recurso nunca entra no caixa da Prefeitura.</p>
+              <p><strong>Fundo Municipal (FMI)</strong> — 1% da receita orçamentária anual. Complementar ao PII.</p>
+              <p><strong>Quem pode propor:</strong></p>
+              <ul>
+                <li>O proponente precisa fazer parte de um <strong>API (Arranjo Promotor de Inovação)</strong> credenciado</li>
+                <li><strong>Pessoa Física:</strong> residente em Florianópolis, sem sociedade em empresa</li>
+                <li><strong>Pessoa Jurídica:</strong> MEI, ME ou EPP com sede em Florianópolis</li>
+                <li>Projeto <strong>não pode ser aprimoramento de produto existente</strong> — deve ser inovador</li>
+              </ul>
+              <p><strong>Como funciona na prática:</strong></p>
+              <ul>
+                <li>Cadastro no site <strong>spii.pmf.sc.gov.br</strong>, aberto de janeiro a setembro em 3 ciclos/ano</li>
+                <li>Após aprovado, o proponente tem <strong>2 anos para captar</strong>. Com 20% do valor captado, já pode executar</li>
+                <li>Prestação de contas a cada 6 meses + relatório final obrigatório</li>
+                <li>Multa de até <strong>10x o valor</strong> em caso de irregularidade</li>
+              </ul>
+            </div>
+            <div class="bench-city__resultado">
+              <h4>Resultados</h4>
+              <p>PII 2025: 13 projetos aprovados, R$ 2,15 milhões captáveis (recorde). 6 APIs credenciadas. 5 Centros de Inovação. SMTDEI com 159 publicações no DOM/SC.</p>
+              <p class="bench-city__atencao">Gargalo: captação real muito abaixo do teto (~R$ 2 mi vs ~R$ 12 mi potenciais). Cultura de redirecionamento fiscal ainda em construção.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CURITIBA -->
+        <div class="bench-city" id="bench-cwb">
+          <div class="bench-city__header">
+            <div>
+              <h2 class="bench-city__name">Curitiba/PR</h2>
+              <span class="bench-city__pop">~1,9 mi hab. | PIB ~R$ 93 bi</span>
+            </div>
+            <span class="bench-city__badge">Vale do Pinhão</span>
+          </div>
+          <div class="bench-city__body">
+            <div class="bench-city__lei">
+              <h3>Lei 15.324/2018 — Lei de Inovação</h3>
+              <p class="bench-city__ementa">Incentivos à inovação e pesquisa científica no ambiente produtivo. Criação do Conselho Municipal de Inovação. Ecossistema Vale do Pinhão.</p>
+              <div class="bench-city__tags">
+                <span class="lei-card__tag lei-card__tag--ok">Operacional</span>
+                <span class="lei-card__tag">12 instrumentos</span>
+                <span class="lei-card__tag">Fundo reestruturado</span>
+              </div>
+              <a href="https://leismunicipais.com.br/a2/pr/c/curitiba/lei-ordinaria/2018/1533/15324" target="_blank" rel="noopener noreferrer" class="lei-card__link">Texto integral ↗</a>
+            </div>
+            <div class="bench-city__mecanismo">
+              <h4>Mecanismo de financiamento</h4>
+              <p><strong>12 instrumentos</strong>: subvenção econômica, financiamento, participação societária, bônus tecnológico (voucher para CT&amp;I), encomenda tecnológica, incentivos fiscais, bolsas, poder de compra, fundos de investimento/participação, títulos financeiros, P&amp;D em concessões.</p>
+              <p>Autoriza a <strong>Administração Municipal a participar minoritariamente do capital de empresas</strong>. Fundo Municipal de Inovação em reestruturação (aprovado pela Câmara em 2025).</p>
+              <p><strong>Programa Tecnoparque:</strong> 16+ empresas já beneficiadas com incentivos fiscais diretos.</p>
+              <p><strong>Ecossistema Vale do Pinhão:</strong> movimento compartilhado entre Agência Curitiba + FIEP + SEBRAE-PR + FECOMERCIO-PR + universidades + incubadoras + fundos de investimento. Modelo colaborativo que distribui a governança entre múltiplos atores.</p>
+            </div>
+            <div class="bench-city__resultado">
+              <h4>Resultados</h4>
+              <p>Ecossistema Vale do Pinhão consolidado: Agência Curitiba + FIEP + SEBRAE-PR + FECOMERCIO-PR. Reconhecido nacionalmente como berço de startups. Pacto pela Inovação assinado por múltiplas instituições.</p>
+              <p class="bench-city__atencao">Recurso passa pelo caixa — depende de prioridade orçamentária. Fundo em reestruturação indica que o modelo anterior tinha gargalos operacionais.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PORTO ALEGRE -->
+        <div class="bench-city" id="bench-poa">
+          <div class="bench-city__header">
+            <div>
+              <h2 class="bench-city__name">Porto Alegre/RS</h2>
+              <span class="bench-city__pop">~1,5 mi hab. | PIB ~R$ 78 bi</span>
+            </div>
+            <span class="bench-city__badge">Programa Creative</span>
+          </div>
+          <div class="bench-city__body">
+            <div class="bench-city__lei">
+              <h3>LC 906/2021 — Programa Creative</h3>
+              <p class="bench-city__ementa">Programa de incentivo ao desenvolvimento de setores estratégicos de alta tecnologia. ISS reduzido a 2% para empresas certificadas.</p>
+              <div class="bench-city__tags">
+                <span class="lei-card__tag lei-card__tag--ok">Operacional desde 2022</span>
+                <span class="lei-card__tag">ISS 2%</span>
+                <span class="lei-card__tag">10 anos renováveis</span>
+              </div>
+              <a href="https://dopaonlineupload.procempa.com.br/dopaonlineupload/3981_ce_326179_1.pdf" target="_blank" rel="noopener noreferrer" class="lei-card__link">Texto integral (PDF) ↗</a>
+            </div>
+            <div class="bench-city__mecanismo">
+              <h4>Mecanismo de financiamento</h4>
+              <p><strong>Redução direta de ISS de 5% para 2%</strong> — válida apenas para atividades relacionadas ao projeto de inovação aprovado (não é ISS genérico da empresa). Certificação por <strong>10 anos, renovável</strong>.</p>
+              <p><strong>Colegiado certificador:</strong> GI (Gabinete de Inovação) + SMDET (Desenvolvimento Econômico) + SMF (Secretaria Municipal da Fazenda).</p>
+              <p><strong>8 setores estratégicos:</strong> telecomunicações, informática, P&amp;D, design tecnológico, laboratórios, automação, biotecnologia/nanotecnologia, saúde/meio ambiente — além de outros setores considerados inovadores.</p>
+              <p><strong>Como solicitar:</strong></p>
+              <ul>
+                <li>Documentos: formulário de requerimento + contrato social + projeto de inovação detalhado</li>
+                <li>Processo via <strong>SEI (Sistema Eletrônico de Informações)</strong></li>
+              </ul>
+              <p><strong>Limite prudencial: 3% da arrecadação de ISS do ano anterior.</strong> Se ultrapassar, novas certificações são vedadas. Para cálculo da renúncia, subtrai-se o incremento de arrecadação gerado pelos novos aderentes ao programa.</p>
+            </div>
+            <div class="bench-city__resultado">
+              <h4>Resultados</h4>
+              <p>Em vigor desde jan/2022. Limite prudencial de 3% garante sustentabilidade fiscal. Modelo mais simples que FLN — não exige captação ativa pelas startups.</p>
+              <p class="bench-city__atencao">Não é redirecionamento (tipo PII) — é isenção parcial. Recurso que deixa de entrar no caixa. Sem mecanismo de direcionamento a projetos específicos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BELO HORIZONTE -->
+        <div class="bench-city" id="bench-bh">
+          <div class="bench-city__header">
+            <div>
+              <h2 class="bench-city__name">Belo Horizonte/MG</h2>
+              <span class="bench-city__pop">~2,5 mi hab. | PIB ~R$ 100 bi</span>
+            </div>
+            <span class="bench-city__badge">Recém-lançado</span>
+          </div>
+          <div class="bench-city__body">
+            <div class="bench-city__lei">
+              <h3>Lei 11.838/2025 — Marco Municipal das Startups</h3>
+              <p class="bench-city__ementa">Medidas de estímulo ao desenvolvimento de startups e atividades de CT&amp;I. Inclui startups no programa de incentivo à instalação/ampliação de empresas.</p>
+              <div class="bench-city__tags">
+                <span class="lei-card__tag lei-card__tag--warn">Em implementação</span>
+                <span class="lei-card__tag">2025</span>
+                <span class="lei-card__tag">PBH Inova</span>
+              </div>
+              <a href="https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2025/04/nova-lei-favorece-pesquisa-tecnol%C3%B3gica-e-desenvolvimento-de-startups" target="_blank" rel="noopener noreferrer" class="lei-card__link">Notícia CMBH ↗</a>
+            </div>
+            <div class="bench-city__mecanismo">
+              <h4>Mecanismo de financiamento</h4>
+              <p><strong>Lei 11.838/2025 + Decreto 19.086/2025</strong> incluiu startups no Programa de Incentivo à Instalação e Ampliação de Empresa já existente. Programa PBH Inova como braço operacional da Prefeitura.</p>
+              <p><strong>3 benefícios tributários por até 5 anos:</strong></p>
+              <ul>
+                <li><strong>Redução de até 60% do ISS</strong> (piso de 2%)</li>
+                <li><strong>Diferimento de 100% do ISS</strong> por 36 meses para novos serviços ou expansão de operações</li>
+                <li><strong>Redução de 10% do IPTU</strong></li>
+              </ul>
+              <p>Orientação sugerida: análise do escritório Machado Meyer Advogados confirmou os termos e a aplicabilidade dos incentivos conforme regulamentado pelo Decreto.</p>
+            </div>
+            <div class="bench-city__resultado">
+              <h4>Resultados</h4>
+              <p>Lei muito recente (2025) — sem resultados mensuráveis ainda. Sinaliza tendência de capitais brasileiras criando marcos municipais de startups. PBH Inova como portal de programas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SÃO PAULO -->
+        <div class="bench-city" id="bench-sp">
+          <div class="bench-city__header">
+            <div>
+              <h2 class="bench-city__name">São Paulo/SP</h2>
+              <span class="bench-city__pop">~12 mi hab. | PIB ~R$ 800 bi</span>
+            </div>
+            <span class="bench-city__badge">ADE SAMPA</span>
+          </div>
+          <div class="bench-city__body">
+            <div class="bench-city__lei">
+              <h3>Lei 15.838/2013 — ADE SAMPA + PL 835/2024</h3>
+              <p class="bench-city__ementa">Agência São Paulo de Desenvolvimento — serviço social autônomo. PL 835/2024 amplia escopo para incubação, aceleração, subsídios e hubs de inovação.</p>
+              <div class="bench-city__tags">
+                <span class="lei-card__tag lei-card__tag--ok">ADE ativa</span>
+                <span class="lei-card__tag lei-card__tag--warn">PL em tramitação</span>
+              </div>
+              <a href="https://legislacao.prefeitura.sp.gov.br/leis/projeto-de-lei-executivo-835-de-10-de-dezembro-de-2024/consolidado" target="_blank" rel="noopener noreferrer" class="lei-card__link">PL 835/2024 ↗</a>
+            </div>
+            <div class="bench-city__mecanismo">
+              <h4>Mecanismo de financiamento</h4>
+              <p><strong>Agência autônoma (ADE SAMPA)</strong> com orçamento próprio. Subsídios via editais de fomento, aceleração, incubação. Soluções financeiras e crédito. PL 835 quer ampliar para parques tecnológicos, hubs e capacitação.</p>
+              <p>Não tem renúncia fiscal para inovação. Recurso sai do orçamento via agência.</p>
+            </div>
+            <div class="bench-city__resultado">
+              <h4>Resultados</h4>
+              <p>ADE SAMPA ativa e consolidada. Modelo de agência autônoma garante agilidade operacional. Reformulação em andamento (PL 835) mostra maturação do modelo.</p>
+              <p class="bench-city__atencao">Modelo pesado — exige agência própria com equipe e orçamento. Não replicável facilmente em municípios menores.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- LONDRINA -->
+        <div class="bench-city" id="bench-lon">
+          <div class="bench-city__header">
+            <div>
+              <h2 class="bench-city__name">Londrina/PR</h2>
+              <span class="bench-city__pop">~580 mil hab. | PIB ~R$ 25 bi</span>
+            </div>
+          </div>
+          <div class="bench-city__body">
+            <div class="bench-city__lei">
+              <h3>Lei 13.869/2024 — Lei de Inovação</h3>
+              <p class="bench-city__ementa">Medidas de incentivo à inovação e pesquisa científica nos setores produtivos e sociais do município.</p>
+              <div class="bench-city__tags">
+                <span class="lei-card__tag lei-card__tag--warn">Escopo limitado</span>
+                <span class="lei-card__tag">2024</span>
+                <span class="lei-card__tag">Programa interno</span>
+              </div>
+              <a href="https://www.cml.pr.gov.br/proposicoes/Leis-/0/4/0/41190" target="_blank" rel="noopener noreferrer" class="lei-card__link">Câmara Municipal ↗</a>
+            </div>
+            <div class="bench-city__mecanismo">
+              <h4>Mecanismo de financiamento</h4>
+              <p><strong>Programa de Incentivo à Inovação</strong> — focado em servidores públicos (inovação na gestão pública), NÃO em startups ou empresas externas. Editais anuais com premiação de projetos internos.</p>
+            </div>
+            <div class="bench-city__resultado">
+              <h4>Resultados</h4>
+              <p>Editais desde 2021. Em 2022, nenhum projeto foi implementado. Execução irregular. Escopo limitado à máquina pública — não atinge o ecossistema de inovação.</p>
+              <p class="bench-city__atencao">Modelo insuficiente como referência. Não cria mecanismo de financiamento para o ecossistema privado.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BRASÍLIA -->
+        <div class="bench-city" id="bench-bsb">
+          <div class="bench-city__header">
+            <div>
+              <h2 class="bench-city__name">Brasília/DF</h2>
+              <span class="bench-city__pop">~3 mi hab. | PIB ~R$ 280 bi</span>
+            </div>
+          </div>
+          <div class="bench-city__body">
+            <div class="bench-city__lei">
+              <h3>Lei 6.370/2019 — Política de Estímulo a Startups</h3>
+              <p class="bench-city__ementa">Política distrital de estímulo, incentivo e promoção ao desenvolvimento local de startups.</p>
+              <div class="bench-city__tags">
+                <span class="lei-card__tag lei-card__tag--warn">Principiológica</span>
+                <span class="lei-card__tag">2019</span>
+              </div>
+              <a href="https://www.sinj.df.gov.br/sinj/Norma/ba6e92c8925642ba832bfe71e7dc1cc5/Lei_6370_05_09_2019.html" target="_blank" rel="noopener noreferrer" class="lei-card__link">SINJ-DF ↗</a>
+            </div>
+            <div class="bench-city__mecanismo">
+              <h4>Mecanismo de financiamento</h4>
+              <p>Lei declaratória com 9 objetivos (desburocratizar, linhas de crédito, incentivos fiscais, eventos). Prevê linhas de crédito e incentivos fiscais mas não cria instrumento operacional específico.</p>
+            </div>
+            <div class="bench-city__resultado">
+              <h4>Resultados</h4>
+              <p>Pouca operacionalização concreta identificada. Lei serve como base principiológica mas falta regulamentação e programa estruturado.</p>
+              <p class="bench-city__atencao">Exemplo de lei que ficou no papel — mesmo risco da 7.170 de Joinville. Sem programa, sem fundo, sem métricas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPARATIVO -->
+        <div class="bench-comparativo" id="bench-comparativo">
+          <h2 class="section__title">Comparativo Geral</h2>
+          <div class="bench-table-wrap">
+            <table class="bench-table">
+              <thead>
+                <tr>
+                  <th>Cidade</th>
+                  <th>Lei</th>
+                  <th>Ano</th>
+                  <th>Mecanismo</th>
+                  <th>Fora do caixa?</th>
+                  <th>Operacional?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bench-table__destaque">
+                  <td><strong>Florianópolis</strong></td>
+                  <td>LC 432</td>
+                  <td>2012</td>
+                  <td>Redirecionamento ISS/IPTU 20%</td>
+                  <td><span class="lei-card__tag lei-card__tag--ok">Sim</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--ok">Sim</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Curitiba</strong></td>
+                  <td>Lei 15.324</td>
+                  <td>2018</td>
+                  <td>Fundo + 12 instrumentos</td>
+                  <td><span class="lei-card__tag">Parcial</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--ok">Sim</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Porto Alegre</strong></td>
+                  <td>LC 906</td>
+                  <td>2021</td>
+                  <td>ISS 2% p/ tech (10 anos)</td>
+                  <td><span class="lei-card__tag">Isenção</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--ok">Sim</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Belo Horizonte</strong></td>
+                  <td>Lei 11.838</td>
+                  <td>2025</td>
+                  <td>Marco Startups + PBH Inova</td>
+                  <td><span class="lei-card__tag">Não</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--warn">Recente</span></td>
+                </tr>
+                <tr>
+                  <td><strong>São Paulo</strong></td>
+                  <td>Lei 15.838</td>
+                  <td>2013</td>
+                  <td>Agência ADE SAMPA</td>
+                  <td><span class="lei-card__tag">Não</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--ok">Sim</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Londrina</strong></td>
+                  <td>Lei 13.869</td>
+                  <td>2024</td>
+                  <td>Programa interno (servidores)</td>
+                  <td><span class="lei-card__tag">Não</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--warn">Limitado</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Brasília</strong></td>
+                  <td>Lei 6.370</td>
+                  <td>2019</td>
+                  <td>Principiológica</td>
+                  <td><span class="lei-card__tag">Não</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--warn">Fraco</span></td>
+                </tr>
+                <tr class="bench-table__joinville">
+                  <td><strong>Joinville</strong></td>
+                  <td>Lei 7.170</td>
+                  <td>2011</td>
+                  <td>FIT (não regulamentado)</td>
+                  <td><span class="lei-card__tag lei-card__tag--warn">Não</span></td>
+                  <td><span class="lei-card__tag lei-card__tag--warn">Não</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- PARECER -->
+        <div class="parecer" id="bench-parecer">
+          <h2 class="parecer__title">Parecer — Lições do Benchmark</h2>
+          <p class="parecer__subtitle">Orientação sugerida pela consultoria BRZ Capacitação com base na pesquisa comparativa.</p>
+
+          <div class="parecer__section">
+            <h4>1. Florianópolis é o único modelo com recurso fora do caixa</h4>
+            <p>Entre as 7 cidades pesquisadas, apenas Florianópolis opera com redirecionamento fiscal direto (contribuinte → projeto). Todas as demais usam mecanismos que passam pelo orçamento: fundos, agências, isenções ou programas internos. Isso confirma que o modelo PII é <strong>inovador e ainda raro no Brasil</strong> — Joinville pode ser a segunda cidade a implementá-lo.</p>
+          </div>
+
+          <div class="parecer__section">
+            <h4>2. Porto Alegre oferece referência para controle fiscal</h4>
+            <p>O <strong>limite prudencial de 3% da arrecadação de ISS</strong> (LC 906/2021, Art. 5) é um mecanismo inteligente de trava fiscal. Se Joinville adotar o modelo PII, pode incluir trava similar — ex: "a renúncia fiscal anual do programa não excederá X% da arrecadação de ISS+IPTU do exercício anterior". Isso responde antecipadamente à preocupação da Fazenda.</p>
+          </div>
+
+          <div class="parecer__section">
+            <h4>3. Curitiba mostra amplitude de instrumentos</h4>
+            <p>A Lei 15.324/2018 lista 12 instrumentos, incluindo <strong>bônus tecnológico</strong>, <strong>encomenda tecnológica</strong> e <strong>participação societária</strong>. Joinville pode considerar incluir instrumentos além do redirecionamento fiscal — especialmente encomenda tecnológica (já prevista na LC 182/2021) e bônus tecnológico (voucher para contratar serviços de CT&amp;I).</p>
+          </div>
+
+          <div class="parecer__section">
+            <h4>4. Leis declaratórias não funcionam</h4>
+            <p>Brasília (2019) e a própria Lei 7.170 de Joinville (2011) demonstram o mesmo padrão: leis principiológicas sem mecanismo operacional concreto geram zero resultado. <strong>Sem programa, sem fundo operante, sem edital — a lei fica no papel.</strong> A nova legislação de Joinville precisa nascer com programa, decreto e primeiro edital prontos.</p>
+          </div>
+
+          <div class="parecer__section">
+            <h4>5. Mecanismos recomendados para Joinville</h4>
+            <ul>
+              <li><strong>Redirecionamento fiscal (modelo FLN)</strong> — mecanismo central, recurso fora do caixa, contribuinte escolhe o projeto</li>
+              <li><strong>Limite prudencial (modelo POA)</strong> — trava fiscal de X% da arrecadação ISS+IPTU, protege a Fazenda</li>
+              <li><strong>APIs credenciadas (modelo FLN)</strong> — Softville, ACIJ, Agora Tech Park, Inovaparq são candidatos naturais</li>
+              <li><strong>Certificação por colegiado (modelo POA)</strong> — SDE + Fazenda + COMCITI avaliam enquadramento</li>
+              <li><strong>Prazo generoso (modelo POA)</strong> — 10 anos renováveis dá segurança jurídica ao investidor</li>
+              <li><strong>Encomenda tecnológica (modelo CWB)</strong> — já tem base federal (LC 182/2021), complementa o programa</li>
+            </ul>
+          </div>
+
+          <div class="parecer__section">
+            <h4>6. O que evitar</h4>
+            <ul>
+              <li><strong>Lei sem programa operacional</strong> — lição de Brasília e da própria 7.170</li>
+              <li><strong>Programa focado só em servidores</strong> — lição de Londrina (escopo limitado, sem impacto no ecossistema)</li>
+              <li><strong>Agência autônoma</strong> — modelo SP exige estrutura pesada, inadequado pro porte de Joinville</li>
+              <li><strong>Fundo sem regulamentação</strong> — lição da própria 7.170 (15 anos parado)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /page-benchmark -->
 
     <!-- ==================== PAGE: PROGRAMA ==================== -->
     <div class="page" id="page-programa">

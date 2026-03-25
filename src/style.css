@@ -1046,6 +1046,159 @@ strong {
 .embasamento-item p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
 
 /* ============================================
+   BENCHMARK PAGE
+   ============================================ */
+.bench-city {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+}
+
+.bench-city__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bench-city__header--destaque {
+  border-left: 3px solid var(--accent-green);
+}
+
+.bench-city__name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.bench-city__pop {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.bench-city__badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  color: var(--text-secondary);
+}
+
+.bench-city__badge--referencia {
+  background: var(--accent-green-dim);
+  color: var(--accent-green);
+}
+
+.bench-city__body {
+  padding: var(--space-md) var(--space-lg);
+}
+
+.bench-city__lei {
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.bench-city__lei h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.bench-city__ementa {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.bench-city__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.bench-city__mecanismo, .bench-city__resultado {
+  margin-bottom: var(--space-sm);
+}
+
+.bench-city__mecanismo h4, .bench-city__resultado h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.bench-city__mecanismo p, .bench-city__resultado p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.bench-city__atencao {
+  color: var(--accent-yellow) !important;
+  font-size: 0.82rem !important;
+  padding: 6px 10px;
+  background: var(--accent-yellow-dim);
+  border-radius: var(--radius-sm);
+  margin-top: 6px;
+}
+
+/* Benchmark Table */
+.bench-comparativo { margin: var(--space-xl) 0; }
+
+.bench-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bench-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.bench-table th {
+  background: rgba(255,255,255,0.03);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border-medium);
+  white-space: nowrap;
+}
+
+.bench-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.bench-table__destaque td {
+  background: var(--accent-green-dim);
+}
+
+.bench-table__joinville td {
+  background: rgba(239,68,68,0.05);
+  border-left: 3px solid var(--accent-red);
+}
+
+/* ============================================
    PROGRAMA PAGE
    ============================================ */
 .programa-wip {
