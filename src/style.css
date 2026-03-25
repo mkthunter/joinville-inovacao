@@ -705,7 +705,7 @@ strong {
 }
 
 .parecer__subtitle {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--text-muted);
   margin-bottom: var(--space-md);
   font-style: italic;
@@ -1073,7 +1073,7 @@ strong {
 
 .bench-city__name {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: 700;
 }
 
@@ -1131,7 +1131,7 @@ strong {
 }
 
 .bench-city__mecanismo h4, .bench-city__resultado h4 {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent-blue);
   text-transform: uppercase;
@@ -1143,12 +1143,34 @@ strong {
   font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 6px;
+  margin-bottom: var(--space-xs);
 }
 
-.bench-city__atencao {
-  color: var(--accent-yellow) !important;
-  font-size: 0.82rem !important;
+.bench-city__mecanismo p + p,
+.bench-city__resultado p + p {
+  margin-top: 4px;
+}
+
+.bench-city__mecanismo ul,
+.bench-city__resultado ul {
+  padding-left: 20px;
+  margin-top: 4px;
+  margin-bottom: var(--space-xs);
+}
+
+.bench-city__mecanismo li,
+.bench-city__resultado li {
+  list-style: disc;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.bench-city__mecanismo .bench-city__atencao,
+.bench-city__resultado .bench-city__atencao {
+  color: var(--accent-yellow);
+  font-size: 0.82rem;
   padding: 6px 10px;
   background: var(--accent-yellow-dim);
   border-radius: var(--radius-sm);
@@ -1157,6 +1179,11 @@ strong {
 
 /* Benchmark Table */
 .bench-comparativo { margin: var(--space-xl) 0; }
+
+.bench-comparativo .section__title {
+  font-size: 1.3rem;
+  margin-bottom: var(--space-md);
+}
 
 .bench-table-wrap {
   overflow-x: auto;
