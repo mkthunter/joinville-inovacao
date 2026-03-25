@@ -1,0 +1,379 @@
+LEI Nº 7170, DE 19 DE DEZEMBRO DE 2011.
+
+DISPÕE SOBRE MEDIDAS DE INCENTIVO À INOVAÇÃO E À PESQUISA CIENTÍFICA E TECNOLÓGICA NO AMBIENTE PRODUTIVO E SOCIAL MUNICIPAL E DÁ OUTRAS PROVIDÊNCIAS
+
+O Prefeito Municipal de Joinville, no exercício de suas atribuições, faz saber que a Câmara de Vereadores de Joinville aprovou e ele sanciona a presente Lei:
+
+CAPÍTULO I
+DA INOVAÇÃO TECNOLÓGICA
+DISPOSIÇÕES GERAIS
+
+Art. 1º Esta Lei estabelece medidas de incentivo à inovação e à pesquisa científica e desenvolvimento tecnológico no ambiente produtivo e social, proporcionando o desenvolvimento social e econômico sustentável da Cidade de Joinville, em conformidade com os artigos 218 e 219 da Constituição Federal, as disposições contidas na Lei Federal nº 10.973, de 02 de dezembro de 2004, Lei Estadual nº 14.328, de 15 de janeiro de 2008, regulamentada pelo Decreto nº 2.372, de 09 de junho de 2009, o artigo 77 da Lei Orgânica do Município de Joinville e a Lei Complementar nº 266, de 05 de abril de 2008 - Estatuto dos Servidores Públicos do Município de Joinville.
+
+Art. 2º Para os efeitos desta lei considera-se:
+
+I - agência de fomento: órgão ou instituição de natureza pública ou privada que tenha entre os seus objetivos o financiamento de ações que visem a estimular e promover o desenvolvimento da ciência, da tecnologia e da inovação;
+
+II - criação: invenção, modelo de utilidade, desenho industrial, programa de computador, topografia de circuito integrado, nova cultivar ou cultivar essencialmente derivada e qualquer outro desenvolvimento tecnológico que acarrete ou possa acarretar o surgimento de novo produto, processo ou aperfeiçoamento incremental, obtida por um ou mais criadores;
+
+III - criador: pesquisador que seja inventor, obtentor ou autor de criação;
+
+IV - inovação: introdução de novidade ou aperfeiçoamento no ambiente produtivo ou social que resulte em novos produtos, processos ou serviços;
+
+V - processo, bem ou serviço inovador: tecnologias e conhecimentos dinâmicos radicais - conhecimento novo - ou incrementais - novo uso de conhecimento - que envolvem atividades científicas, tecnológicas, organizativas, financeiras e comerciais, que levam ou que tentam levar à implementação de produtos, processos, serviços e mudanças organizacionais novos ou melhorados ao ambiente produtivo ou social de novos processos, bens ou serviços, que promovam diferencial competitivo no mercado e significativo benefício social;
+
+VI - inovação de produto ou serviço: introdução, no ambiente produtivo ou social, de um produto ou serviço novo ou significativamente melhorado no que concerne a suas características ou usos previstos dos produtos ou serviços previamente produzidos, incluindo-se melhoramentos significativos em especificações técnicas, componentes e materiais, softwares incorporados, facilidade de uso ou outras características funcionais;
+
+VII - inovação de serviço no ambiente social: introdução no ambiente social de um serviço novo ou significativamente melhorado no que concerne a suas características ou usos previstos dos serviços previamente introduzidos, incluindo-se melhoramentos significativos na qualidade dos serviços;
+
+VIII - inovação de processo no ambiente produtivo: a implementação, no ambiente produtivo, de um método de produção ou distribuição novo ou significativamente melhorado, incluindo-se mudanças significativas em técnicas, equipamentos e/ou softwares;
+
+IX - inovação de processo no ambiente social: a implementação, no ambiente social, de um método de produção ou distribuição novo ou significativamente melhorado, incluindo-se mudanças significativas em técnicas, equipamentos e ou softwares;
+
+X - inovação de método organizacional: operações técnicas de implementação, no ambiente produtivo ou social, de um novo método organizacional nas práticas de negócios da empresa, na organização do seu local de trabalho ou em suas relações externas;
+
+XI - instituição de apoio: instituições criadas sob o amparo da Lei Federal nº 8.958, de 20 de dezembro de 1994, com a finalidade de dar apoio a projetos de pesquisa, ensino e extensão e de desenvolvimento institucional, científico e tecnológico;
+
+XII - inventor independente: pessoa física, não ocupante de cargo efetivo, cargo militar ou emprego público, que seja inventor, obtentor ou autor de criação;
+
+XIII - Núcleo de Inovação Tecnológica - NIT: núcleo ou órgão constituído por uma ou mais Instituição Científica e Tecnológica - ICT com a finalidade de gerir sua política de inovação;
+
+XIV - pesquisador público: ocupante de cargo efetivo, cargo militar ou emprego público que realize pesquisa básica ou aplicada de caráter científico ou tecnológico;
+
+XV - Arranjos Produtivos Locais - APL´s: aglomerações de empresas, localizadas em um mesmo território, que apresentam especialização, produtiva e mantém vínculos de articulação, interação, cooperação e aprendizagem entre si e com outros atores locais, tais como governo, associações empresariais, instituições de crédito, ensino e pesquisa;
+
+XVI - Empresas de Base Tecnológica - EBT: empresa legalmente constituída, com unidade produtora e/ou centro de pesquisa, cuja atividade produtiva é direcionada para o desenvolvimento ou aprimoramento de produtos, processos e /ou serviços, com base na aplicação sistemática de conhecimentos científicos e tecnológicos e na utilização de técnicas consideradas avançadas ou pioneiras, ou que desenvolva projetos de ciência, tecnologia e inovação;
+
+XVII - contrapartida: aporte de recursos financeiros, de bens ou de serviços relacionados com o projeto de pesquisa, economicamente mensuráveis durante a execução do projeto e na fase de prestação de contas;
+
+XVIII - incubadora de empresas de base tecnológicas: organizações e complexos que incentivam a criação e o desenvolvimento de micro e pequenas empresas industriais ou de prestação de serviços, de base tecnológica ou de manufaturas leves, por meio do provimento de infra-estrutura básica e da qualificação técnica e gerencial do empreendedor, em caráter complementar, para viabilizar seu acesso à inovação tecnológica e sua inserção competitiva no mercado;
+
+XIX - instrumentos jurídicos: instrumentos legais estabelecidos na forma de convênios, termos de outorga, termos de parceria ou acordos de cooperação técnica, contratos de desenvolvimento conjunto, de transferência de tecnologia, de licenciamento, protocolos de intenções e outros instrumentos da espécie, celebrados entre a administração pública municipal, instituições científicas tecnológicas, agências de fomento ou a iniciativa privada;
+
+XX - parque científico e tecnológico: organização, gerida por profissionais especializados, cujo objetivo fundamental é aumentar a riqueza da comunidade em que se insere mediante a promoção da cultura da inovação e da competitividade das empresas e instituições intensivas em conhecimento associadas à organização, tais como universidades e institutos de pesquisa. Envolve, necessariamente, a promoção do relacionamento entre a universidade a que está vinculado e os setores empresarial e industrial, além de outros setores da sociedade e/ou poder público, visando estimular o processo de inovação, a facilitação da transferência de tecnologia e habilidades entre a academia e o setor empresarial, promovendo o desenvolvimento sustentado da região onde atua;
+
+XXI - condomínios empresariais: espaços criados especificamente para a instalação de empresas de tecnologia, que ofertem infra-estrutura de internet de alta qualidade, telefonia, rede de computadores, serviços de segurança, limpeza, áreas de uso comum para reuniões e treinamento;
+
+XXII - incubadoras sociais: organizações de apoio ao desenvolvimento de comunidades e municípios através de entidades associativas, por meio da formação e qualificação de empreendedores e do estímulo aos empreendimentos intensivos em tecnologias sociais;
+
+XXIII - Instituição Científica e Tecnológica de Joinville - ICT/Jlle: órgão ou entidade da administração pública municipal, direta ou indireta, bem como outras instituições públicas ou privadas, sem fins lucrativos, que tenha por missão institucional, dentre outras, a promoção e transferência de conhecimento, a execução de atividades de pesquisa aplicada de caráter científico, em especial a pesquisa tecnológica e a geração de inovação;
+
+XXIV - Política Municipal de Ciência, Tecnologia e Inovação - PMCTI: conjunto de diretrizes, instrumentos, regulamentos e ferramentas legais, compromissos e metas pró-desenvolvimento da ciência, tecnologia no Município de Joinville, em especial visando o incentivo à inovação;
+
+XXV - Região de Potencial Tecnológico - REPOT: constitui parcela territorial do município onde são incentivadas atividades e ou empreendimentos tecnológicos dos setores industrial, comercial e de serviços;
+
+XXVI - tecnologias sociais: compreendem produtos, técnicas ou metodologias reaplicáveis desenvolvidas na interação com a comunidade e que representem efetivas soluções de transformações sociais;
+
+XXVII - transferência de tecnologia: é a transferência de licença de direitos (exploração de patentes) e de conhecimentos tecnológicos (fornecimentos de tecnologia e prestação de serviços de assistência técnica e científica).
+
+CAPÍTULO II
+DA GESTÃO DA INOVAÇÃO
+
+Art. 3º Fica estabelecida a Secretaria de Integração e Desenvolvimento Econômico, como órgão da Administração Pública Municipal, para gerir a Política Municipal de Ciência, Tecnologia e Inovação - PMCTI, observando as diretrizes produzidas nas Conferências Municipais de Ciência, Tecnologia e Inovação, coordenadas pelo Conselho Municipal de Ciência, Tecnologia e Inovação - COMCETI.
+
+CAPÍTULO III
+DO APOIO À INOVAÇÃO
+
+Seção I
+Dos Incentivos a Empresas e Instituições Que Visem a Inovação
+
+Art. 4º O Poder Executivo Municipal deverá estudar e identificar Regiões de Potencial Tecnológico - REPOTs, bem como indicar os requisitos mínimos necessários para obtenção de incentivos à instalação de empreendimentos, conforme a Lei Municipal nº 3.598, de 17 de Novembro de 1997 (Pró-Empresa).
+
+Art. 5º Os incentivos para a constituição de Empresas de Base Tecnológica - EBTs, Instituições Científicas e Tecnológicas - ICTs, Núcleos de Inovação Tecnológica - NITs, parques tecnológicos, incubadoras, condomínios empresariais e outros empreendimentos sediados em Joinville que venham a promover a inovação e a pesquisa, serão constituídos através de modalidades a serem fixadas pelo Poder Executivo Municipal em regulamentação específica e de acordo com a realização da receita e o cumprimento das metas fiscais.
+
+§ 1º Consideram-se modalidades de incentivo a isenção fiscal dos seguintes tributos:
+
+a) Imposto sobre Transmissão de Bens Imóveis - ITBI e Imposto Predial e Territorial Urbano - IPTU, incidente sobre o imóvel destinado à instalação da empresa;
+b) Imposto Sobre Serviços de Qualquer Natureza - ISSQN retido incidente sobre a prestação de serviços relacionados à implantação ou ampliação do empreendimento;
+c) Taxas relativas à localização, aprovação, vistoria e fiscalização do projeto do respectivo empreendimento;
+d) Contribuição de Melhoria e Contribuição para Custeio do Serviço de Iluminação Pública - COSIP que incidir sobre o imóvel de que trata a alínea "a";
+e) Taxa de Vigilância Sanitária, para empresas que exerçam atividades sujeitas ao seu pagamento.
+
+Seção II
+Da Suplementação Pelo Município de Projetos de Fomento à Inovação
+
+Art. 6º O Poder Executivo Municipal fará constar no Anexo de Metas Fiscais da Lei de Diretrizes Orçamentária, de forma compatível com o Plano Plurianual, a parcela de seu orçamento anual destinada à suplementação e ampliação do alcance de projetos governamentais de fomento à inovação e à capacitação tecnológica, que beneficiem microempresas e empresas de pequeno porte inscritas no Município.
+
+§ 1º Os recursos referidos no caput deste artigo poderão suplementar contrapartida das empresas atendidas pelos respectivos projetos, cobrir gastos com divulgação e orientação destinada a captar empreendimentos que possam receber os benefícios dos projetos, servir como contrapartida de convênios com entidades de apoio a microempresas e empresas de pequeno porte, em ações de divulgação dos projetos, atendimento técnico e disseminação de conhecimento.
+
+Seção III
+Do Ambiente de Apoio à Inovação
+
+Art. 7º Fica instituído, no âmbito do Município de Joinville, o prêmio "INOVAÇÃO JOINVILLE", para homenagear pessoas e instituições públicas ou privadas que com suas ações se destacarem na promoção do conhecimento e prática da inovação, na geração de processos, bens e serviços inovadores em benefício da cidade.
+
+Parágrafo Único - Fica atribuída à Secretaria de Integração e Desenvolvimento Econômico, a responsabilidade de definir critérios e propor a regulamentação a ser adotada na concessão do Prêmio.
+
+Art. 8º O Município, através de seus órgãos da administração pública direta e indireta deverá promover ampla discussão com a sociedade, de temas inovadores e novas tecnologias, através de fóruns, congressos, feiras, cursos e outros eventos afins, de forma a estimular a apropriação do conhecimento que possam proporcionar o desenvolvimento social e economicamente sustentável da cidade.
+
+Art. 9º O Município e as agências de Apoio e Fomento à Ciência, Tecnologia e Inovação poderão estimular a constituição de alianças estratégicas e o desenvolvimento de projetos de cooperação que objetivem a geração de produtos e processos inovadores e a criação e consolidação de ambientes de inovação, em especial incubadoras de empresas de base tecnológica, condomínios e parques tecnológicos.
+
+Seção IV
+Do Fundo Municipal de Inovação Tecnológica
+
+Art. 10. Fica autorizado o Poder Executivo Municipal a criar o Fundo Municipal de Inovação Tecnológica de Joinville FIT/Jlle, com o objetivo de fomentar a inovação tecnológica no Município e de incentivar as empresas e instituições nele instaladas ou que desejarem se instalar, a realizar investimentos em projetos de pesquisa científica, tecnológica e de inovação ou desenvolvimento de Tecnologias Sociais que venham a melhorar significativamente a qualidade de vida das populações onde sejam aplicadas.
+
+§ 1º Os recursos que compõem o FIT/Jlle serão utilizados no financiamento de projetos que tenham como foco a inovação e a pesquisa científica e tecnológica, propostos por pessoas jurídicas sediadas em Joinville e que contribuam para a consecução dos objetivos da presente Lei, entre eles:
+
+I - desenvolvimento de produtos e processos inovadores;
+
+II - realização de eventos técnicos, encontros, seminários, feiras, exposições e cursos que abordem exclusivamente assuntos ligados ás áreas de inovação e tecnologia.
+
+§ 2º O Município regulamentará os dispositivos para a concessão do FIT/Jlle no prazo máximo de 06 (seis) meses, a contar do início da vigência desta Lei.
+
+§ 3º Não será permitida a utilização dos recursos do FIT/Jlle para custear despesas correntes, exceto quando previstas em projetos ou programas de trabalho com duração previamente estabelecida e prevista no regulamento a que se refere o § 2º.
+
+Art. 11. O Fundo Municipal de Inovação Tecnológica - FIT/Jlle poderá conceder recursos financeiros através das seguintes modalidades de apoio:
+
+I - bolsas de estudo para estudantes graduandos;
+
+II - bolsas de iniciação técnico-científica, para alunos do 2º Grau e universitários;
+
+III - auxílios para elaboração de teses, monografias e dissertações, para graduandos e pós-graduandos;
+
+IV - auxílio à pesquisa e estudos, para pessoas físicas e jurídicas;
+
+Art. 12. Poderão constituir fontes de receitas do FIT/Jlle:
+
+I - dotações consignáveis na lei orçamentária anual e seus créditos adicionais;
+
+II - recursos decorrentes de acordos, ajustes, contratos e convênios celebrados com órgãos ou instituições de natureza pública, inclusive agências de fomento;
+
+III - contratos, convênios, e doações realizadas por entidades nacionais ou internacionais, públicas ou privadas;
+
+IV - doações, auxílios, subvenções e legados, de qualquer natureza, de pessoas físicas ou jurídicas do país ou do exterior;
+
+V - recursos de empréstimos realizados com destinação para pesquisa, desenvolvimento e inovação tecnológica;
+
+VI - rendimentos de aplicação financeira dos seus recursos;
+
+VII - outras receitas que vierem a ser destinadas ao Fundo;
+
+VIII - recursos decorrentes da aplicação de contrapartidas.
+
+Art. 13. A concessão de recursos do FIT/Jlle poderá ser efetuada das seguintes formas:
+
+I - subvenção econômica;
+
+II - apoio financeiro reembolsável;
+
+III - financiamento de risco;
+
+IV - participação societária;
+
+V - contrapartida em contratos e convênios relacionados aos objetivos da presente Lei.
+
+Art. 14. Os beneficiários de recursos previstos nesta lei deverão fazer constar o apoio recebido do FIT/Jlle quando da divulgação dos projetos e atividades e de seus respectivos resultados.
+
+Art. 15. Os projetos e pesquisas apoiados pelo FIT/Jlle, cujo objeto final seja a pesquisa aplicada localmente, devem propiciar a popularização e difusão do conhecimento produzido com a apresentação dos resultados das pesquisas em reunião pública.
+
+§ 1º Uma cópia dos relatórios finais da pesquisa deve ser encaminhada para o Conselho Municipal de Ciência, Tecnologia e Inovação - COMCETI e outra para Secretaria de Integração e Desenvolvimento Econômico.
+
+§ 2º A divulgação das pesquisas não implicará em renúncia de direitos autorais ou direito a registro de patentes por parte dos autores.
+
+Art. 16. Somente poderão receber recursos aqueles proponentes que estejam em situação regular frente ao Município, Estado e União, incluídos: o pagamento de impostos devidos e a prestação de contas relativas a projetos de ciência e tecnologia, já aprovadas e executadas com recursos do Poder Executivo Municipal.
+
+Art. 17. Compete ao Poder Executivo Municipal gerir o FIT/Jlle através da Secretaria de Integração e Desenvolvimento Econômico que, entre outras atribuições:
+
+I - acompanhará as atividades a serem desenvolvidas no âmbito do FIT/Jlle;
+
+II - zelará pela eficiência e economia no emprego dos recursos;
+
+III - fiscalizará o cumprimento de acordos que venham a ser celebrados.
+
+Art. 18. As empresas só poderão gozar de incentivos fiscais e tributários definidos nesta lei, quando se comprometerem formalmente com a implementação das seguintes medidas:
+
+I - preferência em compras e contratação de serviços com microempresas e empresas de pequeno porte estabelecidas em Joinville;
+
+II - contratação preferencial de trabalhadores, estudantes e egressos nas universidades locais residentes do Município como funcionários;
+
+III - disposição seletiva do lixo produzido para doação dos itens comercializáveis a cooperativas do setor ou a entidades assistenciais do município;
+
+IV - oferecimento de estágios remunerados para estudantes universitários ou de escolas técnicas locais;
+
+V - qualificação para empregados operacionais e administrativos;
+
+VI - apoio de profissionais da empresa como "palestrantes voluntários" nas escolas do Município, visando incentivar o interesse dos jovens pela área de tecnologia e inovação;
+
+VII - programa de formação e qualificação de mão de obra para as atividades a serem desenvolvidas no empreendimento, de forma autônoma ou em parceria com outras empresas ou instituições de ensino locais.
+
+§ 1º As medidas relacionadas nos incisos elencados no caput deste artigo, deverão estar plenamente implementadas no prazo fixado em contrato específico, que estabelecerá as prioridades de implantação de acordo com a natureza do empreendimento.
+
+§ 2º O teor de qualquer das medidas relacionadas no contrato específico, só poderá ser alterado por solicitação expressa da empresa e concordância documentada do órgão municipal competente.
+
+CAPÍTULO IV
+DO ESTÍMULO À INOVAÇÃO NAS EMPRESAS E INSTITUIÇÕES
+
+Art. 19. O Município de Joinville, por meio de entidades e órgãos da administração pública direta ou indireta, poderá promover e incentivar o desenvolvimento de produtos e processos inovadores em empresas e organizações de direito privado, voltadas para atividades de pesquisa e desenvolvimento no processo de inovação, mediante o compartilhamento de recursos humanos, materiais e de infra-estrutura ou da concessão de apoio financeiro a serem ajustados em instrumentos jurídicos específicos.
+
+§ 1º A concessão de apoio financeiro, sob a forma de subvenção econômica, financiamento ou participação societária, visando ao desenvolvimento de produtos ou processos inovadores, será efetuada através de recursos do Fundo de Inovação Tecnológica de Joinville - FIT/Jlle.
+
+§ 2º O compartilhamento de recursos humanos, mediante participação de servidor público municipal ocupante de cargo ou emprego das áreas técnicas ou científicas, inclusive pesquisadores, poderá ser autorizada pelo prazo de duração do projeto de desenvolvimento de produtos ou processos inovadores de interesse público, respeitado o período máximo de cedência, em ato fundamentado expedido pela autoridade máxima do órgão ou entidade a qual estiver subordinado devidamente amparado na legislação vigente.
+
+§ 3º Durante o período de cedência referido no § 2º, é assegurado ao servidor público municipal o vencimento do cargo efetivo, ou o salário do emprego público da instituição de origem, acrescido das vantagens pecuniárias permanentes estabelecidas em lei, bem como a progressão funcional e os benefícios do plano de seguridade social ao qual estiver vinculado.
+
+§ 4º A utilização de materiais, de infra-estrutura ou equipamentos integrantes do patrimônio do órgão ou entidade incentivador ou promotor da cooperação dar-se-á mediante a celebração de termo próprio que estabelece as obrigações das partes, observada a duração prevista no cronograma físico de execução do projeto de cooperação.
+
+§ 5º A redestinação do material cedido ou a sua utilização em finalidade diversa da prevista, acarretará para o beneficiário as cominações administrativas civis e penais da legislação.
+
+Art. 20. Havendo relevante interesse público, mediante expressa autorização do Poder Executivo Municipal e com observância da Lei Federal nº 8.666, de 21 de junho de 1993, os órgãos e entidades da Administração Pública Municipal podem, em matéria de interesse público, contratar empresa privada estabelecida em Joinville, com reconhecida capacitação técnica, para a realização de atividades de pesquisa e desenvolvimento envolvendo risco tecnológico, individualmente ou consorciada com outras empresas privadas, para a solução de problema técnico específico, bem como para a obtenção de produto ou processo inovador.
+
+§ 1º Considerar-se-á desenvolvida na vigência do contrato a que se refere este artigo, toda a criação intelectual cuja proteção seja requerida pela(s) empresa(s) contratada(s), até dois anos após o seu término.
+
+§ 2º Findo o contrato sem alcance integral ou com alcance parcial do resultado almejado, o contratante, a seu exclusivo critério, poderá, mediante auditoria técnica e financeira, prorrogar seu prazo de duração ou elaborar relatório final dando-o por encerrado.
+
+§ 3º O pagamento decorrente da contratação prevista neste artigo será efetuado conforme o risco assumido e pactuado, com bonificação proporcional ao resultado obtido, levando-se em conta o percentual atingido do resultado pretendido nas atividades de pesquisa e desenvolvimento contratadas.
+
+§ 4º A contratação fica condicionada à aprovação prévia de projeto específico, que explicitará a amplitude do risco, a proporção em que o risco tecnológico será compartilhado entre contratante(s) e contratado(s), com etapas de execução estabelecidas em cronograma físico-financeiro, resultados e produtos a serem alcançados, elaborado pela empresa ou consórcio a que se refere este artigo.
+
+§ 5º O instrumento jurídico de contratação deve prever a confidencialidade do andamento dos trabalhos, dos resultados alcançados, os direitos referentes à propriedade intelectual e todos os direitos patrimoniais relativos ao projeto e seus resultados incluindo irrestrito direito ao uso para fins de exploração, que pertencem ao órgão e entidades da Administração Pública Municipal.
+
+§ 6º Os direitos referidos no § 5º incluem o fornecimento de todos os dados, documentos e elementos de informação pertinentes à tecnologia de concepção, o desenvolvimento, a fixação em suporte físico de qualquer natureza e a aplicação da criação, ainda que os resultados obtidos na execução do projeto se limitem à tecnologia ou conhecimentos insuscetíveis de proteção pela propriedade intelectual.
+
+§ 7º O contratante deve ser informado quanto à evolução do projeto e os resultados parciais alcançados, devendo acompanhá-lo mediante avaliação técnica e financeira de equipe previamente designada para a tarefa.
+
+Art. 21. Nas aquisições de bens, de serviços ou de outras contratações públicas do Município, que envolvam inovação definida no artigo 2º, inc. IV, desta Lei, realizadas pela Administração Pública Municipal, poderá ser concedido tratamento diferenciado e simplificado para os fornecedores enquadrados como microempresas e empresas de pequeno porte, objetivando a promoção do desenvolvimento econômico e social no âmbito municipal, a ampliação da eficiência das políticas públicas e o incentivo à inovação tecnológica, desde que comprovados estes pressupostos.
+
+Parágrafo Único - Para o cumprimento do disposto no art. 20, a Administração Pública Municipal deverá obedecer às disposições da Lei Federal nº 8.666, de 21 de junho de 1993 e alterações e, no que couber, a legislação municipal vigente.
+
+CAPÍTULO V
+DOS PARQUES TECNOLÓGICOS, INCUBADORAS E CONDOMÍNIOS
+
+Art. 22. O Município, dentro do contexto de sua Política Municipal de Ciência, Tecnologia e Inovação, estimulará e apoiará a implantação de parques tecnológicos, núcleos de inovação tecnológica, incubadoras e condomínios, sociais e de base tecnológica, visando incentivar os investimentos em pesquisa e apropriação de novos conhecimentos e novas tecnologias que gerem novos negócios, ampliando a competitividade da economia local e novos processos mantenedores e desenvolvedores da qualidade de vida local e regional.
+
+Art. 23. O Poder Executivo Municipal poderá apoiar e coordenar iniciativas de criação e consolidação de parques tecnológicos, incubadoras e condomínios empresariais, inclusive mediante cessão ou doação de área de terreno do Município para essa finalidade, quando necessário.
+
+§ 1º Fica facultado ao Poder Executivo Municipal, para consecução dos objetivos de que trata o art. 23, celebrar convênios e outros instrumentos jurídicos específicos, com órgãos da administração direta ou indireta, federal, estadual ou municipal, bem como com organismos internacionais, instituições de pesquisa, universidades, instituições de fomento, investimento ou financiamento, com o objetivo de:
+
+I - promover a cooperação entre os agentes envolvidos e;
+
+II - facilitar a interação destes com empresas cujas atividades estejam baseadas em conhecimento e inovação tecnológica.
+
+§ 2º Para receber os benefícios referidos no caput deste artigo, a instituição deverá atender aos seguintes critérios, observada a legislação pertinente:
+
+I - ter personalidade jurídica própria e objeto social específico compatível com as finalidades previstas nesta Lei;
+
+II - possuir modelo de gestão compatível com a realização de seus objetivos, o qual deverá prever órgão técnico que zele pelo cumprimento de seu objeto social;
+
+III - demonstrar a viabilidade econômica e financeira do empreendimento, incluindo, se necessário, projetos associados e/ou complementares em relação às atividades a serem desenvolvidas;
+
+IV - apresentar projeto de planejamento que defina e avalie o perfil das atividades da instituição, de acordo com as competências científicas e tecnológicas das entidades locais e as vocações econômicas regionais;
+
+V - demonstrar que dispõe, para desenvolver suas atividades, de recursos próprios ou oriundos de instituições de fomento, instituições financeiras ou e outras instituições de apoio às atividades empresariais;
+
+VI - desenvolver análise de impactos econômicos negativos no entorno, apresentando medidas de tratamento adequado para mitigá-los e definindo contrapartidas compensatórias;
+
+VII - desenvolver programa de responsabilidade social, com publicação do balanço social e divulgação das atividades realizadas.
+
+Art. 24. O Poder Executivo Municipal fomentará a criação de condomínios empresariais que venham a ser instalados nas REPOT`s definidas pelo Município, que promovam o desenvolvimento de áreas com baixo índice de desenvolvimento econômico.
+
+Parágrafo Único - Estes empreendimentos poderão usufruir dos incentivos previstos no art. 5º desta Lei.
+
+CAPÍTULO VI
+DAS INSTITUIÇÕES CIENTÍFICAS E TECNOLÓGICAS
+
+Art. 25. O Poder Executivo Municipal apoiará a criação e reconhecerá as Instituições Científicas e Tecnológicas em Joinville - ICT/Jlle como órgãos ou entidades auxiliadoras da administração pública municipal, direta ou indireta, que tenham como missão institucional executar, dentre outras, atividades de pesquisa básica ou aplicada, de caráter científico ou tecnológico que promovam a inovação.
+
+Parágrafo Único - Fica o Poder Executivo Municipal autorizado a incentivar a criação de ICT/Jlle de pesquisa e desenvolvimento de produtos ou serviços de interesse direto do Município, para aquisição destes produtos e serviços que tenham alcançado os padrões de qualidade e valores adequados às licitações regidas pela Lei Municipal específica.
+
+Art. 26. Caberá à Secretaria de Integração e Desenvolvimento Econômico, atestar para todos os fins que se fizerem necessários, a condição de uma instituição como ICT/Jlle, inclusive ICTs Federais, Estaduais e privadas, desde que sediadas em Joinville.
+
+§ 1º A Secretaria de Integração e Desenvolvimento Econômico deverá desenvolver o regulamento aplicável ao reconhecimento de instituições como ICT/Jlle.
+
+§ 2º As ICTs Federais, serão regidas pela legislação federal pertinente, notadamente o estipulado na Lei Federal nº 10.973, de 02 de dezembro de 2004.
+
+§ 3º As ICTs Estaduais, serão regidas pela legislação estadual pertinente, notadamente o estipulado na Lei Estadual nº 14.328, de 15 de janeiro de 2008.
+
+§ 4º Os funcionários públicos municipais que participarem de uma ICT/Jlle, serão regidos pela legislação municipal pertinente, notadamente o estipulado na Lei Complementar nº 266, de 05 de abril de 2008 - Estatuto dos Servidores Públicos do Município de Joinville.
+
+Art. 27. Cada ICT/Jlle deverá estabelecer sua política de estímulo à inovação e à proteção dos resultados obtidos.
+
+Art. 28. As ICTs/Jlle poderão desenvolver, entre outras, as atividades que estejam em consonância com os artigos 4º, 6º, 7º, 8º, 9º e 11º da Lei Federal nº 10.973, de 02 de dezembro de 2004.
+
+Art. 29. É facultado à ICT/Jlle proteger, diretamente ou em parceria com instituições públicas ou privadas sem fins lucrativos, os resultados das pesquisas nos termos da legislação relativa à propriedade intelectual.
+
+Art. 30. Aos dirigentes, criadores, alunos ou a quaisquer servidores regularmente matriculados em ICT/Jlle, empregados de entidades públicas, privadas ou prestadores de serviços é vedado divulgar, noticiar ou publicar qualquer aspecto de criações de cujo desenvolvimento tenham participado diretamente ou tomado conhecimento por força de suas atividades, sem antes obter expressa autorização da ICT/Jlle e de empresas envolvidas, quando for o caso.
+
+§ 1º O não cumprimento da determinação prevista no caput implica na aplicação de sanções legais pertinentes.
+
+§ 2º Toda a divulgação, notícia ou publicação eventualmente autorizada, deve mencionar as parcerias estabelecidas para a realização da pesquisa ou desenvolvimento de novas tecnologias, passíveis ou não de proteção.
+
+Art. 31. Os instrumentos jurídicos firmados entre as ICTs/Jlle, as instituições de apoio, agências de fomento e as entidades nacionais de direito privado sem fins lucrativos voltadas para a atividade de pesquisa, cujo objeto seja compatível com os objetivos desta Lei, poderão prever recursos para cobertura de despesas operacionais e administrativas incorridos na execução dos mesmos, observada a legislação pertinente.
+
+Art. 32. As ICTs/Jlle deverão criar o seu Núcleo de Inovação Tecnológica - NIT próprio ou em cooperação com instituições congêneres, com a finalidade de implantar e gerir sua política de inovação, tendo como atribuições mínimas:
+
+I - zelar pela implantação, manutenção e desenvolvimento da política institucional de estímulo à proteção das criações, licenciamento, inovação e outras formas de transferência de tecnologia;
+
+II - avaliar e classificar os resultados decorrentes de atividades e projetos de pesquisa para o atendimento das disposições desta Lei;
+
+III - avaliar solicitação de inventor e ou pesquisador independente para adoção de invenção na forma do artigo 36 desta Lei;
+
+IV - opinar sobre a conveniência e promover a proteção das criações desenvolvidas na instituição;
+
+V - opinar quanto à conveniência de divulgação das criações desenvolvidas na instituição, passíveis de proteção pela legislação de propriedade intelectual;
+
+VI - acompanhar junto aos órgãos competentes, o andamento dos processos de pedido de proteção, bem como dos processos de manutenção dos títulos concedidos de propriedade intelectual em nome da instituição;
+
+VII - avaliar e classificar os resultados decorrentes de atividades de inovação e pesquisa científica e tecnológica, tendo em vista a viabilidade econômica do produto ou processo a ser aprimorado ou desenvolvido, a sua vinculação às necessidades de desenvolvimento do Município ou ao planejamento estratégico da própria ICT/Jlle;
+
+VIII - apoiar e assessorar iniciativas de fortalecimento do sistema de inovação tecnológica no âmbito da ICT/Jlle assim como nas demais instituições, públicas ou privadas no Município;
+
+IX - zelar pela manutenção da política institucional de estímulo à proteção das criações e da sua comercialização;
+
+X - incentivar a formação de parcerias de pesquisa conjunta com empresas e instituições de ensino e pesquisas, públicas ou privadas, com ou sem fins lucrativos, nacionais ou estrangeiras, visando à obtenção de inovação que viabilize a geração, o desenvolvimento e a fabricação de produtos e sistemas.
+
+§ 1º Para cumprimento das atividades previstas no caput deste artigo, as ICTs/Jlle deverão designar servidores/colaboradores de seu quadro para seu efetivo exercício nos NITs.
+
+§ 2º As ICTs/Jlle poderão promover parcerias com instituições públicas ou privadas, para prover atividades de capacitação de pessoas para atuarem nos NITs.
+
+Art. 33. As ICTs/Jlle, na elaboração e execução dos seus orçamentos, adotarão as medidas cabíveis para a administração e gestão da sua política de inovação para permitir o recebimento de receitas e o pagamento de despesas, decorrentes da aplicação do disposto nos artigos 4º, 6º, 8º, e 9º da Lei Federal nº 10.973, de 02 de dezembro de 2004, assim como o pagamento das despesas para a proteção da propriedade intelectual e os pagamentos devidos aos criadores e eventuais colaboradores.
+
+Parágrafo Único - Os recursos financeiros de que trata este artigo, percebidos pelas ICTs/Jlle, constituem receita própria e deverão ser aplicados, exclusivamente, em objetivos institucionais de pesquisa, desenvolvimento e inovação.
+
+Art. 34. As ICTs/Jlle e os órgãos e entidades da administração pública municipal adotarão em seus orçamentos as medidas cabíveis para a sua administração e gestão da sua política de inovação e proteção de criadores pela legislação da propriedade intelectual, assim como, instrumentos contábeis próprios para permitir o recebimento e distribuição dos ganhos econômicos decorrentes da comercialização de processos e tecnologias, de acordo com o estabelecido nesta Lei.
+
+Art. 35. Para se favorecer dos benefícios desta Lei, as ICTs/Jlle deverão promover, onde couber, o ajuste de seus estatutos aos fins previstos.
+
+CAPÍTULO VII
+DO ESTÍMULO AO INVENTOR INDEPENDENTE
+
+Art. 36. Ao inventor independente, que comprove pedido de proteção de propriedade intelectual já formalmente depositado perante as instâncias competentes, é facultado solicitar a adoção de uma criação por ICT/Jlle, que decidirá livremente quanto à conveniência e oportunidade de elaborar projeto voltado a sua avaliação para futuro desenvolvimento, incubação, utilização, industrialização e comercialização pelo setor produtivo.
+
+§ 1º O NIT da ICT/Jlle avaliará a invenção, a sua afinidade com a respectiva área de atuação e o interesse no seu desenvolvimento, submetendo o projeto à ICT/Jlle para que esta decida sobre a sua adoção, mediante contrato.
+
+§ 2º O NIT informará ao inventor independente, no prazo máximo de 06 (seis) meses, a decisão quanto à adoção a que se refere o caput deste artigo. Decorrido este prazo, sem que a ICT/Jlle tenha promovido qualquer ação efetiva, o inventor independente fica desobrigado do compromisso.
+
+§ 3º O projeto de que trata este artigo pode incluir, dentre outros, ensaios de conformidade, construção de protótipos, projetos de engenharia e análise de viabilidade econômica e mercadológica, entre outros.
+
+§ 4º Será assegurado ao inventor independente, sempre que solicitado, o direito de conhecer e de acompanhar as diversas fases de andamento do projeto pertinente à criação adotada pela ICT/Jlle.
+
+§ 5º Adotada a invenção por uma ICT/Jlle, o inventor independente comprometer-se-á, mediante contrato, a compartilhar os ganhos econômicos auferidos com a exploração industrial da invenção protegida.
+
+§ 6º O valor referente aos ganhos econômicos somente será repassado após seu efetivo recebimento pela ICT/Jlle, descontada as despesas administrativas envolvidas.
+
+§ 7º O projeto a ser definido deverá conter explicitamente as condições de início da exploração econômica e forma de repasse dos ganhos econômicos.
+
+§ 8º Na hipótese da ICT/Jlle não providenciar, direta ou indiretamente, a exploração econômica no prazo de 12 (doze) meses, contados a partir do término do prazo estipulado no projeto firmado entre as partes, ficará o inventor independente desobrigado de compartilhar os ganhos econômicos.
+
+CAPÍTULO VIII
+DAS DISPOSIÇÕES FINAIS
+
+Art. 37. Na aplicação do disposto desta Lei serão observadas as seguintes diretrizes:
+
+I - priorizar ações que visem dotar a pesquisa e o sistema produtivo local de maiores recursos humanos e capacitação tecnológica;
+
+II - assegurar tratamento favorecido a empresas de micro, pequeno e médio porte;
+
+III - dar tratamento preferencial, na aquisição de bens e serviços pelo Poder Executivo Municipal, às empresas que invistam em pesquisa e no desenvolvimento de tecnologia no Município, respeitando os preceitos contidos na Lei Federal nº 8.666, de 21 de junho de 1993.
+
+Art. 38. O Poder Executivo Municipal regulamentará os dispositivos necessários, em especial a concessão de subsídios e incentivos previstos nesta Lei, no prazo máximo de 06 (seis) meses, contados de sua aplicação.
+
+Art. 39. Esta lei entra em vigor na data de sua publicação.
+
+Carlito Merss
+Prefeito Municipal
+
+Rodrigo Fallgatter Thomazi
+Secretário de Integração e Desenvolvimento Econômico
+
+Nota: Este texto não substitui o original publicado no Diário Oficial.
+Data de Inserção no Sistema LeisMunicipais: 03/01/2012

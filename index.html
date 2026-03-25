@@ -8,10 +8,107 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Roboto+Condensed:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar is-open" id="sidebar">
+      <div class="sidebar__header">
+        <div class="sidebar__brand">
+          <span class="sidebar__brand-icon">JV</span>
+          <span class="sidebar__brand-text">Joinville<span class="text-accent">.</span>Inovação</span>
+        </div>
+        <button class="sidebar__toggle" id="sidebar-toggle" aria-label="Alternar menu lateral">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+      <nav class="sidebar__nav">
+        <a class="sidebar__item is-active" data-page="home" href="#">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="sidebar__label">Início</span>
+        </a>
+        <a class="sidebar__item" data-page="mapa" href="#">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          <span class="sidebar__label">Mapa de Inovação</span>
+        </a>
+        <a class="sidebar__item" data-page="leis" href="#">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span class="sidebar__label">Leis</span>
+        </a>
+        <a class="sidebar__item" data-page="lei7170" href="#">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span class="sidebar__label">Lei 7.170/2011</span>
+        </a>
+        <a class="sidebar__item" data-page="rotas" href="#">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"/></svg>
+          <span class="sidebar__label">Rotas</span>
+        </a>
+        <a class="sidebar__item" data-page="programa" href="#">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span class="sidebar__label">Programa de Inovação</span>
+        </a>
+      </nav>
+      <div class="sidebar__footer">
+        <span class="sidebar__footer-text">BRZ Capacitação — SEBRAE</span>
+      </div>
+    </aside>
+
+    <!-- ========== SIDEBAR OVERLAY (mobile) ========== -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- ========== MAIN WRAPPER ========== -->
+    <div class="main-wrapper" id="main-wrapper">
+
+    <!-- ==================== PAGE: HOME ==================== -->
+    <div class="page is-active" id="page-home">
+      <section class="home-hero">
+        <div class="home-hero__bg-grid"></div>
+        <div class="home-hero__content">
+          <div class="home-hero__badge"><span class="badge">BRZ Capacitação — Consultoria SEBRAE | 2026</span></div>
+          <h1 class="home-hero__title">Joinville<span class="text-accent"> Rumo à Inovação</span></h1>
+          <p class="home-hero__subtitle">Plataforma de trabalho para construção do ecossistema legal de inovação do município</p>
+
+          <div class="home-nav-cards">
+            <a class="home-nav-card" data-page="mapa" href="#">
+              <span class="home-nav-card__number">01</span>
+              <h3 class="home-nav-card__title">Mapa de Inovação</h3>
+              <p class="home-nav-card__desc">Diagnóstico completo do ecossistema, dados econômicos, comparativos e oportunidades</p>
+              <span class="home-nav-card__arrow">→</span>
+            </a>
+            <a class="home-nav-card" data-page="leis" href="#">
+              <span class="home-nav-card__number">02</span>
+              <h3 class="home-nav-card__title">Leis</h3>
+              <p class="home-nav-card__desc">Painel completo da legislação de inovação vigente em Joinville</p>
+              <span class="home-nav-card__arrow">→</span>
+            </a>
+            <a class="home-nav-card" data-page="lei7170" href="#">
+              <span class="home-nav-card__number">03</span>
+              <h3 class="home-nav-card__title">Lei 7.170/2011</h3>
+              <p class="home-nav-card__desc">Lei de Inovação na íntegra com análise artigo por artigo — oportunidades, desafios e pontos de atenção</p>
+              <span class="home-nav-card__arrow">→</span>
+            </a>
+            <a class="home-nav-card" data-page="rotas" href="#">
+              <span class="home-nav-card__number">04</span>
+              <h3 class="home-nav-card__title">Rotas</h3>
+              <p class="home-nav-card__desc">Caminhos legislativos para viabilizar o Programa de Incentivo à Inovação</p>
+              <span class="home-nav-card__arrow">→</span>
+            </a>
+            <a class="home-nav-card home-nav-card--wip" data-page="programa" href="#">
+              <span class="home-nav-card__number">05</span>
+              <h3 class="home-nav-card__title">Programa de Inovação</h3>
+              <p class="home-nav-card__desc">Construção do programa de incentivo fiscal — em desenvolvimento</p>
+              <span class="home-nav-card__badge">Em construção</span>
+              <span class="home-nav-card__arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE: MAPA DE INOVAÇÃO ==================== -->
+    <div class="page" id="page-mapa">
 
     <!-- ========== NAV ========== -->
     <nav class="nav" id="nav">
@@ -31,6 +128,7 @@
           <a href="#pii">PII</a>
           <a href="#comparativo">Comparativo</a>
           <a href="#estrutura">SDE</a>
+          <a href="#dados">Dados</a>
         </div>
       </div>
     </nav>
@@ -373,8 +471,8 @@
               <div class="timeline__dot timeline__dot--highlight"></div>
               <div class="timeline__card">
                 <span class="timeline__year timeline__year--highlight">2025</span>
-                <h4>Lei 10.075 — CPSI</h4>
-                <p>Contratação Pública de Soluções Inovadoras. Prefeitura contrata startups sem licitação tradicional.</p>
+                <h4>CPSI — Base Federal</h4>
+                <p>Contratação Pública de Soluções Inovadoras com base na LC 182/2021 (Marco Legal das Startups). Consulta pública realizada em 2025.</p>
               </div>
             </div>
 
@@ -551,16 +649,17 @@
               <span class="instrument-card__status instrument-card__status--yellow">Sem contratos ainda</span>
               <span class="instrument-card__year">2025</span>
             </div>
-            <h3 class="instrument-card__title">Lei 10.075/2025</h3>
-            <p class="instrument-card__subtitle">CPSI — Contratação Pública de Soluções Inovadoras</p>
+            <h3 class="instrument-card__title">CPSI — Inovação Aberta</h3>
+            <p class="instrument-card__subtitle">Contratação Pública de Soluções Inovadoras (base federal: LC 182/2021)</p>
             <div class="instrument-card__body">
               <div class="instrument-card__section">
                 <h4>O que faz</h4>
                 <ul>
-                  <li>Permite contratar startups sem licitação tradicional</li>
+                  <li>Permite contratar startups sem licitação tradicional (LC 182/2021, arts. 12-15)</li>
                   <li>9 desafios definidos por secretarias municipais</li>
                   <li>Primeira consulta pública realizada (dez/2025 – jan/2026)</li>
                   <li>Relatório final da consulta pública publicado em 27/01/2026</li>
+                  <li class="instrument-card__note">Base legal: legislação federal, não lei municipal própria</li>
                 </ul>
               </div>
               <div class="instrument-card__section">
@@ -887,7 +986,7 @@
             </div>
             <span class="acao-card__instrument">CPSI</span>
             <h3>Contratar startups para problemas públicos</h3>
-            <p>A Lei 10.075/2025 já permite que a Prefeitura contrate soluções inovadoras sem licitação tradicional. Relatório final da consulta pública publicado em 27/01/2026.</p>
+            <p>A LC 182/2021 (Marco Legal das Startups) já permite que a Prefeitura contrate soluções inovadoras. Joinville realizou consulta pública em 2025 com 9 desafios. Relatório publicado em 27/01/2026.</p>
             <div class="acao-card__action">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span>Publicar edital de licitação CPSI (relatório publicado em 27/01/2026)</span>
@@ -1608,7 +1707,7 @@
                 <td>CPSI</td>
                 <td><span class="compare__no">Não tem</span></td>
                 <td><span class="compare__no">Não tem</span></td>
-                <td><span class="compare__advantage">Lei 10.075/2025</span></td>
+                <td><span class="compare__advantage">CPSI (LC 182/2021)</span></td>
                 <td><span class="compare__advantage">Vantagem mantida</span></td>
               </tr>
               <tr>
@@ -1803,6 +1902,1128 @@
         </div>
       </div>
     </footer>
+
+    </div><!-- /page-mapa -->
+
+    <!-- ==================== PAGE: LEIS ==================== -->
+    <div class="page" id="page-leis">
+      <div class="page-header">
+        <div class="container">
+          <span class="page-header__label">02 — Legislação</span>
+          <h1 class="page-header__title">Leis de Inovação de Joinville</h1>
+          <p class="page-header__subtitle">Mapeamento completo da legislação vigente — o que existe, o que faz e o que falta</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="leis-grid">
+
+          <div class="lei-card lei-card--vigente">
+            <div class="lei-card__header">
+              <span class="lei-card__status lei-card__status--vigente">Vigente</span>
+              <span class="lei-card__year">2011</span>
+            </div>
+            <h3 class="lei-card__title">Lei 7.170/2011</h3>
+            <p class="lei-card__ementa">Medidas de incentivo à inovação e à pesquisa científica e tecnológica no ambiente produtivo e social municipal</p>
+            <div class="lei-card__tags">
+              <span class="lei-card__tag">Lei-mãe</span>
+              <span class="lei-card__tag lei-card__tag--warn">Desatualizada</span>
+              <span class="lei-card__tag">FIT/JIle</span>
+            </div>
+            <div class="lei-card__detail">
+              <p><strong>39 artigos, 8 capítulos.</strong> Cria a base do ecossistema: incentivos fiscais (ITBI, IPTU, ISS, taxas), Fundo Municipal de Inovação (FIT/JIle), COMCETI, prêmio, parques tecnológicos, ICTs e estímulo ao inventor.</p>
+              <p class="lei-card__alert">FIT/JIle nunca foi regulamentado (15 anos). Anterior ao Marco Legal das Startups (2021).</p>
+            </div>
+            <div class="lei-card__actions">
+              <a href="https://leismunicipais.com.br/a/sc/j/joinville/lei-ordinaria/2011/717/7170" target="_blank" class="lei-card__link">Texto integral ↗</a>
+              <a class="lei-card__link lei-card__link--internal" data-page="lei7170" href="#">Análise completa →</a>
+            </div>
+          </div>
+
+          <div class="lei-card lei-card--vigente">
+            <div class="lei-card__header">
+              <span class="lei-card__status lei-card__status--vigente">Vigente</span>
+              <span class="lei-card__year">2023</span>
+            </div>
+            <h3 class="lei-card__title">Lei 9.538/2023</h3>
+            <p class="lei-card__ementa">Conselho Municipal de Ciência, Tecnologia e Inovação — COMCITI</p>
+            <div class="lei-card__tags">
+              <span class="lei-card__tag">Conselho</span>
+              <span class="lei-card__tag lei-card__tag--ok">Ativo</span>
+              <span class="lei-card__tag">21 membros</span>
+            </div>
+            <div class="lei-card__detail">
+              <p><strong>Órgão propositivo e consultivo.</strong> Até 21 representantes (Poder Público, Ensino, Ambientes de Inovação, Associações, Empresas). Reuniões bimestrais. Presidente: Modesto Hurtado Ferrer (2024-2026).</p>
+              <p>Substitui a Lei 7.190/2012. Deliberações por maioria dos votos.</p>
+            </div>
+            <div class="lei-card__actions">
+              <a href="https://leismunicipais.com.br/a/sc/j/joinville/lei-ordinaria/2023/953/9538" target="_blank" class="lei-card__link">Texto integral ↗</a>
+            </div>
+          </div>
+
+          <div class="lei-card lei-card--vigente">
+            <div class="lei-card__header">
+              <span class="lei-card__status lei-card__status--vigente">Vigente</span>
+              <span class="lei-card__year">2023</span>
+            </div>
+            <h3 class="lei-card__title">LC 661/2023</h3>
+            <p class="lei-card__ementa">Ambiente regulatório experimental (sandbox regulatório) no Município de Joinville</p>
+            <div class="lei-card__tags">
+              <span class="lei-card__tag">Sandbox</span>
+              <span class="lei-card__tag lei-card__tag--ok">Regulamentado</span>
+              <span class="lei-card__tag">ISS 2%</span>
+            </div>
+            <div class="lei-card__detail">
+              <p><strong>Regulamentada pelo Decreto 64.509/2025 + IN Conjunta 208/2025.</strong> Startups aceitas recebem por 2 anos: ISS reduzido a 2%, isenção de taxas, prioridade administrativa.</p>
+              <p>Requisitos: conceito de startup (LC 182/2021), modelo validado (prova de conceito mínima). Obrigação de Relatório de Impacto Socioeconômico ao final.</p>
+            </div>
+            <div class="lei-card__actions">
+              <a href="https://leismunicipais.com.br/a/sc/j/joinville/lei-complementar/2023/66/661" target="_blank" class="lei-card__link">Texto integral ↗</a>
+            </div>
+          </div>
+
+          <div class="lei-card lei-card--vigente">
+            <div class="lei-card__header">
+              <span class="lei-card__status lei-card__status--vigente">Base Federal</span>
+              <span class="lei-card__year">2021/2025</span>
+            </div>
+            <h3 class="lei-card__title">CPSI — Inovação Aberta</h3>
+            <p class="lei-card__ementa">Contratação Pública de Soluções Inovadoras pela Administração Municipal</p>
+            <div class="lei-card__tags">
+              <span class="lei-card__tag">CPSI</span>
+              <span class="lei-card__tag lei-card__tag--ok">Em operação</span>
+              <span class="lei-card__tag">LC 182/2021</span>
+            </div>
+            <div class="lei-card__detail">
+              <p><strong>Base legal federal: LC 182/2021 (Marco Legal das Startups), arts. 12-15.</strong> Joinville adotou o instrumento diretamente da legislação federal — não foi localizada lei municipal própria regulamentando CPSI.</p>
+              <p>Consulta pública realizada em dez/2025 com 9 desafios de secretarias municipais. Relatório final publicado em 27/01/2026. Processo SEI 25.0.292659-3.</p>
+              <p class="lei-card__alert">Orientação sugerida: confirmar com a Procuradoria se existe lei municipal específica ou se a operação é integralmente baseada na legislação federal.</p>
+            </div>
+            <div class="lei-card__actions">
+              <a href="https://www.joinville.sc.gov.br/eventos/consulta-publica-para-inovacao-aberta-edital-27819814-2025/" target="_blank" class="lei-card__link">Consulta Pública ↗</a>
+            </div>
+          </div>
+
+          <div class="lei-card lei-card--tramitacao">
+            <div class="lei-card__header">
+              <span class="lei-card__status lei-card__status--tramitacao">Em tramitação</span>
+              <span class="lei-card__year">2026</span>
+            </div>
+            <h3 class="lei-card__title">Minuta SEI 28347922/2026</h3>
+            <p class="lei-card__ementa">Atualização do Sandbox Regulatório — amplia para qualquer pessoa jurídica</p>
+            <div class="lei-card__tags">
+              <span class="lei-card__tag">Sandbox v2</span>
+              <span class="lei-card__tag">Edital público</span>
+              <span class="lei-card__tag">Prazo 2 anos</span>
+            </div>
+            <div class="lei-card__detail">
+              <p><strong>Novidades vs LC 661:</strong> Abre para qualquer PJ (não só startups). Cria conceito de "participante". Startups mantêm ISS 2%, demais NÃO. Ingresso por edital público. Prazo máx 2 anos. Multa 90% + impedimento 2 anos se não entregar relatório.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="leis-dispositivos">
+          <h2 class="section__title">Decretos e Normas Complementares</h2>
+          <div class="dispositivos-grid">
+            <div class="dispositivo-item">
+              <span class="dispositivo-item__tipo">Decreto</span>
+              <strong>64.371/2025</strong> — Nomeação dos membros titulares e suplentes do COMCITI
+            </div>
+            <div class="dispositivo-item">
+              <span class="dispositivo-item__tipo">Decreto</span>
+              <strong>64.509/2025</strong> — Regulamentação do Sandbox (LC 661/2023)
+            </div>
+            <div class="dispositivo-item">
+              <span class="dispositivo-item__tipo">Decreto</span>
+              <strong>65.059/2025</strong> — Complementa regulamentação do Sandbox
+            </div>
+            <div class="dispositivo-item">
+              <span class="dispositivo-item__tipo">IN Conjunta</span>
+              <strong>SAP/SDE/SEFAZ 208/2025</strong> — Norma operacional do Sandbox entre secretarias
+            </div>
+            <div class="dispositivo-item">
+              <span class="dispositivo-item__tipo">Decreto</span>
+              <strong>65.132/2025</strong> — Regulamenta incentivos Região Sudeste (LC 673/2023)
+            </div>
+            <div class="dispositivo-item">
+              <span class="dispositivo-item__tipo">Lei</span>
+              <strong>3.598/1997 (Pró-Empresa)</strong> — Incentivos à instalação de empreendimentos
+            </div>
+          </div>
+        </div>
+
+        <div class="leis-gap">
+          <h2 class="section__title">O que falta</h2>
+          <div class="leis-gap__grid">
+            <div class="gap-card">
+              <span class="gap-card__icon">⚡</span>
+              <h3>Mecanismo de financiamento direto</h3>
+              <p>Nenhuma lei cria redirecionamento fiscal (tipo PII de Florianópolis). Não existe caminho para contribuinte destinar parte do imposto a projetos de inovação.</p>
+            </div>
+            <div class="gap-card">
+              <span class="gap-card__icon">🏦</span>
+              <h3>Fundo regulamentado</h3>
+              <p>O FIT/JIle existe na Lei 7.170 desde 2011, mas nunca foi regulamentado. 15 anos sem decreto, sem edital, sem operação.</p>
+            </div>
+            <div class="gap-card">
+              <span class="gap-card__icon">🔗</span>
+              <h3>APIs / Entidades credenciadas</h3>
+              <p>Não existe figura de Arranjos Promotores de Inovação — entidades do ecossistema que recebem, validam e encaminham projetos.</p>
+            </div>
+            <div class="gap-card">
+              <span class="gap-card__icon">📊</span>
+              <h3>Transparência e métricas</h3>
+              <p>COMCITI sem atas públicas, sem portal de transparência, sem indicadores de impacto. Governança existe mas é opaca.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /page-leis -->
+
+    <!-- ==================== PAGE: LEI 7170 ==================== -->
+    <div class="page" id="page-lei7170">
+      <div class="page-header">
+        <div class="container">
+          <span class="page-header__label">03 — Análise Legislativa</span>
+          <h1 class="page-header__title">Lei nº 7.170, de 19 de dezembro de 2011</h1>
+          <p class="page-header__subtitle">Medidas de incentivo à inovação e à pesquisa científica e tecnológica — texto integral comentado</p>
+          <div class="lei-meta">
+            <span class="lei-meta__item">Prefeito: Carlito Merss</span>
+            <span class="lei-meta__sep">|</span>
+            <span class="lei-meta__item">Secretário: Rodrigo Fallgatter Thomazi</span>
+            <span class="lei-meta__sep">|</span>
+            <span class="lei-meta__item lei-meta__item--status">Vigente — Desatualizada</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container lei-container">
+
+        <div class="disclaimer">
+          <strong>Nota:</strong> Texto legal transcrito integralmente de <a href="https://leismunicipais.com.br/a/sc/j/joinville/lei-ordinaria/2011/717/7170" target="_blank">LeisMunicipais.com.br</a> (plataforma oficial indicada pela Prefeitura). Este texto não substitui o original publicado no Diário Oficial. As anotações identificadas como "Análise", "Oportunidade", "Atenção" e "Desafio" são <strong>orientações sugeridas pela consultoria BRZ Capacitação</strong>, não constituem parecer jurídico e devem ser validadas pela Procuradoria Municipal antes de qualquer decisão.
+        </div>
+
+        <nav class="lei-toc">
+          <div class="lei-toc__title">Sumário da Lei</div>
+          <div class="lei-toc__list">
+            <a class="lei-toc__link" href="#lei-cap1">I — Disposições Gerais</a>
+            <a class="lei-toc__link" href="#lei-cap2">II — Gestão</a>
+            <a class="lei-toc__link" href="#lei-cap3">III — Apoio à Inovação</a>
+            <a class="lei-toc__link" href="#lei-cap4">IV — Estímulo Empresas</a>
+            <a class="lei-toc__link" href="#lei-cap5">V — Parques e Incubadoras</a>
+            <a class="lei-toc__link" href="#lei-cap6">VI — ICTs</a>
+            <a class="lei-toc__link" href="#lei-cap7">VII — Inventor</a>
+            <a class="lei-toc__link" href="#lei-cap8">VIII — Finais</a>
+            <a class="lei-toc__link" href="#lei-veredito">Veredito</a>
+            <a class="lei-toc__link" href="#lei-parecer">Parecer Técnico</a>
+          </div>
+        </nav>
+
+        <div class="lei-legend">
+          <span class="lei-legend__item lei-legend__item--oportunidade">Oportunidade</span>
+          <span class="lei-legend__item lei-legend__item--atencao">Atenção</span>
+          <span class="lei-legend__item lei-legend__item--desafio">Desafio</span>
+          <span class="lei-legend__item lei-legend__item--analise">Análise</span>
+        </div>
+
+        <!-- CAP I -->
+        <div class="lei-capitulo" id="lei-cap1">
+          <h2 class="lei-capitulo__titulo">Capítulo I — Da Inovação Tecnológica — Disposições Gerais</h2>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 1º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Esta Lei estabelece medidas de incentivo à inovação e à pesquisa científica e desenvolvimento tecnológico no ambiente produtivo e social, proporcionando o desenvolvimento social e econômico sustentável da Cidade de Joinville, em conformidade com os artigos 218 e 219 da Constituição Federal, as disposições contidas na Lei Federal nº 10.973, de 02 de dezembro de 2004, Lei Estadual nº 14.328, de 15 de janeiro de 2008, regulamentada pelo Decreto nº 2.372, de 09 de junho de 2009, o artigo 77 da Lei Orgânica do Município de Joinville e a Lei Complementar nº 266, de 05 de abril de 2008 - Estatuto dos Servidores Públicos do Município de Joinville.
+            </div>
+            <div class="lei-nota lei-nota--analise">
+              <strong>Orientação sugerida:</strong> Base legal sólida — referencia CF, Lei Federal de Inovação e Lei Estadual. Porém, é anterior ao Marco Legal de CT&amp;I (Lei 13.243/2016) e ao Marco Legal das Startups (LC 182/2021). Precisa de atualização nas referências.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 2º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Para os efeitos desta lei considera-se:<br/><br/>
+              I - agência de fomento: órgão ou instituição de natureza pública ou privada que tenha entre os seus objetivos o financiamento de ações que visem a estimular e promover o desenvolvimento da ciência, da tecnologia e da inovação;<br/><br/>
+              II - criação: invenção, modelo de utilidade, desenho industrial, programa de computador, topografia de circuito integrado, nova cultivar ou cultivar essencialmente derivada e qualquer outro desenvolvimento tecnológico que acarrete ou possa acarretar o surgimento de novo produto, processo ou aperfeiçoamento incremental, obtida por um ou mais criadores;<br/><br/>
+              III - criador: pesquisador que seja inventor, obtentor ou autor de criação;<br/><br/>
+              IV - inovação: introdução de novidade ou aperfeiçoamento no ambiente produtivo ou social que resulte em novos produtos, processos ou serviços;<br/><br/>
+              V - processo, bem ou serviço inovador: tecnologias e conhecimentos dinâmicos radicais - conhecimento novo - ou incrementais - novo uso de conhecimento - que envolvem atividades científicas, tecnológicas, organizativas, financeiras e comerciais, que levam ou que tentam levar à implementação de produtos, processos, serviços e mudanças organizacionais novos ou melhorados ao ambiente produtivo ou social de novos processos, bens ou serviços, que promovam diferencial competitivo no mercado e significativo benefício social;<br/><br/>
+              VI - inovação de produto ou serviço: introdução, no ambiente produtivo ou social, de um produto ou serviço novo ou significativamente melhorado no que concerne a suas características ou usos previstos dos produtos ou serviços previamente produzidos, incluindo-se melhoramentos significativos em especificações técnicas, componentes e materiais, softwares incorporados, facilidade de uso ou outras características funcionais;<br/><br/>
+              VII - inovação de serviço no ambiente social: introdução no ambiente social de um serviço novo ou significativamente melhorado no que concerne a suas características ou usos previstos dos serviços previamente introduzidos, incluindo-se melhoramentos significativos na qualidade dos serviços;<br/><br/>
+              VIII - inovação de processo no ambiente produtivo: a implementação, no ambiente produtivo, de um método de produção ou distribuição novo ou significativamente melhorado, incluindo-se mudanças significativas em técnicas, equipamentos e/ou softwares;<br/><br/>
+              IX - inovação de processo no ambiente social: a implementação, no ambiente social, de um método de produção ou distribuição novo ou significativamente melhorado, incluindo-se mudanças significativas em técnicas, equipamentos e ou softwares;<br/><br/>
+              X - inovação de método organizacional: operações técnicas de implementação, no ambiente produtivo ou social, de um novo método organizacional nas práticas de negócios da empresa, na organização do seu local de trabalho ou em suas relações externas;<br/><br/>
+              XI - instituição de apoio: instituições criadas sob o amparo da Lei Federal nº 8.958, de 20 de dezembro de 1994, com a finalidade de dar apoio a projetos de pesquisa, ensino e extensão e de desenvolvimento institucional, científico e tecnológico;<br/><br/>
+              XII - inventor independente: pessoa física, não ocupante de cargo efetivo, cargo militar ou emprego público, que seja inventor, obtentor ou autor de criação;<br/><br/>
+              XIII - Núcleo de Inovação Tecnológica - NIT: núcleo ou órgão constituído por uma ou mais Instituição Científica e Tecnológica - ICT com a finalidade de gerir sua política de inovação;<br/><br/>
+              XIV - pesquisador público: ocupante de cargo efetivo, cargo militar ou emprego público que realize pesquisa básica ou aplicada de caráter científico ou tecnológico;<br/><br/>
+              XV - Arranjos Produtivos Locais - APL´s: aglomerações de empresas, localizadas em um mesmo território, que apresentam especialização, produtiva e mantém vínculos de articulação, interação, cooperação e aprendizagem entre si e com outros atores locais, tais como governo, associações empresariais, instituições de crédito, ensino e pesquisa;<br/><br/>
+              XVI - Empresas de Base Tecnológica - EBT: empresa legalmente constituída, com unidade produtora e/ou centro de pesquisa, cuja atividade produtiva é direcionada para o desenvolvimento ou aprimoramento de produtos, processos e /ou serviços, com base na aplicação sistemática de conhecimentos científicos e tecnológicos e na utilização de técnicas consideradas avançadas ou pioneiras, ou que desenvolva projetos de ciência, tecnologia e inovação;<br/><br/>
+              XVII - contrapartida: aporte de recursos financeiros, de bens ou de serviços relacionados com o projeto de pesquisa, economicamente mensuráveis durante a execução do projeto e na fase de prestação de contas;<br/><br/>
+              XVIII - incubadora de empresas de base tecnológicas: organizações e complexos que incentivam a criação e o desenvolvimento de micro e pequenas empresas industriais ou de prestação de serviços, de base tecnológica ou de manufaturas leves, por meio do provimento de infra-estrutura básica e da qualificação técnica e gerencial do empreendedor, em caráter complementar, para viabilizar seu acesso à inovação tecnológica e sua inserção competitiva no mercado;<br/><br/>
+              XIX - instrumentos jurídicos: instrumentos legais estabelecidos na forma de convênios, termos de outorga, termos de parceria ou acordos de cooperação técnica, contratos de desenvolvimento conjunto, de transferência de tecnologia, de licenciamento, protocolos de intenções e outros instrumentos da espécie, celebrados entre a administração pública municipal, instituições científicas tecnológicas, agências de fomento ou a iniciativa privada;<br/><br/>
+              XX - parque científico e tecnológico: organização, gerida por profissionais especializados, cujo objetivo fundamental é aumentar a riqueza da comunidade em que se insere mediante a promoção da cultura da inovação e da competitividade das empresas e instituições intensivas em conhecimento associadas à organização, tais como universidades e institutos de pesquisa. Envolve, necessariamente, a promoção do relacionamento entre a universidade a que está vinculado e os setores empresarial e industrial, além de outros setores da sociedade e/ou poder público, visando estimular o processo de inovação, a facilitação da transferência de tecnologia e habilidades entre a academia e o setor empresarial, promovendo o desenvolvimento sustentado da região onde atua;<br/><br/>
+              XXI - condomínios empresariais: espaços criados especificamente para a instalação de empresas de tecnologia, que ofertem infra-estrutura de internet de alta qualidade, telefonia, rede de computadores, serviços de segurança, limpeza, áreas de uso comum para reuniões e treinamento;<br/><br/>
+              XXII - incubadoras sociais: organizações de apoio ao desenvolvimento de comunidades e municípios através de entidades associativas, por meio da formação e qualificação de empreendedores e do estímulo aos empreendimentos intensivos em tecnologias sociais;<br/><br/>
+              XXIII - Instituição Científica e Tecnológica de Joinville - ICT/Jlle: órgão ou entidade da administração pública municipal, direta ou indireta, bem como outras instituições públicas ou privadas, sem fins lucrativos, que tenha por missão institucional, dentre outras, a promoção e transferência de conhecimento, a execução de atividades de pesquisa aplicada de caráter científico, em especial a pesquisa tecnológica e a geração de inovação;<br/><br/>
+              XXIV - Política Municipal de Ciência, Tecnologia e Inovação - PMCTI: conjunto de diretrizes, instrumentos, regulamentos e ferramentas legais, compromissos e metas pró-desenvolvimento da ciência, tecnologia no Município de Joinville, em especial visando o incentivo à inovação;<br/><br/>
+              XXV - Região de Potencial Tecnológico - REPOT: constitui parcela territorial do município onde são incentivadas atividades e ou empreendimentos tecnológicos dos setores industrial, comercial e de serviços;<br/><br/>
+              XXVI - tecnologias sociais: compreendem produtos, técnicas ou metodologias reaplicáveis desenvolvidas na interação com a comunidade e que representem efetivas soluções de transformações sociais;<br/><br/>
+              XXVII - transferência de tecnologia: é a transferência de licença de direitos (exploração de patentes) e de conhecimentos tecnológicos (fornecimentos de tecnologia e prestação de serviços de assistência técnica e científica).
+            </div>
+            <div class="lei-nota lei-nota--atencao">
+              <strong>Atenção:</strong> 27 definições — robusto para 2011, mas faltam conceitos modernos: <strong>startup, sandbox, encomenda tecnológica, CPSI, plataforma digital, IA, dados abertos</strong>. A lei não define "contribuinte incentivador" nem "redirecionamento fiscal" — conceitos essenciais para o programa nos moldes de FLN.
+            </div>
+          </div>
+        </div>
+
+        <!-- CAP II -->
+        <div class="lei-capitulo" id="lei-cap2">
+          <h2 class="lei-capitulo__titulo">Capítulo II — Da Gestão da Inovação</h2>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 3º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Fica estabelecida a Secretaria de Integração e Desenvolvimento Econômico, como órgão da Administração Pública Municipal, para gerir a Política Municipal de Ciência, Tecnologia e Inovação - PMCTI, observando as diretrizes produzidas nas Conferências Municipais de Ciência, Tecnologia e Inovação, coordenadas pelo Conselho Municipal de Ciência, Tecnologia e Inovação - COMCETI.
+            </div>
+            <div class="lei-nota lei-nota--atencao">
+              <strong>Atenção:</strong> Secretaria mudou de nome. Hoje é <strong>SDE — Secretaria de Desenvolvimento Econômico e Inovação</strong>. COMCETI virou COMCITI (Lei 9.538/2023). A referência está desatualizada mas o mecanismo funciona.
+            </div>
+          </div>
+        </div>
+
+        <!-- CAP III -->
+        <div class="lei-capitulo" id="lei-cap3">
+          <h2 class="lei-capitulo__titulo">Capítulo III — Do Apoio à Inovação</h2>
+          <h3 class="lei-secao__titulo">Seção I — Dos Incentivos a Empresas e Instituições Que Visem a Inovação</h3>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 4º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Poder Executivo Municipal deverá estudar e identificar Regiões de Potencial Tecnológico - REPOTs, bem como indicar os requisitos mínimos necessários para obtenção de incentivos à instalação de empreendimentos, conforme a Lei Municipal nº 3.598, de 17 de Novembro de 1997 (Pró-Empresa).
+            </div>
+            <div class="lei-nota lei-nota--desafio">
+              <strong>Desafio:</strong> REPOTs <strong>nunca foram mapeadas</strong> em 15 anos. Nenhum decreto identificou regiões de potencial tecnológico. Instrumento morto.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 5º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Os incentivos para a constituição de Empresas de Base Tecnológica - EBTs, Instituições Científicas e Tecnológicas - ICTs, Núcleos de Inovação Tecnológica - NITs, parques tecnológicos, incubadoras, condomínios empresariais e outros empreendimentos sediados em Joinville que venham a promover a inovação e a pesquisa, serão constituídos através de modalidades a serem fixadas pelo Poder Executivo Municipal em regulamentação específica e de acordo com a realização da receita e o cumprimento das metas fiscais.<br/><br/>
+              § 1º Consideram-se modalidades de incentivo a isenção fiscal dos seguintes tributos:<br/><br/>
+              a) Imposto sobre Transmissão de Bens Imóveis - ITBI e Imposto Predial e Territorial Urbano - IPTU, incidente sobre o imóvel destinado à instalação da empresa;<br/>
+              b) Imposto Sobre Serviços de Qualquer Natureza - ISSQN retido incidente sobre a prestação de serviços relacionados à implantação ou ampliação do empreendimento;<br/>
+              c) Taxas relativas à localização, aprovação, vistoria e fiscalização do projeto do respectivo empreendimento;<br/>
+              d) Contribuição de Melhoria e Contribuição para Custeio do Serviço de Iluminação Pública - COSIP que incidir sobre o imóvel de que trata a alínea "a";<br/>
+              e) Taxa de Vigilância Sanitária, para empresas que exerçam atividades sujeitas ao seu pagamento.
+            </div>
+            <div class="lei-nota lei-nota--oportunidade">
+              <strong>Orientação sugerida:</strong> Arcabouço fiscal amplo — 5 tributos passíveis de isenção. Porém, o mecanismo é de <strong>isenção clássica</strong> (empresa não paga). NÃO é redirecionamento fiscal (contribuinte destina parte do imposto a projeto). Para criar o programa nos moldes de FLN, precisamos de um mecanismo NOVO que a lei atual não prevê.
+            </div>
+          </div>
+
+          <h3 class="lei-secao__titulo">Seção II — Da Suplementação Pelo Município de Projetos de Fomento à Inovação</h3>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 6º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Poder Executivo Municipal fará constar no Anexo de Metas Fiscais da Lei de Diretrizes Orçamentária, de forma compatível com o Plano Plurianual, a parcela de seu orçamento anual destinada à suplementação e ampliação do alcance de projetos governamentais de fomento à inovação e à capacitação tecnológica, que beneficiem microempresas e empresas de pequeno porte inscritas no Município.<br/><br/>
+              § 1º Os recursos referidos no caput deste artigo poderão suplementar contrapartida das empresas atendidas pelos respectivos projetos, cobrir gastos com divulgação e orientação destinada a captar empreendimentos que possam receber os benefícios dos projetos, servir como contrapartida de convênios com entidades de apoio a microempresas e empresas de pequeno porte, em ações de divulgação dos projetos, atendimento técnico e disseminação de conhecimento.
+            </div>
+            <div class="lei-nota lei-nota--oportunidade">
+              <strong>Orientação sugerida:</strong> A lei JÁ prevê reserva orçamentária para inovação no PPA/LDO. Pode ser utilizado como base legal para incluir dotação do Programa de Incentivo na LOA.
+            </div>
+          </div>
+
+          <h3 class="lei-secao__titulo">Seção III — Do Ambiente de Apoio à Inovação</h3>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 7º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Fica instituído, no âmbito do Município de Joinville, o prêmio "INOVAÇÃO JOINVILLE", para homenagear pessoas e instituições públicas ou privadas que com suas ações se destacarem na promoção do conhecimento e prática da inovação, na geração de processos, bens e serviços inovadores em benefício da cidade.<br/><br/>
+              Parágrafo Único - Fica atribuída à Secretaria de Integração e Desenvolvimento Econômico, a responsabilidade de definir critérios e propor a regulamentação a ser adotada na concessão do Prêmio.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 8º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Município, através de seus órgãos da administração pública direta e indireta deverá promover ampla discussão com a sociedade, de temas inovadores e novas tecnologias, através de fóruns, congressos, feiras, cursos e outros eventos afins, de forma a estimular a apropriação do conhecimento que possam proporcionar o desenvolvimento social e economicamente sustentável da cidade.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 9º</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Município e as agências de Apoio e Fomento à Ciência, Tecnologia e Inovação poderão estimular a constituição de alianças estratégicas e o desenvolvimento de projetos de cooperação que objetivem a geração de produtos e processos inovadores e a criação e consolidação de ambientes de inovação, em especial incubadoras de empresas de base tecnológica, condomínios e parques tecnológicos.
+            </div>
+            <div class="lei-nota lei-nota--desafio">
+              <strong>Desafio:</strong> Prêmio Inovação Joinville — realizado pelo menos uma vez (2019, organizado pelo COMCITI na ExpoInovação). Porém sem registro de continuidade institucional regular.
+            </div>
+          </div>
+
+          <h3 class="lei-secao__titulo">Seção IV — Do Fundo Municipal de Inovação Tecnológica</h3>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 10</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Fica autorizado o Poder Executivo Municipal a criar o Fundo Municipal de Inovação Tecnológica de Joinville FIT/Jlle, com o objetivo de fomentar a inovação tecnológica no Município e de incentivar as empresas e instituições nele instaladas ou que desejarem se instalar, a realizar investimentos em projetos de pesquisa científica, tecnológica e de inovação ou desenvolvimento de Tecnologias Sociais que venham a melhorar significativamente a qualidade de vida das populações onde sejam aplicadas.<br/><br/>
+              § 1º Os recursos que compõem o FIT/Jlle serão utilizados no financiamento de projetos que tenham como foco a inovação e a pesquisa científica e tecnológica, propostos por pessoas jurídicas sediadas em Joinville e que contribuam para a consecução dos objetivos da presente Lei, entre eles:<br/><br/>
+              I - desenvolvimento de produtos e processos inovadores;<br/><br/>
+              II - realização de eventos técnicos, encontros, seminários, feiras, exposições e cursos que abordem exclusivamente assuntos ligados ás áreas de inovação e tecnologia.<br/><br/>
+              § 2º O Município regulamentará os dispositivos para a concessão do FIT/Jlle no prazo máximo de 06 (seis) meses, a contar do início da vigência desta Lei.<br/><br/>
+              § 3º Não será permitida a utilização dos recursos do FIT/Jlle para custear despesas correntes, exceto quando previstas em projetos ou programas de trabalho com duração previamente estabelecida e prevista no regulamento a que se refere o § 2º.
+            </div>
+            <div class="lei-nota lei-nota--desafio">
+              <strong>Desafio crítico:</strong> O FIT/Jlle <strong>nunca foi regulamentado</strong>. O prazo de 6 meses venceu em junho de 2012 — passaram 15 anos. Nenhum decreto, nenhum edital, nenhuma operação. O fundo existe juridicamente mas está <strong>completamente inativo</strong>.
+            </div>
+            <div class="lei-nota lei-nota--oportunidade">
+              <strong>Orientação sugerida:</strong> A regulamentação depende APENAS do Executivo (decreto do Prefeito). Não precisa passar pela Câmara. É o caminho mais rápido para ativar o mecanismo de financiamento.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 11</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Fundo Municipal de Inovação Tecnológica - FIT/Jlle poderá conceder recursos financeiros através das seguintes modalidades de apoio:<br/><br/>
+              I - bolsas de estudo para estudantes graduandos;<br/><br/>
+              II - bolsas de iniciação técnico-científica, para alunos do 2º Grau e universitários;<br/><br/>
+              III - auxílios para elaboração de teses, monografias e dissertações, para graduandos e pós-graduandos;<br/><br/>
+              IV - auxílio à pesquisa e estudos, para pessoas físicas e jurídicas;
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 12</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Poderão constituir fontes de receitas do FIT/Jlle:<br/><br/>
+              I - dotações consignáveis na lei orçamentária anual e seus créditos adicionais;<br/><br/>
+              II - recursos decorrentes de acordos, ajustes, contratos e convênios celebrados com órgãos ou instituições de natureza pública, inclusive agências de fomento;<br/><br/>
+              III - contratos, convênios, e doações realizadas por entidades nacionais ou internacionais, públicas ou privadas;<br/><br/>
+              IV - doações, auxílios, subvenções e legados, de qualquer natureza, de pessoas físicas ou jurídicas do país ou do exterior;<br/><br/>
+              V - recursos de empréstimos realizados com destinação para pesquisa, desenvolvimento e inovação tecnológica;<br/><br/>
+              VI - rendimentos de aplicação financeira dos seus recursos;<br/><br/>
+              VII - outras receitas que vierem a ser destinadas ao Fundo;<br/><br/>
+              VIII - recursos decorrentes da aplicação de contrapartidas.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 13</span>
+            </div>
+            <div class="lei-artigo__texto">
+              A concessão de recursos do FIT/Jlle poderá ser efetuada das seguintes formas:<br/><br/>
+              I - subvenção econômica;<br/><br/>
+              II - apoio financeiro reembolsável;<br/><br/>
+              III - financiamento de risco;<br/><br/>
+              IV - participação societária;<br/><br/>
+              V - contrapartida em contratos e convênios relacionados aos objetivos da presente Lei.
+            </div>
+            <div class="lei-nota lei-nota--analise">
+              <strong>Orientação sugerida:</strong> O FIT tem 5 modalidades de concessão (Art. 13) e 8 fontes de receita (Art. 12) — estrutura robusta. Porém, NENHUMA dessas modalidades é "redirecionamento fiscal de contribuinte". O FIT opera com <strong>dinheiro do caixa</strong> — exatamente o problema que o modelo FLN resolve ao operar <strong>fora do caixa</strong>.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 14</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Os beneficiários de recursos previstos nesta lei deverão fazer constar o apoio recebido do FIT/Jlle quando da divulgação dos projetos e atividades e de seus respectivos resultados.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 15</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Os projetos e pesquisas apoiados pelo FIT/Jlle, cujo objeto final seja a pesquisa aplicada localmente, devem propiciar a popularização e difusão do conhecimento produzido com a apresentação dos resultados das pesquisas em reunião pública.<br/><br/>
+              § 1º Uma cópia dos relatórios finais da pesquisa deve ser encaminhada para o Conselho Municipal de Ciência, Tecnologia e Inovação - COMCETI e outra para Secretaria de Integração e Desenvolvimento Econômico.<br/><br/>
+              § 2º A divulgação das pesquisas não implicará em renúncia de direitos autorais ou direito a registro de patentes por parte dos autores.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 16</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Somente poderão receber recursos aqueles proponentes que estejam em situação regular frente ao Município, Estado e União, incluídos: o pagamento de impostos devidos e a prestação de contas relativas a projetos de ciência e tecnologia, já aprovadas e executadas com recursos do Poder Executivo Municipal.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 17</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Compete ao Poder Executivo Municipal gerir o FIT/Jlle através da Secretaria de Integração e Desenvolvimento Econômico que, entre outras atribuições:<br/><br/>
+              I - acompanhará as atividades a serem desenvolvidas no âmbito do FIT/Jlle;<br/><br/>
+              II - zelará pela eficiência e economia no emprego dos recursos;<br/><br/>
+              III - fiscalizará o cumprimento de acordos que venham a ser celebrados.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 18</span>
+            </div>
+            <div class="lei-artigo__texto">
+              As empresas só poderão gozar de incentivos fiscais e tributários definidos nesta lei, quando se comprometerem formalmente com a implementação das seguintes medidas:<br/><br/>
+              I - preferência em compras e contratação de serviços com microempresas e empresas de pequeno porte estabelecidas em Joinville;<br/><br/>
+              II - contratação preferencial de trabalhadores, estudantes e egressos nas universidades locais residentes do Município como funcionários;<br/><br/>
+              III - disposição seletiva do lixo produzido para doação dos itens comercializáveis a cooperativas do setor ou a entidades assistenciais do município;<br/><br/>
+              IV - oferecimento de estágios remunerados para estudantes universitários ou de escolas técnicas locais;<br/><br/>
+              V - qualificação para empregados operacionais e administrativos;<br/><br/>
+              VI - apoio de profissionais da empresa como "palestrantes voluntários" nas escolas do Município, visando incentivar o interesse dos jovens pela área de tecnologia e inovação;<br/><br/>
+              VII - programa de formação e qualificação de mão de obra para as atividades a serem desenvolvidas no empreendimento, de forma autônoma ou em parceria com outras empresas ou instituições de ensino locais.<br/><br/>
+              § 1º As medidas relacionadas nos incisos elencados no caput deste artigo, deverão estar plenamente implementadas no prazo fixado em contrato específico, que estabelecerá as prioridades de implantação de acordo com a natureza do empreendimento.<br/><br/>
+              § 2º O teor de qualquer das medidas relacionadas no contrato específico, só poderá ser alterado por solicitação expressa da empresa e concordância documentada do órgão municipal competente.
+            </div>
+            <div class="lei-nota lei-nota--oportunidade">
+              <strong>Orientação sugerida:</strong> Contrapartida social é um diferencial forte. Pode ser adaptada para o novo programa — empresas que recebem incentivo fiscal devem retribuir ao ecossistema local. Conceito sólido, precisa de atualização (ex: mentorias, dados abertos, eventos).
+            </div>
+          </div>
+        </div>
+
+        <!-- CAP IV -->
+        <div class="lei-capitulo" id="lei-cap4">
+          <h2 class="lei-capitulo__titulo">Capítulo IV — Do Estímulo à Inovação nas Empresas e Instituições</h2>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 19</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Município de Joinville, por meio de entidades e órgãos da administração pública direta ou indireta, poderá promover e incentivar o desenvolvimento de produtos e processos inovadores em empresas e organizações de direito privado, voltadas para atividades de pesquisa e desenvolvimento no processo de inovação, mediante o compartilhamento de recursos humanos, materiais e de infra-estrutura ou da concessão de apoio financeiro a serem ajustados em instrumentos jurídicos específicos.<br/><br/>
+              § 1º A concessão de apoio financeiro, sob a forma de subvenção econômica, financiamento ou participação societária, visando ao desenvolvimento de produtos ou processos inovadores, será efetuada através de recursos do Fundo de Inovação Tecnológica de Joinville - FIT/Jlle.<br/><br/>
+              § 2º O compartilhamento de recursos humanos, mediante participação de servidor público municipal ocupante de cargo ou emprego das áreas técnicas ou científicas, inclusive pesquisadores, poderá ser autorizada pelo prazo de duração do projeto de desenvolvimento de produtos ou processos inovadores de interesse público, respeitado o período máximo de cedência, em ato fundamentado expedido pela autoridade máxima do órgão ou entidade a qual estiver subordinado devidamente amparado na legislação vigente.<br/><br/>
+              § 3º Durante o período de cedência referido no § 2º, é assegurado ao servidor público municipal o vencimento do cargo efetivo, ou o salário do emprego público da instituição de origem, acrescido das vantagens pecuniárias permanentes estabelecidas em lei, bem como a progressão funcional e os benefícios do plano de seguridade social ao qual estiver vinculado.<br/><br/>
+              § 4º A utilização de materiais, de infra-estrutura ou equipamentos integrantes do patrimônio do órgão ou entidade incentivador ou promotor da cooperação dar-se-á mediante a celebração de termo próprio que estabelece as obrigações das partes, observada a duração prevista no cronograma físico de execução do projeto de cooperação.<br/><br/>
+              § 5º A redestinação do material cedido ou a sua utilização em finalidade diversa da prevista, acarretará para o beneficiário as cominações administrativas civis e penais da legislação.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 20</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Havendo relevante interesse público, mediante expressa autorização do Poder Executivo Municipal e com observância da Lei Federal nº 8.666, de 21 de junho de 1993, os órgãos e entidades da Administração Pública Municipal podem, em matéria de interesse público, contratar empresa privada estabelecida em Joinville, com reconhecida capacitação técnica, para a realização de atividades de pesquisa e desenvolvimento envolvendo risco tecnológico, individualmente ou consorciada com outras empresas privadas, para a solução de problema técnico específico, bem como para a obtenção de produto ou processo inovador.<br/><br/>
+              § 1º Considerar-se-á desenvolvida na vigência do contrato a que se refere este artigo, toda a criação intelectual cuja proteção seja requerida pela(s) empresa(s) contratada(s), até dois anos após o seu término.<br/><br/>
+              § 2º Findo o contrato sem alcance integral ou com alcance parcial do resultado almejado, o contratante, a seu exclusivo critério, poderá, mediante auditoria técnica e financeira, prorrogar seu prazo de duração ou elaborar relatório final dando-o por encerrado.<br/><br/>
+              § 3º O pagamento decorrente da contratação prevista neste artigo será efetuado conforme o risco assumido e pactuado, com bonificação proporcional ao resultado obtido, levando-se em conta o percentual atingido do resultado pretendido nas atividades de pesquisa e desenvolvimento contratadas.<br/><br/>
+              § 4º A contratação fica condicionada à aprovação prévia de projeto específico, que explicitará a amplitude do risco, a proporção em que o risco tecnológico será compartilhado entre contratante(s) e contratado(s), com etapas de execução estabelecidas em cronograma físico-financeiro, resultados e produtos a serem alcançados, elaborado pela empresa ou consórcio a que se refere este artigo.<br/><br/>
+              § 5º O instrumento jurídico de contratação deve prever a confidencialidade do andamento dos trabalhos, dos resultados alcançados, os direitos referentes à propriedade intelectual e todos os direitos patrimoniais relativos ao projeto e seus resultados incluindo irrestrito direito ao uso para fins de exploração, que pertencem ao órgão e entidades da Administração Pública Municipal.<br/><br/>
+              § 6º Os direitos referidos no § 5º incluem o fornecimento de todos os dados, documentos e elementos de informação pertinentes à tecnologia de concepção, o desenvolvimento, a fixação em suporte físico de qualquer natureza e a aplicação da criação, ainda que os resultados obtidos na execução do projeto se limitem à tecnologia ou conhecimentos insuscetíveis de proteção pela propriedade intelectual.<br/><br/>
+              § 7º O contratante deve ser informado quanto à evolução do projeto e os resultados parciais alcançados, devendo acompanhá-lo mediante avaliação técnica e financeira de equipe previamente designada para a tarefa.
+            </div>
+            <div class="lei-nota lei-nota--oportunidade">
+              <strong>Orientação sugerida:</strong> Art. 19 já permite compartilhamento de recursos e apoio financeiro. Art. 20 permite contratação com risco tecnológico compartilhado — precursor da CPSI. Hoje Joinville pode operar CPSI com base federal (LC 182/2021, arts. 12-15).
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 21</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Nas aquisições de bens, de serviços ou de outras contratações públicas do Município, que envolvam inovação definida no artigo 2º, inc. IV, desta Lei, realizadas pela Administração Pública Municipal, poderá ser concedido tratamento diferenciado e simplificado para os fornecedores enquadrados como microempresas e empresas de pequeno porte, objetivando a promoção do desenvolvimento econômico e social no âmbito municipal, a ampliação da eficiência das políticas públicas e o incentivo à inovação tecnológica, desde que comprovados estes pressupostos.<br/><br/>
+              Parágrafo Único - Para o cumprimento do disposto no art. 20, a Administração Pública Municipal deverá obedecer às disposições da Lei Federal nº 8.666, de 21 de junho de 1993 e alterações e, no que couber, a legislação municipal vigente.
+            </div>
+          </div>
+        </div>
+
+        <!-- CAP V -->
+        <div class="lei-capitulo" id="lei-cap5">
+          <h2 class="lei-capitulo__titulo">Capítulo V — Dos Parques Tecnológicos, Incubadoras e Condomínios</h2>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 22</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Município, dentro do contexto de sua Política Municipal de Ciência, Tecnologia e Inovação, estimulará e apoiará a implantação de parques tecnológicos, núcleos de inovação tecnológica, incubadoras e condomínios, sociais e de base tecnológica, visando incentivar os investimentos em pesquisa e apropriação de novos conhecimentos e novas tecnologias que gerem novos negócios, ampliando a competitividade da economia local e novos processos mantenedores e desenvolvedores da qualidade de vida local e regional.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 23</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Poder Executivo Municipal poderá apoiar e coordenar iniciativas de criação e consolidação de parques tecnológicos, incubadoras e condomínios empresariais, inclusive mediante cessão ou doação de área de terreno do Município para essa finalidade, quando necessário.<br/><br/>
+              § 1º Fica facultado ao Poder Executivo Municipal, para consecução dos objetivos de que trata o art. 23, celebrar convênios e outros instrumentos jurídicos específicos, com órgãos da administração direta ou indireta, federal, estadual ou municipal, bem como com organismos internacionais, instituições de pesquisa, universidades, instituições de fomento, investimento ou financiamento, com o objetivo de:<br/><br/>
+              I - promover a cooperação entre os agentes envolvidos e;<br/><br/>
+              II - facilitar a interação destes com empresas cujas atividades estejam baseadas em conhecimento e inovação tecnológica.<br/><br/>
+              § 2º Para receber os benefícios referidos no caput deste artigo, a instituição deverá atender aos seguintes critérios, observada a legislação pertinente:<br/><br/>
+              I - ter personalidade jurídica própria e objeto social específico compatível com as finalidades previstas nesta Lei;<br/><br/>
+              II - possuir modelo de gestão compatível com a realização de seus objetivos, o qual deverá prever órgão técnico que zele pelo cumprimento de seu objeto social;<br/><br/>
+              III - demonstrar a viabilidade econômica e financeira do empreendimento, incluindo, se necessário, projetos associados e/ou complementares em relação às atividades a serem desenvolvidas;<br/><br/>
+              IV - apresentar projeto de planejamento que defina e avalie o perfil das atividades da instituição, de acordo com as competências científicas e tecnológicas das entidades locais e as vocações econômicas regionais;<br/><br/>
+              V - demonstrar que dispõe, para desenvolver suas atividades, de recursos próprios ou oriundos de instituições de fomento, instituições financeiras ou e outras instituições de apoio às atividades empresariais;<br/><br/>
+              VI - desenvolver análise de impactos econômicos negativos no entorno, apresentando medidas de tratamento adequado para mitigá-los e definindo contrapartidas compensatórias;<br/><br/>
+              VII - desenvolver programa de responsabilidade social, com publicação do balanço social e divulgação das atividades realizadas.
+            </div>
+            <div class="lei-nota lei-nota--analise">
+              <strong>Orientação sugerida:</strong> A previsão de cessão/doação de terreno é poderosa mas raramente utilizada. Joinville já tem o Agora Tech Park e a Softville como ambientes de inovação consolidados — não precisou da lei para isso.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 24</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Poder Executivo Municipal fomentará a criação de condomínios empresariais que venham a ser instalados nas REPOT`s definidas pelo Município, que promovam o desenvolvimento de áreas com baixo índice de desenvolvimento econômico.<br/><br/>
+              Parágrafo Único - Estes empreendimentos poderão usufruir dos incentivos previstos no art. 5º desta Lei.
+            </div>
+          </div>
+        </div>
+
+        <!-- CAP VI -->
+        <div class="lei-capitulo" id="lei-cap6">
+          <h2 class="lei-capitulo__titulo">Capítulo VI — Das Instituições Científicas e Tecnológicas</h2>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 25</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Poder Executivo Municipal apoiará a criação e reconhecerá as Instituições Científicas e Tecnológicas em Joinville - ICT/Jlle como órgãos ou entidades auxiliadoras da administração pública municipal, direta ou indireta, que tenham como missão institucional executar, dentre outras, atividades de pesquisa básica ou aplicada, de caráter científico ou tecnológico que promovam a inovação.<br/><br/>
+              Parágrafo Único - Fica o Poder Executivo Municipal autorizado a incentivar a criação de ICT/Jlle de pesquisa e desenvolvimento de produtos ou serviços de interesse direto do Município, para aquisição destes produtos e serviços que tenham alcançado os padrões de qualidade e valores adequados às licitações regidas pela Lei Municipal específica.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 26</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Caberá à Secretaria de Integração e Desenvolvimento Econômico, atestar para todos os fins que se fizerem necessários, a condição de uma instituição como ICT/Jlle, inclusive ICTs Federais, Estaduais e privadas, desde que sediadas em Joinville.<br/><br/>
+              § 1º A Secretaria de Integração e Desenvolvimento Econômico deverá desenvolver o regulamento aplicável ao reconhecimento de instituições como ICT/Jlle.<br/><br/>
+              § 2º As ICTs Federais, serão regidas pela legislação federal pertinente, notadamente o estipulado na Lei Federal nº 10.973, de 02 de dezembro de 2004.<br/><br/>
+              § 3º As ICTs Estaduais, serão regidas pela legislação estadual pertinente, notadamente o estipulado na Lei Estadual nº 14.328, de 15 de janeiro de 2008.<br/><br/>
+              § 4º Os funcionários públicos municipais que participarem de uma ICT/Jlle, serão regidos pela legislação municipal pertinente, notadamente o estipulado na Lei Complementar nº 266, de 05 de abril de 2008 - Estatuto dos Servidores Públicos do Município de Joinville.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 27</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Cada ICT/Jlle deverá estabelecer sua política de estímulo à inovação e à proteção dos resultados obtidos.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 28</span>
+            </div>
+            <div class="lei-artigo__texto">
+              As ICTs/Jlle poderão desenvolver, entre outras, as atividades que estejam em consonância com os artigos 4º, 6º, 7º, 8º, 9º e 11º da Lei Federal nº 10.973, de 02 de dezembro de 2004.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 29</span>
+            </div>
+            <div class="lei-artigo__texto">
+              É facultado à ICT/Jlle proteger, diretamente ou em parceria com instituições públicas ou privadas sem fins lucrativos, os resultados das pesquisas nos termos da legislação relativa à propriedade intelectual.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 30</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Aos dirigentes, criadores, alunos ou a quaisquer servidores regularmente matriculados em ICT/Jlle, empregados de entidades públicas, privadas ou prestadores de serviços é vedado divulgar, noticiar ou publicar qualquer aspecto de criações de cujo desenvolvimento tenham participado diretamente ou tomado conhecimento por força de suas atividades, sem antes obter expressa autorização da ICT/Jlle e de empresas envolvidas, quando for o caso.<br/><br/>
+              § 1º O não cumprimento da determinação prevista no caput implica na aplicação de sanções legais pertinentes.<br/><br/>
+              § 2º Toda a divulgação, notícia ou publicação eventualmente autorizada, deve mencionar as parcerias estabelecidas para a realização da pesquisa ou desenvolvimento de novas tecnologias, passíveis ou não de proteção.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 31</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Os instrumentos jurídicos firmados entre as ICTs/Jlle, as instituições de apoio, agências de fomento e as entidades nacionais de direito privado sem fins lucrativos voltadas para a atividade de pesquisa, cujo objeto seja compatível com os objetivos desta Lei, poderão prever recursos para cobertura de despesas operacionais e administrativas incorridos na execução dos mesmos, observada a legislação pertinente.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 32</span>
+            </div>
+            <div class="lei-artigo__texto">
+              As ICTs/Jlle deverão criar o seu Núcleo de Inovação Tecnológica - NIT próprio ou em cooperação com instituições congêneres, com a finalidade de implantar e gerir sua política de inovação, tendo como atribuições mínimas:<br/><br/>
+              I - zelar pela implantação, manutenção e desenvolvimento da política institucional de estímulo à proteção das criações, licenciamento, inovação e outras formas de transferência de tecnologia;<br/><br/>
+              II - avaliar e classificar os resultados decorrentes de atividades e projetos de pesquisa para o atendimento das disposições desta Lei;<br/><br/>
+              III - avaliar solicitação de inventor e ou pesquisador independente para adoção de invenção na forma do artigo 36 desta Lei;<br/><br/>
+              IV - opinar sobre a conveniência e promover a proteção das criações desenvolvidas na instituição;<br/><br/>
+              V - opinar quanto à conveniência de divulgação das criações desenvolvidas na instituição, passíveis de proteção pela legislação de propriedade intelectual;<br/><br/>
+              VI - acompanhar junto aos órgãos competentes, o andamento dos processos de pedido de proteção, bem como dos processos de manutenção dos títulos concedidos de propriedade intelectual em nome da instituição;<br/><br/>
+              VII - avaliar e classificar os resultados decorrentes de atividades de inovação e pesquisa científica e tecnológica, tendo em vista a viabilidade econômica do produto ou processo a ser aprimorado ou desenvolvido, a sua vinculação às necessidades de desenvolvimento do Município ou ao planejamento estratégico da própria ICT/Jlle;<br/><br/>
+              VIII - apoiar e assessorar iniciativas de fortalecimento do sistema de inovação tecnológica no âmbito da ICT/Jlle assim como nas demais instituições, públicas ou privadas no Município;<br/><br/>
+              IX - zelar pela manutenção da política institucional de estímulo à proteção das criações e da sua comercialização;<br/><br/>
+              X - incentivar a formação de parcerias de pesquisa conjunta com empresas e instituições de ensino e pesquisas, públicas ou privadas, com ou sem fins lucrativos, nacionais ou estrangeiras, visando à obtenção de inovação que viabilize a geração, o desenvolvimento e a fabricação de produtos e sistemas.<br/><br/>
+              § 1º Para cumprimento das atividades previstas no caput deste artigo, as ICTs/Jlle deverão designar servidores/colaboradores de seu quadro para seu efetivo exercício nos NITs.<br/><br/>
+              § 2º As ICTs/Jlle poderão promover parcerias com instituições públicas ou privadas, para prover atividades de capacitação de pessoas para atuarem nos NITs.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 33</span>
+            </div>
+            <div class="lei-artigo__texto">
+              As ICTs/Jlle, na elaboração e execução dos seus orçamentos, adotarão as medidas cabíveis para a administração e gestão da sua política de inovação para permitir o recebimento de receitas e o pagamento de despesas, decorrentes da aplicação do disposto nos artigos 4º, 6º, 8º, e 9º da Lei Federal nº 10.973, de 02 de dezembro de 2004, assim como o pagamento das despesas para a proteção da propriedade intelectual e os pagamentos devidos aos criadores e eventuais colaboradores.<br/><br/>
+              Parágrafo Único - Os recursos financeiros de que trata este artigo, percebidos pelas ICTs/Jlle, constituem receita própria e deverão ser aplicados, exclusivamente, em objetivos institucionais de pesquisa, desenvolvimento e inovação.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 34</span>
+            </div>
+            <div class="lei-artigo__texto">
+              As ICTs/Jlle e os órgãos e entidades da administração pública municipal adotarão em seus orçamentos as medidas cabíveis para a sua administração e gestão da sua política de inovação e proteção de criadores pela legislação da propriedade intelectual, assim como, instrumentos contábeis próprios para permitir o recebimento e distribuição dos ganhos econômicos decorrentes da comercialização de processos e tecnologias, de acordo com o estabelecido nesta Lei.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 35</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Para se favorecer dos benefícios desta Lei, as ICTs/Jlle deverão promover, onde couber, o ajuste de seus estatutos aos fins previstos.
+            </div>
+            <div class="lei-nota lei-nota--analise">
+              <strong>Orientação sugerida:</strong> Capítulo sofisticado sobre ICTs e NITs (Arts. 25-35). Bem alinhado com a Lei Federal 10.973. Na prática, sem evidência de ICTs municipais reconhecidas formalmente em Joinville.
+            </div>
+          </div>
+        </div>
+
+        <!-- CAP VII -->
+        <div class="lei-capitulo" id="lei-cap7">
+          <h2 class="lei-capitulo__titulo">Capítulo VII — Do Estímulo ao Inventor Independente</h2>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 36</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Ao inventor independente, que comprove pedido de proteção de propriedade intelectual já formalmente depositado perante as instâncias competentes, é facultado solicitar a adoção de uma criação por ICT/Jlle, que decidirá livremente quanto à conveniência e oportunidade de elaborar projeto voltado a sua avaliação para futuro desenvolvimento, incubação, utilização, industrialização e comercialização pelo setor produtivo.<br/><br/>
+              § 1º O NIT da ICT/Jlle avaliará a invenção, a sua afinidade com a respectiva área de atuação e o interesse no seu desenvolvimento, submetendo o projeto à ICT/Jlle para que esta decida sobre a sua adoção, mediante contrato.<br/><br/>
+              § 2º O NIT informará ao inventor independente, no prazo máximo de 06 (seis) meses, a decisão quanto à adoção a que se refere o caput deste artigo. Decorrido este prazo, sem que a ICT/Jlle tenha promovido qualquer ação efetiva, o inventor independente fica desobrigado do compromisso.<br/><br/>
+              § 3º O projeto de que trata este artigo pode incluir, dentre outros, ensaios de conformidade, construção de protótipos, projetos de engenharia e análise de viabilidade econômica e mercadológica, entre outros.<br/><br/>
+              § 4º Será assegurado ao inventor independente, sempre que solicitado, o direito de conhecer e de acompanhar as diversas fases de andamento do projeto pertinente à criação adotada pela ICT/Jlle.<br/><br/>
+              § 5º Adotada a invenção por uma ICT/Jlle, o inventor independente comprometer-se-á, mediante contrato, a compartilhar os ganhos econômicos auferidos com a exploração industrial da invenção protegida.<br/><br/>
+              § 6º O valor referente aos ganhos econômicos somente será repassado após seu efetivo recebimento pela ICT/Jlle, descontada as despesas administrativas envolvidas.<br/><br/>
+              § 7º O projeto a ser definido deverá conter explicitamente as condições de início da exploração econômica e forma de repasse dos ganhos econômicos.<br/><br/>
+              § 8º Na hipótese da ICT/Jlle não providenciar, direta ou indiretamente, a exploração econômica no prazo de 12 (doze) meses, contados a partir do término do prazo estipulado no projeto firmado entre as partes, ficará o inventor independente desobrigado de compartilhar os ganhos econômicos.
+            </div>
+            <div class="lei-nota lei-nota--analise">
+              <strong>Orientação sugerida:</strong> Mecanismo interessante mas dependente de ICTs ativas (que não existem formalmente em Joinville). Conceito válido se o ecossistema amadurecer.
+            </div>
+          </div>
+        </div>
+
+        <!-- CAP VIII -->
+        <div class="lei-capitulo" id="lei-cap8">
+          <h2 class="lei-capitulo__titulo">Capítulo VIII — Das Disposições Finais</h2>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 37</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Na aplicação do disposto desta Lei serão observadas as seguintes diretrizes:<br/><br/>
+              I - priorizar ações que visem dotar a pesquisa e o sistema produtivo local de maiores recursos humanos e capacitação tecnológica;<br/><br/>
+              II - assegurar tratamento favorecido a empresas de micro, pequeno e médio porte;<br/><br/>
+              III - dar tratamento preferencial, na aquisição de bens e serviços pelo Poder Executivo Municipal, às empresas que invistam em pesquisa e no desenvolvimento de tecnologia no Município, respeitando os preceitos contidos na Lei Federal nº 8.666, de 21 de junho de 1993.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 38</span>
+            </div>
+            <div class="lei-artigo__texto">
+              O Poder Executivo Municipal regulamentará os dispositivos necessários, em especial a concessão de subsídios e incentivos previstos nesta Lei, no prazo máximo de 06 (seis) meses, contados de sua aplicação.
+            </div>
+            <div class="lei-nota lei-nota--desafio">
+              <strong>Desafio final:</strong> Art. 38 mandava regulamentar em 6 meses (jun/2012). <strong>Nunca foi cumprido.</strong> Este é o ponto central — a lei existe, mas ficou no papel por falta de regulamentação do Executivo.
+            </div>
+          </div>
+
+          <div class="lei-artigo">
+            <div class="lei-artigo__header">
+              <span class="lei-artigo__num">Art. 39</span>
+            </div>
+            <div class="lei-artigo__texto">
+              Esta lei entra em vigor na data de sua publicação.
+            </div>
+          </div>
+        </div>
+
+        <!-- VEREDITO -->
+        <div class="lei-veredito" id="lei-veredito">
+          <h2 class="lei-veredito__title">Veredito</h2>
+          <div class="lei-veredito__grid">
+            <div class="lei-veredito__item lei-veredito__item--pode">
+              <h3>O que a lei PODE</h3>
+              <ul>
+                <li>Conceder isenção fiscal direta (ITBI, IPTU, ISS, taxas, COSIP)</li>
+                <li>Alocar verba orçamentária para inovação (Art. 6)</li>
+                <li>Operar o FIT com 5 modalidades (se regulamentado)</li>
+                <li>Ceder terrenos e infraestrutura para ambientes de inovação</li>
+                <li>Compartilhar servidores com projetos de inovação</li>
+                <li>Exigir contrapartida social das empresas beneficiadas</li>
+              </ul>
+            </div>
+            <div class="lei-veredito__item lei-veredito__item--nao-pode">
+              <h3>O que a lei NÃO PODE</h3>
+              <ul>
+                <li>Permitir redirecionamento fiscal de contribuinte para projetos (modelo PII/FLN)</li>
+                <li>Criar a figura do "contribuinte incentivador"</li>
+                <li>Credenciar APIs (Arranjos Promotores de Inovação)</li>
+                <li>Operar programa de captação por startups</li>
+                <li>Funcionar com recurso "fora do caixa" da Prefeitura</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lei-veredito__conclusao">
+            <strong>Conclusão:</strong> A Lei 7.170/2011 é uma base sólida mas insuficiente para o programa pretendido. O mecanismo de redirecionamento fiscal (modelo FLN) exige dispositivo legal novo — seja por emenda, lei complementar específica ou lei substitutiva.
+          </div>
+        </div>
+
+        <!-- PARECER TÉCNICO -->
+        <div class="parecer" id="lei-parecer">
+          <h2 class="parecer__title">Parecer Técnico — Consultoria BRZ Capacitação</h2>
+          <p class="parecer__subtitle">Orientação sugerida. Não constitui parecer jurídico formal. Deve ser validado pela Procuradoria Municipal.</p>
+
+          <div class="parecer__section">
+            <h4>1. Situação atual da Lei 7.170/2011</h4>
+            <p>A lei está em vigor desde dezembro de 2011 e nunca foi revogada. Porém, apresenta defasagem significativa frente ao arcabouço federal atual (Marco Legal de CT&amp;I — Lei 13.243/2016; Marco Legal das Startups — LC 182/2021) e não contempla conceitos, instrumentos e mecanismos que surgiram nos últimos 15 anos.</p>
+            <p>Os principais instrumentos previstos na lei que <strong>nunca foram operacionalizados</strong>:</p>
+            <ul>
+              <li><strong>FIT/JIle (Fundo Municipal de Inovação)</strong> — Art. 10: nunca regulamentado. Prazo legal de 6 meses venceu em junho de 2012. Nenhum decreto, edital ou operação identificados em fontes oficiais.</li>
+              <li><strong>REPOTs (Regiões de Potencial Tecnológico)</strong> — Art. 4: nunca mapeadas. Nenhum ato oficial identificado.</li>
+              <li><strong>Regulamentação geral</strong> — Art. 38: determinava regulamentação em 6 meses. Nunca cumprido integralmente.</li>
+            </ul>
+            <p>Os instrumentos que <strong>funcionam parcialmente</strong>:</p>
+            <ul>
+              <li><strong>Prêmio Inovação Joinville</strong> — Art. 7: realizado pelo menos uma vez (2019, ExpoInovação/COMCITI). Sem regularidade institucional.</li>
+              <li><strong>COMCETI/COMCITI</strong> — Art. 3: o conselho foi atualizado pela Lei 9.538/2023 e está ativo com 21 membros (Decreto 64.371/2025).</li>
+            </ul>
+          </div>
+
+          <div class="parecer__section">
+            <h4>2. Adequação ao programa pretendido</h4>
+            <p>O programa de incentivo à inovação nos moldes do PII de Florianópolis (LC 432/2012) requer um mecanismo de <strong>redirecionamento fiscal</strong> — onde contribuintes destinam parte do ISS/IPTU devido diretamente a projetos de inovação aprovados, sem que o recurso transite pelo caixa da Prefeitura.</p>
+            <p>A Lei 7.170/2011 <strong>não prevê este mecanismo</strong>. O que a lei oferece são:</p>
+            <ul>
+              <li>Isenção fiscal clássica (empresa inovadora não paga) — Art. 5</li>
+              <li>Fundo com dotação orçamentária (dinheiro do caixa) — Arts. 10-17</li>
+              <li>Suplementação via LDO/PPA (também do caixa) — Art. 6</li>
+            </ul>
+            <p>Nenhum destes mecanismos permite que o recurso fique <strong>fora do orçamento municipal</strong>, que é o diferencial do modelo de Florianópolis e a razão pela qual ele funciona sem depender de prioridades orçamentárias.</p>
+          </div>
+
+          <div class="parecer__section">
+            <h4>3. O que pode ser aproveitado</h4>
+            <ul>
+              <li><strong>Base principiológica</strong> (Art. 1): alinhamento constitucional e com Lei Federal de Inovação — sólido</li>
+              <li><strong>Incentivos fiscais diretos</strong> (Art. 5): isenção de ITBI, IPTU, ISS, taxas — utilizável para complementar o programa</li>
+              <li><strong>Contrapartida social</strong> (Art. 18): 7 medidas obrigatórias — conceito válido, adaptável</li>
+              <li><strong>Reserva orçamentária</strong> (Art. 6): previsão na LDO/PPA — base legal para dotação complementar</li>
+              <li><strong>FIT/JIle</strong> (Arts. 10-17): se regulamentado, pode operar como fundo complementar ao programa de redirecionamento</li>
+              <li><strong>Definições</strong> (Art. 2): 27 conceitos — base reutilizável com atualização</li>
+            </ul>
+          </div>
+
+          <div class="parecer__section">
+            <h4>4. O que precisa ser criado (inexistente na lei atual)</h4>
+            <ul>
+              <li>Conceito de <strong>contribuinte incentivador</strong> (quem redireciona o imposto)</li>
+              <li>Mecanismo de <strong>redirecionamento fiscal</strong> (ISS/IPTU para projetos aprovados)</li>
+              <li>Figura dos <strong>APIs</strong> (Arranjos Promotores de Inovação — entidades credenciadas)</li>
+              <li>Fluxo de <strong>captação</strong> (carta de autorização, conta exclusiva, certificado fiscal)</li>
+              <li>Conceito de <strong>startup</strong> e alinhamento com LC 182/2021</li>
+              <li><strong>Comissão de seleção</strong> e comitê gestor do programa</li>
+              <li>Sistema de <strong>prestação de contas</strong> específico para recurso de renúncia</li>
+              <li>Definição de <strong>percentual de renúncia</strong> e teto por projeto</li>
+            </ul>
+          </div>
+
+          <div class="parecer__section">
+            <h4>5. Recomendação</h4>
+            <p>A decisão sobre qual rota legislativa seguir é do Município — cabe à Diretoria de Inovação (SDE), à Procuradoria e ao Poder Executivo avaliar viabilidade política, jurídica e de tempo. As três rotas identificadas (emenda, lei nova ou lei complementar específica) são tecnicamente viáveis, cada uma com trade-offs diferentes de velocidade, risco e abrangência.</p>
+            <p>Independentemente da rota escolhida, recomendamos que a construção do instrumento legal inclua:</p>
+            <ul>
+              <li>Estimativa de impacto fiscal (exigência da LRF, Art. 14 da LC 101/2000)</li>
+              <li>Previsão na LDO/LOA do exercício correspondente</li>
+              <li>Validação pela Procuradoria Municipal</li>
+              <li>Consulta ao Tribunal de Contas do Estado (TCE/SC) sobre limites de renúncia</li>
+              <li>Alinhamento com o COMCITI como órgão consultivo</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /page-lei7170 -->
+
+    <!-- ==================== PAGE: ROTAS ==================== -->
+    <div class="page" id="page-rotas">
+      <div class="page-header">
+        <div class="container">
+          <span class="page-header__label">04 — Estratégia Legislativa</span>
+          <h1 class="page-header__title">Rotas</h1>
+          <p class="page-header__subtitle">Caminhos legislativos para viabilizar o Programa de Incentivo à Inovação em Joinville</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="disclaimer">
+          <strong>Nota:</strong> As rotas apresentadas são <strong>orientações sugeridas pela consultoria BRZ Capacitação</strong> com base na análise da legislação vigente e no modelo de Florianópolis (LC 432/2012). Não constituem parecer jurídico. A viabilidade de cada rota deve ser validada pela Procuradoria Municipal e pela assessoria jurídica da Câmara de Vereadores. Dados sobre LRF, competência tributária e autonomia municipal foram verificados na legislação federal vigente.
+        </div>
+
+        <div class="rotas-grid">
+
+          <div class="rota-card">
+            <div class="rota-card__header">
+              <span class="rota-card__letter">A</span>
+              <h3 class="rota-card__title">Emendar a Lei 7.170</h3>
+              <span class="rota-card__speed rota-card__speed--media">Velocidade média</span>
+            </div>
+            <p class="rota-card__desc">Adicionar artigos à lei existente criando o mecanismo de redirecionamento fiscal. Mantém a lei-mãe, inclui o novo instrumento.</p>
+            <div class="rota-card__pros">
+              <h4>Prós</h4>
+              <ul>
+                <li>Mais rápido politicamente — não revoga nada</li>
+                <li>Aproveita a base legal existente</li>
+                <li>Menor resistência na Câmara</li>
+              </ul>
+            </div>
+            <div class="rota-card__contras">
+              <h4>Contras</h4>
+              <ul>
+                <li>Lei de 2011 com emenda de 2026 — Frankenstein legislativo</li>
+                <li>Referências desatualizadas permanecem (Lei 8.666, secretaria antiga)</li>
+                <li>Pode gerar conflitos interpretativos</li>
+              </ul>
+            </div>
+            <div class="rota-card__tramitacao">
+              <h4>Tramitação</h4>
+              <p>Projeto de lei → Câmara de Vereadores → Sanção do Prefeito</p>
+            </div>
+          </div>
+
+          <div class="rota-card">
+            <div class="rota-card__header">
+              <span class="rota-card__letter">B</span>
+              <h3 class="rota-card__title">Lei nova substituindo a 7.170</h3>
+              <span class="rota-card__speed rota-card__speed--lenta">Mais demorada</span>
+            </div>
+            <p class="rota-card__desc">Revogar a 7.170 e criar lei nova unificada (como FLN fez com a LC 432/2012). Uma lei que contemple tudo: conselho, fundo, programa de incentivo, sandbox, CPSI, APIs.</p>
+            <div class="rota-card__pros">
+              <h4>Prós</h4>
+              <ul>
+                <li>Legislação limpa, moderna, sem contradições</li>
+                <li>Alinhada com Marco Legal das Startups (2021)</li>
+                <li>Unifica todos os instrumentos num único arcabouço</li>
+                <li>Referência de longo prazo para o ecossistema</li>
+              </ul>
+            </div>
+            <div class="rota-card__contras">
+              <h4>Contras</h4>
+              <ul>
+                <li>Tramitação mais longa (projeto de lei completo)</li>
+                <li>Risco político de "revogar" algo existente</li>
+                <li>Demanda mais negociação com vereadores</li>
+              </ul>
+            </div>
+            <div class="rota-card__tramitacao">
+              <h4>Tramitação</h4>
+              <p>Projeto de lei complementar → Câmara → Sanção. Depois: Decreto de regulamentação (Prefeito)</p>
+            </div>
+          </div>
+
+          <div class="rota-card">
+            <div class="rota-card__header">
+              <span class="rota-card__letter">C</span>
+              <h3 class="rota-card__title">Lei complementar específica</h3>
+              <span class="rota-card__speed rota-card__speed--rapida">Mais rápida</span>
+            </div>
+            <p class="rota-card__desc">Manter a 7.170 como base geral. Criar LC nova especificamente para o Programa de Incentivo à Inovação com redirecionamento fiscal, APIs e fluxo de captação.</p>
+            <div class="rota-card__pros">
+              <h4>Prós</h4>
+              <ul>
+                <li>Não mexe na lei existente</li>
+                <li>Foco cirúrgico no que falta</li>
+                <li>Tramitação mais simples (escopo menor)</li>
+                <li>Pode ser implementada rapidamente</li>
+              </ul>
+            </div>
+            <div class="rota-card__contras">
+              <h4>Contras</h4>
+              <ul>
+                <li>Duas leis para manter</li>
+                <li>Possível conflito entre elas</li>
+                <li>Eventual necessidade de unificação futura</li>
+              </ul>
+            </div>
+            <div class="rota-card__tramitacao">
+              <h4>Tramitação</h4>
+              <p>Projeto de LC → Câmara → Sanção. Depois: Decreto + Portaria (Prefeito/SDE)</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="disclaimer" style="margin-top: var(--space-lg);">
+          <strong>Nota:</strong> A escolha da rota legislativa é uma <strong>decisão exclusiva do Município</strong> — cabe ao Poder Executivo, à Procuradoria Municipal e à Câmara de Vereadores avaliar viabilidade política, jurídica e de prazo. As três opções apresentadas são orientações sugeridas pela consultoria BRZ Capacitação com base na análise do arcabouço legal vigente e no modelo de referência de Florianópolis.
+        </div>
+
+        <div class="rotas-detalhamento">
+          <h2 class="section__title">Detalhamento — Passos de cada rota</h2>
+
+          <div class="rota-detalhe">
+            <h3><span class="rota-card__letter" style="display:inline-flex; width:28px; height:28px; font-size:0.9rem; vertical-align:middle; margin-right:8px;">A</span> Emendar a Lei 7.170 — Passo a passo</h3>
+            <ol class="rota-steps">
+              <li><strong>SDE redige minuta de emenda</strong> — artigos novos criando o mecanismo de redirecionamento fiscal, figura do contribuinte incentivador, APIs e fluxo de captação</li>
+              <li><strong>Procuradoria revisa</strong> — validação jurídica, conformidade com LRF e competência tributária</li>
+              <li><strong>Estimativa de impacto fiscal</strong> — Secretaria da Fazenda calcula renúncia estimada por faixa de percentual</li>
+              <li><strong>Projeto de lei encaminhado à Câmara</strong> — mensagem do Prefeito com justificativa</li>
+              <li><strong>Tramitação na Câmara</strong> — comissões (Legislação, Finanças, Desenvolvimento Econômico), plenário</li>
+              <li><strong>Sanção do Prefeito</strong></li>
+              <li><strong>Decreto de regulamentação</strong> — regras operacionais do programa (Prefeito, sem Câmara)</li>
+              <li><strong>Portaria SDE</strong> — procedimentos, formulários, prazos, comissões</li>
+            </ol>
+            <p class="rota-detalhe__tempo">Estimativa de prazo: 4 a 8 meses (depende da velocidade da Câmara)</p>
+          </div>
+
+          <div class="rota-detalhe">
+            <h3><span class="rota-card__letter" style="display:inline-flex; width:28px; height:28px; font-size:0.9rem; vertical-align:middle; margin-right:8px;">B</span> Lei nova substituindo a 7.170 — Passo a passo</h3>
+            <ol class="rota-steps">
+              <li><strong>SDE + consultoria redigem anteprojeto de lei completa</strong> — unificando conselho, fundo, programa de incentivo, APIs, sandbox, CPSI, governança</li>
+              <li><strong>Consulta ao COMCITI</strong> — como órgão consultivo, parecer sobre o anteprojeto</li>
+              <li><strong>Procuradoria revisa</strong> — validação integral, verificação de conflitos com leis existentes</li>
+              <li><strong>Estimativa de impacto fiscal</strong> — Fazenda</li>
+              <li><strong>Consulta pública</strong> (recomendada, não obrigatória) — ecossistema opina</li>
+              <li><strong>Projeto de lei complementar à Câmara</strong> — mensagem com justificativa e revogação expressa da 7.170</li>
+              <li><strong>Tramitação na Câmara</strong> — comissões + plenário (pode exigir quórum qualificado se for LC)</li>
+              <li><strong>Sanção do Prefeito + publicação DO</strong></li>
+              <li><strong>Decreto de regulamentação</strong></li>
+              <li><strong>Portaria SDE + primeiro edital</strong></li>
+            </ol>
+            <p class="rota-detalhe__tempo">Estimativa de prazo: 6 a 14 meses (mais complexo, mais abrangente)</p>
+          </div>
+
+          <div class="rota-detalhe">
+            <h3><span class="rota-card__letter" style="display:inline-flex; width:28px; height:28px; font-size:0.9rem; vertical-align:middle; margin-right:8px;">C</span> Lei complementar específica — Passo a passo</h3>
+            <ol class="rota-steps">
+              <li><strong>SDE + consultoria redigem LC específica</strong> — focada exclusivamente no programa de redirecionamento fiscal, APIs, captação, prestação de contas</li>
+              <li><strong>Procuradoria revisa</strong> — verifica compatibilidade com 7.170 (que permanece vigente)</li>
+              <li><strong>Estimativa de impacto fiscal</strong> — Fazenda</li>
+              <li><strong>Projeto de LC à Câmara</strong> — escopo menor, tramitação mais ágil</li>
+              <li><strong>Tramitação na Câmara</strong> — comissões + plenário</li>
+              <li><strong>Sanção do Prefeito</strong></li>
+              <li><strong>Decreto de regulamentação</strong> — detalhamento operacional</li>
+              <li><strong>Portaria SDE + credenciamento de APIs + primeiro edital</strong></li>
+            </ol>
+            <p class="rota-detalhe__tempo">Estimativa de prazo: 3 a 6 meses (escopo cirúrgico)</p>
+            <p class="rota-detalhe__obs"><strong>Observação:</strong> Pode ser seguida pela Rota B num segundo momento — primeiro ativa o programa (LC específica), depois unifica tudo (lei nova). Abordagem incremental.</p>
+          </div>
+        </div>
+
+        <div class="rotas-embasamento">
+          <h2 class="section__title">Embasamento Legal</h2>
+          <div class="embasamento-grid">
+            <div class="embasamento-item">
+              <h4>LRF — LC 101/2000, Art. 14</h4>
+              <p>Qualquer renúncia fiscal exige estimativa de impacto orçamentário-financeiro, previsão na LDO/LOA e demonstração de que não compromete metas fiscais.</p>
+            </div>
+            <div class="embasamento-item">
+              <h4>CF — Art. 156</h4>
+              <p>Município tem autonomia plena sobre seus tributos próprios (ISS, IPTU, ITBI). Pode legislar sobre alíquotas, isenções e destinação.</p>
+            </div>
+            <div class="embasamento-item">
+              <h4>Percentual de renúncia</h4>
+              <p>Não existe limite federal. O 20% de Florianópolis é decisão municipal. Joinville define o percentual que quiser, desde que cumpra a LRF.</p>
+            </div>
+            <div class="embasamento-item">
+              <h4>Regramento de uso</h4>
+              <p>Itens permitidos/vedados, setores prioritários, tetos e limites — tudo é decisão municipal, definido por decreto ou portaria.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /page-rotas -->
+
+    <!-- ==================== PAGE: PROGRAMA ==================== -->
+    <div class="page" id="page-programa">
+      <div class="page-header">
+        <div class="container">
+          <span class="page-header__label">05 — Programa</span>
+          <h1 class="page-header__title">Programa de Inovação Joinville</h1>
+          <p class="page-header__subtitle">Construção do programa de incentivo fiscal à inovação</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="programa-wip">
+          <div class="programa-wip__icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h2 class="programa-wip__title">Em desenvolvimento</h2>
+          <p class="programa-wip__text">O programa de incentivo à inovação está sendo construído em conjunto com a Diretoria de Inovação do Município de Joinville e a consultoria SEBRAE.</p>
+          <div class="programa-wip__status">
+            <div class="programa-wip__step programa-wip__step--done">Diagnóstico do ecossistema</div>
+            <div class="programa-wip__step programa-wip__step--done">Mapeamento legislativo</div>
+            <div class="programa-wip__step programa-wip__step--done">Análise da Lei 7.170/2011</div>
+            <div class="programa-wip__step programa-wip__step--active">Definição da rota legislativa</div>
+            <div class="programa-wip__step">Redação da minuta de lei/decreto</div>
+            <div class="programa-wip__step">Regramento do programa</div>
+            <div class="programa-wip__step">Publicação e operação</div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /page-programa -->
+
+    </div><!-- /main-wrapper -->
 
     <script type="module" src="/src/main.js"></script>
   </body>
