@@ -596,6 +596,14 @@ function initPrintMode() {
       subtitulo: 'Regulamenta a organização, o credenciamento, as competências, o acompanhamento, as vedações, as sanções e o descredenciamento dos Arranjos Promotores de Inovação (APIs) no âmbito do Programa Municipal de Incentivo à Inovação de Joinville.',
       idContainer: 'page-decreto-apis',
     },
+    'modelos': {
+      pageId: 'modelos',
+      bloco: null,
+      tag: 'Kit Operacional',
+      titulo: 'Modelos Operacionais do Programa',
+      subtitulo: 'Edital de Chamamento Público · Carta de Vinculação · Parecer de Pré-Qualificação · Relatórios Semestral e Anual · Formulário de Manifestação de Interesse. Peças ancoradas nos arts. 22, 23, 27 e 40 do Decreto dos APIs.',
+      idContainer: 'page-modelos',
+    },
   }
   const cfg = mapa[printTarget]
   if (!cfg) return

@@ -67,6 +67,9 @@ gerar_pdf "print=rota-a&notas=1"         "decreto-programa-rota-a-consultivo.pdf
 gerar_pdf "print=rota-b&notas=1"         "decreto-programa-rota-b-consultivo.pdf" "Decreto do Programa — Rota B — consultivo (com orientações)"
 gerar_pdf "print=apis&notas=1"           "decreto-apis-consultivo.pdf"            "Decreto dos APIs — consultivo (com orientações)"
 
+# Kit de modelos operacionais (único PDF)
+gerar_pdf "print=modelos"                "modelos-operacionais.pdf"               "Modelos Operacionais — Edital, Carta, Parecer, Relatórios, Manifestação"
+
 echo ""
 echo "═══════════════════════════════════════════════════════"
 echo "✓ Concluído. PDFs em:"
