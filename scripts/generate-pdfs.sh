@@ -7,7 +7,7 @@ set -e
 
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 BASE="http://localhost:5178"
-OUT="$(cd "$(dirname "$0")/.." && pwd)/pdfs"
+OUT="$(cd "$(dirname "$0")/.." && pwd)/public/pdfs"
 
 if [ ! -x "$CHROME" ]; then
   echo "ERRO: Google Chrome não encontrado em $CHROME"

@@ -8664,3 +8664,57 @@ html.print-mode .dec-incisos a {
     widows: 3;
   }
 }
+
+/* ============================================
+   DOWNLOADS — botão real (substitui placeholder)
+   ============================================ */
+
+.decreto-downloads__item--apis::before { background: #f59e0b; }
+.decreto-downloads__item--completo::before { background: #94a3b8; }
+
+.decreto-downloads__item--apis .decreto-downloads__tag {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.32);
+}
+
+.decreto-downloads__item--completo .decreto-downloads__tag {
+  color: #cbd5e1;
+  background: rgba(148, 163, 184, 0.12);
+  border-color: rgba(148, 163, 184, 0.32);
+}
+
+.decreto-downloads__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.7rem 1.1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  cursor: pointer;
+}
+
+.decreto-downloads__btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.decreto-downloads__item--a .decreto-downloads__btn:hover {
+  border-color: #22c55e;
+}
+.decreto-downloads__item--b .decreto-downloads__btn:hover {
+  border-color: #3b82f6;
+}
+.decreto-downloads__item--apis .decreto-downloads__btn:hover {
+  border-color: #f59e0b;
+}
