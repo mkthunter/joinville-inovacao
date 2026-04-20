@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Arquivos de trabalho da consultoria (não vão pro repo)
+.firecrawl/
+apresentacao-ws3.html
+*.bak
+lei7170-snapshot.md
+lei-7170-2011-joinville-texto-integral.txt
