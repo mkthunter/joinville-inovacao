@@ -604,6 +604,14 @@ function initPrintMode() {
       subtitulo: 'Edital de Chamamento Público · Carta de Vinculação · Parecer de Pré-Qualificação · Relatórios Semestral e Anual · Formulário de Manifestação de Interesse. Peças ancoradas nos arts. 22, 23, 27 e 40 do Decreto dos APIs.',
       idContainer: 'page-modelos',
     },
+    'apresentacao': {
+      pageId: 'apresentacao',
+      bloco: null,
+      tag: 'Apresentação Executiva',
+      titulo: 'Programa Municipal de Incentivo à Inovação de Joinville',
+      subtitulo: 'Apresentação executiva da consultoria — panorama do Programa, dos 2 caminhos possíveis, da governança, do cronograma e das decisões pendentes do Poder Executivo.',
+      idContainer: 'page-apresentacao',
+    },
   }
   const cfg = mapa[printTarget]
   if (!cfg) return
@@ -687,10 +695,134 @@ function injetarCapaESumario(cfg, comNotas) {
 }
 
 /* ============================================
+   Apresentação executiva — modo deck + clicker
+   ============================================ */
+function initPitchDeck() {
+  const pitch = document.getElementById('pitch-deck')
+  if (!pitch) return
+
+  const slides = Array.from(pitch.querySelectorAll('.pitch__slide'))
+  if (slides.length === 0) return
+
+  let idx = 0
+  let apresentando = false
+
+  const progresso = document.createElement('div')
+  progresso.className = 'pitch__progresso'
+  progresso.setAttribute('aria-live', 'polite')
+  document.body.appendChild(progresso)
+
+  function atualizar() {
+    slides.forEach((s, i) => s.classList.toggle('is-active', i === idx))
+    progresso.textContent = `${String(idx + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`
+    if (apresentando) {
+      slides[idx]?.scrollIntoView({ behavior: 'instant', block: 'start' })
+    } else {
+      slides[idx]?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
+  function proximo() {
+    if (idx < slides.length - 1) { idx++; atualizar() }
+  }
+
+  function anterior() {
+    if (idx > 0) { idx--; atualizar() }
+  }
+
+  function ir(i) {
+    if (i >= 0 && i < slides.length) { idx = i; atualizar() }
+  }
+
+  function entrarApresentacao() {
+    apresentando = true
+    document.body.classList.add('is-presenting')
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(() => {})
+    }
+    atualizar()
+  }
+
+  function sairApresentacao() {
+    apresentando = false
+    document.body.classList.remove('is-presenting', 'is-blank', 'is-white')
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {})
+    }
+  }
+
+  function toggleBlank(modo) {
+    document.body.classList.toggle('is-blank')
+    document.body.classList.toggle('is-white', modo === 'white' && document.body.classList.contains('is-blank'))
+  }
+
+  // Atalhos: setas, espaço, PgUp/Dn, Home/End, N/P, 0-9, F, Esc, B, W
+  document.addEventListener('keydown', (e) => {
+    if (!apresentando) return
+    // evita interferir em inputs
+    if (e.target.matches('input, textarea')) return
+
+    const k = e.key
+    // avançar
+    if (k === 'ArrowRight' || k === 'ArrowDown' || k === ' ' || k === 'PageDown' || k === 'n' || k === 'N') {
+      e.preventDefault(); proximo()
+    }
+    // voltar
+    else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp' || k === 'p' || k === 'P' || k === 'Backspace') {
+      e.preventDefault(); anterior()
+    }
+    // início / fim
+    else if (k === 'Home') { e.preventDefault(); ir(0) }
+    else if (k === 'End') { e.preventDefault(); ir(slides.length - 1) }
+    // sair
+    else if (k === 'Escape') { sairApresentacao() }
+    // blank/white screen
+    else if (k === 'b' || k === 'B') { e.preventDefault(); toggleBlank('black') }
+    else if (k === 'w' || k === 'W') { e.preventDefault(); toggleBlank('white') }
+    // F5 reinicia
+    else if (k === 'F5') { e.preventDefault(); ir(0) }
+    // Números 1-9, 0 pulam direto pra slide
+    else if (/^[0-9]$/.test(k)) {
+      e.preventDefault()
+      const n = k === '0' ? 9 : parseInt(k) - 1
+      if (n < slides.length) ir(n)
+    }
+  })
+
+  // Tecla F pra entrar apresentação (só fora do modo input)
+  document.addEventListener('keydown', (e) => {
+    if (apresentando) return
+    // Só se a página de apresentação estiver visível
+    const page = document.getElementById('page-apresentacao')
+    if (!page || !page.classList.contains('is-active')) return
+    if (e.target.matches('input, textarea')) return
+    if (e.key === 'f' || e.key === 'F') {
+      e.preventDefault()
+      entrarApresentacao()
+    }
+  })
+
+  // Listener do botão "Iniciar apresentação"
+  const btnPlay = document.getElementById('pitch-play')
+  if (btnPlay) btnPlay.addEventListener('click', entrarApresentacao)
+
+  // Sai do fullscreen → sai do modo apresentação
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement && apresentando) {
+      sairApresentacao()
+    }
+  })
+
+  // Inicializa progress indicator mesmo em modo leitura (só aparece no presenting)
+  progresso.textContent = `01 / ${String(slides.length).padStart(2, '0')}`
+}
+
+/* ============================================
    Init
    ============================================ */
 document.addEventListener('DOMContentLoaded', () => {
   initPrintMode()
+  initPitchDeck()
   initSidebar()
   initPageNavigation()
   initScrollAnimations()

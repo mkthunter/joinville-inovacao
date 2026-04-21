@@ -70,6 +70,9 @@ gerar_pdf "print=apis&notas=1"           "decreto-apis-consultivo.pdf"          
 # Kit de modelos operacionais (único PDF)
 gerar_pdf "print=modelos"                "modelos-operacionais.pdf"               "Modelos Operacionais — Edital, Carta, Parecer, Relatórios, Manifestação"
 
+# Apresentação executiva (pitch)
+gerar_pdf "print=apresentacao"           "apresentacao-executiva.pdf"             "Apresentação Executiva — pitch institucional em 10 slides"
+
 echo ""
 echo "═══════════════════════════════════════════════════════"
 echo "✓ Concluído. PDFs em:"
