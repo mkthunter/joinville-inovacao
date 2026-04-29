@@ -268,6 +268,15 @@ def extract_pii_sections(rota: str) -> list:
                 items.append(("paragrafo", txt))
             continue
 
+        # Considerandos (ol.dec-considerandos)
+        if "dec-considerandos" in classes:
+            for li in el.find_all("li", recursive=False):
+                txt = get_text_for_rota(li, rota)
+                # Filtra placeholder "(sem considerando específico...)"
+                if txt and not txt.startswith("(sem considerando"):
+                    items.append(("considerando", txt))
+            continue
+
         # Incisos (lista)
         if "dec-incisos" in classes:
             for li in el.find_all("li"):
@@ -365,6 +374,13 @@ def extract_apis_sections() -> list:
                 items.append(("paragrafo", txt))
             continue
 
+        if "dec-considerandos" in classes:
+            for li in el.find_all("li", recursive=False):
+                txt = clean_text(li.get_text())
+                if txt and not txt.startswith("(sem considerando"):
+                    items.append(("considerando", txt))
+            continue
+
         if "dec-incisos" in classes:
             for li in el.find_all("li"):
                 txt = clean_text(li.get_text())
@@ -423,6 +439,14 @@ def render_items(doc: Document, items: list):
 
         elif tipo == "paragrafo":
             add_body_paragraph(doc, texto, indent_first=True)
+
+        elif tipo == "considerando":
+            p = doc.add_paragraph()
+            p.paragraph_format.left_indent = Cm(1.25)
+            p.paragraph_format.first_line_indent = Cm(-0.5)
+            run = p.add_run(texto)
+            run.font.size = Pt(12)
+            set_paragraph_format(p, space_before=0, space_after=5, line_spacing=1.15)
 
         elif tipo == "inciso":
             p = doc.add_paragraph()
