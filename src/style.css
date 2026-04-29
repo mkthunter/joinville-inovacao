@@ -7774,83 +7774,169 @@ body[data-caminho="b"] .dec-toggle-inline[data-when="b"] {
 .sidebar__item--subitem-apis { --accent: var(--accent-amber); }
 
 /* ============================================
-   SIDEBAR — DOWNLOADS
+   SIDEBAR — ITEM DOWNLOADS (ABA DESTACADA)
    ============================================ */
-.sidebar__downloads {
-  border-top: 1px solid var(--border-subtle);
-  padding-bottom: 0.5rem;
+.sidebar__downloads-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0.75rem 1rem 0.5rem;
 }
 
-.sidebar__group-title--downloads {
-  border-top: none;
-  margin-top: 0;
-}
-
-.sidebar__dl-item {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.15s ease;
-  border-left: 2px solid transparent;
-  --dl-accent: var(--accent-primary);
-}
-
-.sidebar__dl-item:hover {
+.sidebar__item--downloads {
+  position: relative;
+  margin: 0 0.5rem;
+  border-radius: var(--radius-sm);
   background: rgba(255,255,255,0.04);
-  border-left-color: var(--dl-accent);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
 }
 
-.sidebar__dl-item--rota-a  { --dl-accent: var(--accent-green); }
-.sidebar__dl-item--rota-b  { --dl-accent: var(--accent-blue); }
-.sidebar__dl-item--apis    { --dl-accent: var(--accent-amber); }
-.sidebar__dl-item--modelos { --dl-accent: var(--accent-primary); }
+.sidebar__item--downloads:hover,
+.sidebar__item--downloads.is-active {
+  background: rgba(var(--accent-green-rgb, 52,211,153), 0.1);
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+}
 
-.sidebar__dl-meta {
-  flex: 1;
-  min-width: 0;
+.sidebar__downloads-badge {
+  margin-left: auto;
+  background: var(--accent-green);
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  border-radius: 99px;
+  padding: 1px 5px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   PÁGINA DOWNLOADS — CARDS
+   ============================================ */
+.dl-group {
+  margin-bottom: var(--space-2xl, 3rem);
+}
+
+.dl-group__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.dl-group__subtitle {
+  font-size: 0.82rem;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
+}
+
+.dl-group:not(:has(.dl-group__subtitle)) .dl-group__title {
+  margin-bottom: 1rem;
+}
+
+.dl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.dl-card {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md, 8px);
+  background: var(--surface-raised, rgba(255,255,255,0.03));
+  text-decoration: none;
+  transition: border-color 0.18s, background 0.18s, transform 0.18s;
+  cursor: pointer;
+  --card-accent: var(--accent-primary);
 }
 
-.sidebar__dl-name {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.3;
+.dl-card--rota-a  { --card-accent: var(--accent-green); }
+.dl-card--rota-b  { --card-accent: var(--accent-blue); }
+.dl-card--apis    { --card-accent: var(--accent-amber); }
+.dl-card--modelos { --card-accent: var(--accent-primary); }
+
+.dl-card:hover {
+  border-color: var(--card-accent);
+  background: rgba(255,255,255,0.05);
+  transform: translateY(-2px);
 }
 
-.sidebar__dl-desc {
-  font-size: 0.68rem;
+.dl-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dl-card__tag {
+  font-family: var(--font-mono);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 99px;
+  background: rgba(255,255,255,0.06);
   color: var(--text-tertiary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.3;
 }
 
-.sidebar__dl-item:hover .sidebar__dl-name {
-  color: var(--dl-accent);
+.dl-card:hover .dl-card__tag {
+  background: rgba(255,255,255,0.1);
+  color: var(--card-accent);
 }
 
-.sidebar__dl-icon {
-  flex-shrink: 0;
-  width: 14px;
-  height: 14px;
+.dl-card__tag--limpo     { }
+.dl-card__tag--consultivo { }
+.dl-card__tag--pitch     { }
+.dl-card__tag--kit       { }
+
+.dl-card__icon {
+  width: 18px;
+  height: 18px;
   color: var(--text-muted);
-  opacity: 0.5;
-  transition: opacity 0.15s, color 0.15s;
+  opacity: 0.4;
+  transition: opacity 0.18s, color 0.18s;
+  flex-shrink: 0;
 }
 
-.sidebar__dl-item:hover .sidebar__dl-icon {
+.dl-card:hover .dl-card__icon {
   opacity: 1;
-  color: var(--dl-accent);
+  color: var(--card-accent);
+}
+
+.dl-card__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.dl-card__desc {
+  font-size: 0.82rem;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.dl-card__cta {
+  display: inline-block;
+  margin-top: auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  color: var(--card-accent);
+  opacity: 0.7;
+  transition: opacity 0.15s;
+  letter-spacing: 0.03em;
+}
+
+.dl-card:hover .dl-card__cta {
+  opacity: 1;
 }
 
 .sidebar__item--subitem.is-active::before {
