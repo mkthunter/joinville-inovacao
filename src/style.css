@@ -7810,6 +7810,11 @@ body[data-caminho="b"] .dec-toggle-inline[data-when="b"] {
   line-height: 1.6;
 }
 
+.dl-card__tag--word {
+  color: #2b579a;
+  background: rgba(43,87,154,0.15);
+}
+
 /* ============================================
    PÁGINA DOWNLOADS — CARDS
    ============================================ */
