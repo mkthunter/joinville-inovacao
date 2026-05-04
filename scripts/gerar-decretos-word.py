@@ -201,11 +201,21 @@ def extract_pii_sections(rota: str) -> list:
     tipos: 'ementa', 'autor', 'bloco_title', 'artigo', 'paragrafo',
            'inciso_item', 'section_title', 'pmj_item', 'considerando_item'
     """
+    import copy
+
     anchor = f"caminho-{rota}-completo"
-    section = soup.find(id=anchor)
+    section = copy.copy(soup.find(id=anchor))
     if not section:
         print(f"  ERRO: #{anchor} não encontrado", file=sys.stderr)
         return []
+
+    # Remove blocos dec-caminho que NÃO são do rota atual
+    # (cabeçalho contém "Caminho A" ou "Caminho B")
+    rota_label = f"Caminho {rota.upper()}"
+    for bloco in section.find_all(class_="dec-caminho"):
+        cab = bloco.find(class_="dec-caminho__cabecalho")
+        if cab and rota_label not in cab.get_text():
+            bloco.decompose()
 
     items = []
 
