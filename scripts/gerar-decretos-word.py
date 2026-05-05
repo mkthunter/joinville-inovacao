@@ -210,11 +210,11 @@ def extract_pii_sections(rota: str) -> list:
         return []
 
     # Remove blocos dec-caminho que NÃO são do rota atual
-    # (cabeçalho contém "Caminho A" ou "Caminho B")
-    rota_label = f"Caminho {rota.upper()}"
+    # Identifica pela classe modificadora dec-caminho--a / dec-caminho--b
+    rota_class = f"dec-caminho--{rota}"
     for bloco in section.find_all(class_="dec-caminho"):
-        cab = bloco.find(class_="dec-caminho__cabecalho")
-        if cab and rota_label not in cab.get_text():
+        classes = bloco.get("class", [])
+        if rota_class not in classes:
             bloco.decompose()
 
     items = []
@@ -497,7 +497,7 @@ def gerar_documento(rota: str):
 
     p_sub = doc.add_paragraph()
     p_sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run2 = p_sub.add_run(f"MINUTAS DE DECRETO — ROTA {label}")
+    run2 = p_sub.add_run("MINUTA DE DECRETO")
     run2.font.size = Pt(12)
     set_paragraph_format(p_sub, space_before=0, space_after=4)
 
@@ -514,62 +514,21 @@ def gerar_documento(rota: str):
     run4.font.size = Pt(10)
     set_paragraph_format(p_org, space_before=0, space_after=40)
 
-    # ── Sumário simples ────────────────────────────────────────────────────
-    p_idx = doc.add_paragraph()
-    p_idx.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    run_idx = p_idx.add_run("CONTEÚDO DESTE DOCUMENTO")
-    run_idx.bold = True
-    run_idx.font.size = Pt(11)
-    set_paragraph_format(p_idx, space_before=0, space_after=6)
-
-    for n, titulo in [
-        ("PARTE I", f"Decreto do Programa Municipal de Inovação — Rota {label}"),
-        ("PARTE II", "Decreto dos Ambientes de Programas de Inovação (APIs)"),
-    ]:
-        p_item = doc.add_paragraph()
-        p_item.paragraph_format.left_indent = Cm(0.5)
-        run_item = p_item.add_run(f"{n}  ·  {titulo}")
-        run_item.font.size = Pt(11)
-        set_paragraph_format(p_item, space_before=0, space_after=4)
-
-    # quebra antes do decreto
-    p_break = doc.add_paragraph()
-    run_break = p_break.add_run()
-    run_break.add_break(docx.enum.text.WD_BREAK.PAGE)
-
-    # ── Decreto PII ────────────────────────────────────────────────────────
-    p_parte1 = doc.add_paragraph()
-    p_parte1.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run_p1 = p_parte1.add_run(f"PARTE I — DECRETO DO PROGRAMA DE INOVAÇÃO (ROTA {label})")
-    run_p1.bold = True
-    run_p1.font.size = Pt(11)
-    set_paragraph_format(p_parte1, space_before=0, space_after=18)
+    # ── Título da minuta ───────────────────────────────────────────────────
+    p_titulo_dec = doc.add_paragraph()
+    p_titulo_dec.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run_td = p_titulo_dec.add_run("DECRETO DO PROGRAMA MUNICIPAL DE INCENTIVO À INOVAÇÃO")
+    run_td.bold = True
+    run_td.font.size = Pt(12)
+    set_paragraph_format(p_titulo_dec, space_before=20, space_after=18)
 
     pii_items = extract_pii_sections(rota)
     print(f"  PII Rota {label}: {len(pii_items)} elementos extraídos")
     render_items(doc, pii_items)
 
-    # quebra entre decretos
-    p_break2 = doc.add_paragraph()
-    run_break2 = p_break2.add_run()
-    run_break2.add_break(docx.enum.text.WD_BREAK.PAGE)
-
-    add_separator(doc)
-
-    # ── Decreto APIs ───────────────────────────────────────────────────────
-    p_parte2 = doc.add_paragraph()
-    p_parte2.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run_p2 = p_parte2.add_run("PARTE II — DECRETO DOS AMBIENTES DE PROGRAMAS DE INOVAÇÃO (APIs)")
-    run_p2.bold = True
-    run_p2.font.size = Pt(11)
-    set_paragraph_format(p_parte2, space_before=0, space_after=18)
-
-    apis_items = extract_apis_sections()
-    print(f"  APIs: {len(apis_items)} elementos extraídos")
-    render_items(doc, apis_items)
-
     # ── Salvar ─────────────────────────────────────────────────────────────
-    out_path = OUT_DIR / f"decreto-unificado-rota-{rota}.docx"
+    nome = f"Joinville - R-{label} - Decreto PII.docx"
+    out_path = OUT_DIR / nome
     doc.save(str(out_path))
     print(f"\n  ✓ Salvo: {out_path}")
     return out_path
