@@ -588,6 +588,14 @@ function initPrintMode() {
       subtitulo: 'Caminho B — Mecanismo de incentivo fiscal fundado no redirecionamento parcial de ISSQN e IPTU. Aplicação condicionada à vigência de Lei Complementar municipal autorizativa.',
       idContainer: 'caminho-b-completo',
     },
+    'rota-c': {
+      pageId: 'decreto',
+      bloco: 'caminho-c-completo',
+      tag: 'Decreto Municipal',
+      titulo: 'Decreto do Programa Municipal de Incentivo à Inovação de Joinville',
+      subtitulo: 'Apoio financeiro direto pela Prefeitura, na modalidade de subvenção econômica, executado por dotação orçamentária da Secretaria gestora, em 4 etapas atreladas a metas autodefinidas pelo Proponente. Seleção pública simplificada por aviso no Diário Oficial. APIs nomeados por ato motivado do Prefeito. Aplicável imediatamente por Decreto, com fundamento na Lei Municipal nº 7.170, de 19 de dezembro de 2011.',
+      idContainer: 'caminho-c-completo',
+    },
     'apis': {
       pageId: 'decreto-apis',
       bloco: null,
@@ -596,12 +604,20 @@ function initPrintMode() {
       subtitulo: 'Regulamenta a organização, o credenciamento, as competências, o acompanhamento, as vedações, as sanções e o descredenciamento dos Arranjos Promotores de Inovação (APIs) no âmbito do Programa Municipal de Incentivo à Inovação de Joinville.',
       idContainer: 'page-decreto-apis',
     },
+    'apis-c': {
+      pageId: 'decreto-apis',
+      bloco: 'caminho-apis-c-completo',
+      tag: 'Decreto Municipal Complementar',
+      titulo: 'Decreto dos Arranjos Promotores de Inovação',
+      subtitulo: 'Regulamenta a nomeação por ato motivado do Prefeito dos Arranjos Promotores de Inovação (APIs) que atuarão na 1ª camada da governança do Programa Municipal de Incentivo à Inovação de Joinville (PII/Jlle), com fundamento na Lei Municipal nº 7.170, de 19 de dezembro de 2011.',
+      idContainer: 'caminho-apis-c-completo',
+    },
     'modelos': {
       pageId: 'modelos',
       bloco: null,
       tag: 'Kit Operacional',
       titulo: 'Modelos Operacionais do Programa',
-      subtitulo: 'Edital de Chamamento Público · Carta de Vinculação · Parecer de Pré-Qualificação · Relatórios Semestral e Anual · Formulário de Manifestação de Interesse. Peças ancoradas nos arts. 22, 23, 27 e 40 do Decreto dos APIs.',
+      subtitulo: '7 modelos cobrindo as 3 rotas — Edital de Chamamento Público, Carta de Vinculação, Parecer de Pré-Qualificação, Relatórios Semestral e Anual, Formulário de Manifestação de Interesse (Rotas A e B), Ato de Nomeação de API e Aviso de Seleção Pública Simplificada (Caminho C).',
       idContainer: 'page-modelos',
     },
     'apresentacao': {

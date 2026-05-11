@@ -6,7 +6,7 @@
 set -e
 
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-BASE="http://localhost:5173"
+BASE="http://localhost:5175"
 OUT="$(cd "$(dirname "$0")/.." && pwd)/public/pdfs"
 
 if [ ! -x "$CHROME" ]; then
@@ -60,12 +60,16 @@ echo ""
 # Versões limpas (sem notas da consultoria) — para PGM, Câmara, sanção
 gerar_pdf "print=rota-a"                 "Joinville - R-A - Decreto PII.pdf"             "Joinville - R-A - Decreto PII"
 gerar_pdf "print=rota-b"                 "Joinville - R-B - Decreto PII.pdf"             "Joinville - R-B - Decreto PII"
+gerar_pdf "print=rota-c"                 "Joinville - R-C - Decreto PII.pdf"             "Joinville - R-C - Decreto PII"
 gerar_pdf "print=apis"                   "Joinville - Decreto APIs.pdf"                  "Joinville - Decreto APIs"
+gerar_pdf "print=apis-c"                 "Joinville - R-C - Decreto APIs.pdf"            "Joinville - R-C - Decreto APIs"
 
 # Versões consultivas (com notas da consultoria) — para SEBRAE, interno PMJ
 gerar_pdf "print=rota-a&notas=1"         "Joinville - R-A - Decreto PII - Comentado.pdf" "Joinville - R-A - Decreto PII - Comentado"
 gerar_pdf "print=rota-b&notas=1"         "Joinville - R-B - Decreto PII - Comentado.pdf" "Joinville - R-B - Decreto PII - Comentado"
+gerar_pdf "print=rota-c&notas=1"         "Joinville - R-C - Decreto PII - Comentado.pdf" "Joinville - R-C - Decreto PII - Comentado"
 gerar_pdf "print=apis&notas=1"           "Joinville - Decreto APIs - Comentado.pdf"      "Joinville - Decreto APIs - Comentado"
+gerar_pdf "print=apis-c&notas=1"         "Joinville - R-C - Decreto APIs - Comentado.pdf" "Joinville - R-C - Decreto APIs - Comentado"
 
 # Kit de modelos operacionais (único PDF)
 gerar_pdf "print=modelos"                "modelos-operacionais.pdf"               "Modelos Operacionais — Edital, Carta, Parecer, Relatórios, Manifestação"

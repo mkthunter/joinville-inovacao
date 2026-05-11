@@ -29,6 +29,9 @@
   --accent-primary: var(--accent-green);
   --accent-amber: #F59E0B;
   --accent-amber-dim: rgba(245, 158, 11, 0.15);
+  --accent-violet: #8B5CF6;
+  --accent-violet-dim: rgba(139, 92, 246, 0.15);
+  --accent-violet-glow: rgba(139, 92, 246, 0.3);
 
   --border-subtle: rgba(148, 163, 184, 0.1);
   --border-medium: rgba(148, 163, 184, 0.15);
@@ -5366,7 +5369,6 @@ strong {
 
 .pii-rota__badge--a { background: var(--accent-yellow-dim); color: var(--accent-yellow); }
 .pii-rota__badge--b { background: var(--accent-green-dim); color: var(--accent-green); }
-.pii-rota__badge--c { background: var(--accent-blue-dim); color: var(--accent-blue); }
 
 .pii-rota__grid-meta {
   display: grid;
@@ -5503,66 +5505,6 @@ strong {
   color: var(--text-secondary);
   line-height: 1.5;
 }
-
-/* Rota C timeline */
-.pii-rota-c__timeline {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-md);
-}
-
-.pii-rota-c__fase {
-  background: var(--bg-card);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  position: relative;
-  padding-left: calc(var(--space-md) + 150px);
-}
-
-.pii-rota-c__fase--1 { border-left: 3px solid var(--accent-yellow); }
-.pii-rota-c__fase--2 { border-left: 3px solid var(--accent-green); }
-
-.pii-rota-c__marca {
-  position: absolute;
-  left: var(--space-md);
-  top: var(--space-md);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 4px;
-}
-
-.pii-rota-c__fase--1 .pii-rota-c__marca {
-  background: var(--accent-yellow-dim);
-  color: var(--accent-yellow);
-}
-
-.pii-rota-c__fase--2 .pii-rota-c__marca {
-  background: var(--accent-green-dim);
-  color: var(--accent-green);
-}
-
-.pii-rota-c__fase h4 {
-  font-size: 1.05rem;
-  color: var(--text-primary);
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.pii-rota-c__fase ul { padding-left: 18px; }
-
-.pii-rota-c__fase li {
-  list-style: disc;
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 4px;
-}
-
-.pii-rota-c__fase strong { color: var(--text-primary); }
 
 /* Comparativo */
 .pii-comparativo-rotas-tabela {
@@ -5740,64 +5682,6 @@ strong {
   overflow-x: auto;
 }
 
-/* Recomendação */
-.pii-recomendacao__destaque {
-  background: linear-gradient(135deg, var(--accent-green-dim) 0%, var(--bg-card) 100%);
-  border: 1px solid var(--accent-green);
-  border-left: 4px solid var(--accent-green);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-.pii-recomendacao__tag {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  padding: 4px 10px;
-  background: var(--accent-green);
-  color: var(--bg-primary);
-  border-radius: 4px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: var(--space-sm);
-}
-
-.pii-recomendacao__destaque h3 {
-  font-size: 1.5rem;
-  color: var(--text-primary);
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.pii-recomendacao__lead {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-}
-
-.pii-recomendacao__justificativa,
-.pii-recomendacao__condicoes,
-.pii-recomendacao__alternativas {
-  padding-left: 20px;
-  margin-bottom: var(--space-md);
-}
-
-.pii-recomendacao__justificativa li,
-.pii-recomendacao__condicoes li,
-.pii-recomendacao__alternativas li {
-  list-style: disc;
-  color: var(--text-secondary);
-  font-size: 0.92rem;
-  line-height: 1.7;
-  margin-bottom: 8px;
-}
-
-.pii-recomendacao__justificativa strong,
-.pii-recomendacao__condicoes strong,
-.pii-recomendacao__alternativas strong { color: var(--text-primary); }
-
 /* Decisões PMJ */
 .pii-decisoes-pmj {
   display: grid;
@@ -5887,16 +5771,6 @@ strong {
   .pii-calendario__item {
     grid-template-columns: 1fr;
     gap: 4px;
-  }
-
-  .pii-rota-c__fase {
-    padding-left: var(--space-md);
-  }
-
-  .pii-rota-c__marca {
-    position: static;
-    display: inline-block;
-    margin-bottom: 8px;
   }
 
   .pii-decisao {
@@ -6377,6 +6251,7 @@ strong {
   margin: var(--space-xl) 0;
   padding-top: var(--space-lg);
   border-top: 1px solid var(--border-subtle);
+  scroll-margin-top: 100px;
 }
 
 .dec-section__header {
@@ -6789,6 +6664,7 @@ body[data-caminho="b"] .dec-caminho--a { display: none; }
 
 .decreto-overview__card--a::before { background: #22c55e; }
 .decreto-overview__card--b::before { background: #3b82f6; }
+.decreto-overview__card--c::before { background: #8b5cf6; }
 
 .decreto-overview__card:hover {
   transform: translateY(-2px);
@@ -6802,6 +6678,7 @@ body[data-caminho="b"] .dec-caminho--a { display: none; }
 
 .decreto-overview__card--a:hover { border-color: #22c55e; }
 .decreto-overview__card--b:hover { border-color: #3b82f6; }
+.decreto-overview__card--c:hover { border-color: #8b5cf6; }
 
 .decreto-overview__tag {
   display: inline-block;
@@ -6825,6 +6702,12 @@ body[data-caminho="b"] .dec-caminho--a { display: none; }
   background: rgba(59, 130, 246, 0.15);
   color: #3b82f6;
   border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.decreto-overview__card--c .decreto-overview__tag {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .decreto-overview__card h3 {
@@ -6907,6 +6790,16 @@ body[data-caminho="b"] .dec-caminho--a { display: none; }
 
 .decreto-overview__card--b .decreto-overview__cta:hover {
   background: rgba(59, 130, 246, 0.25);
+}
+
+.decreto-overview__card--c .decreto-overview__cta {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.decreto-overview__card--c .decreto-overview__cta:hover {
+  background: rgba(139, 92, 246, 0.25);
 }
 
 .decreto-overview__ferramentas {
@@ -7066,6 +6959,7 @@ body[data-caminho="b"] .dec-caminho--a { display: none; }
 
 .decreto-toc-direito__grupo-titulo--a { color: #22c55e; }
 .decreto-toc-direito__grupo-titulo--b { color: #3b82f6; }
+.decreto-toc-direito__grupo-titulo--c { color: #8b5cf6; }
 
 .decreto-toc-direito__grupo {
   transition: opacity 0.3s;
@@ -7163,6 +7057,12 @@ body[data-caminho="b"] .dec-caminho--a { display: none; }
   background: rgba(59, 130, 246, 0.15);
   color: #3b82f6;
   border: 1px solid rgba(59, 130, 246, 0.35);
+}
+
+.caminho-completo--c .caminho-completo__tag {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+  border: 1px solid rgba(139, 92, 246, 0.35);
 }
 
 .caminho-completo__title {
@@ -7386,6 +7286,7 @@ body.modo-decreto-limpo .decreto-overview__help::after {
 
 .decreto-downloads__item--a::before { background: #22c55e; }
 .decreto-downloads__item--b::before { background: #3b82f6; }
+.decreto-downloads__item--c::before { background: #8b5cf6; }
 .decreto-downloads__item--completo::before { background: #f59e0b; }
 
 .decreto-downloads__tag {
@@ -7410,6 +7311,11 @@ body.modo-decreto-limpo .decreto-overview__help::after {
 .decreto-downloads__item--b .decreto-downloads__tag {
   background: rgba(59, 130, 246, 0.15);
   color: #3b82f6;
+}
+
+.decreto-downloads__item--c .decreto-downloads__tag {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
 }
 
 .decreto-downloads__item--completo .decreto-downloads__tag {
@@ -7771,7 +7677,9 @@ body[data-caminho="b"] .dec-toggle-inline[data-when="b"] {
 .sidebar__item--subitem { --accent: var(--accent-primary); }
 .sidebar__item--subitem-a { --accent: var(--accent-green); }
 .sidebar__item--subitem-b { --accent: var(--accent-blue); }
+.sidebar__item--subitem-c { --accent: var(--accent-violet); }
 .sidebar__item--subitem-apis { --accent: var(--accent-amber); }
+.sidebar__item--subitem-apis-c { --accent: var(--accent-violet); }
 
 /* ============================================
    SIDEBAR — ITEM DOWNLOADS (ABA DESTACADA)
@@ -7863,6 +7771,7 @@ body[data-caminho="b"] .dec-toggle-inline[data-when="b"] {
 
 .dl-card--rota-a  { --card-accent: var(--accent-green); }
 .dl-card--rota-b  { --card-accent: var(--accent-blue); }
+.dl-card--rota-c  { --card-accent: var(--accent-violet); }
 .dl-card--apis    { --card-accent: var(--accent-amber); }
 .dl-card--modelos { --card-accent: var(--accent-primary); }
 
@@ -7981,6 +7890,18 @@ body[data-caminho="b"] .dec-toggle-inline[data-when="b"] {
   --accent-soft: rgba(59, 130, 246, 0.045);
   --accent-tag-bg: rgba(59, 130, 246, 0.12);
   --accent-border: rgba(59, 130, 246, 0.32);
+}
+.resumo-executivo--c {
+  --accent: #8B5CF6;
+  --accent-soft: rgba(139, 92, 246, 0.045);
+  --accent-tag-bg: rgba(139, 92, 246, 0.12);
+  --accent-border: rgba(139, 92, 246, 0.32);
+}
+.resumo-executivo--apis-c {
+  --accent: #8B5CF6;
+  --accent-soft: rgba(139, 92, 246, 0.045);
+  --accent-tag-bg: rgba(139, 92, 246, 0.12);
+  --accent-border: rgba(139, 92, 246, 0.32);
 }
 .resumo-executivo--apis {
   --accent: #F59E0B;
@@ -8344,8 +8265,27 @@ html.print-mode[data-print-bloco] .caminho-completo {
   display: none !important;
 }
 html.print-mode[data-print-bloco="caminho-a-completo"] #caminho-a-completo,
-html.print-mode[data-print-bloco="caminho-b-completo"] #caminho-b-completo {
+html.print-mode[data-print-bloco="caminho-b-completo"] #caminho-b-completo,
+html.print-mode[data-print-bloco="caminho-c-completo"] #caminho-c-completo,
+html.print-mode[data-print-bloco="caminho-apis-c-completo"] #caminho-apis-c-completo {
   display: block !important;
+}
+
+/* Print do Caminho C dos APIs (nomeação): esconde decreto APIs A/B + divisor + downloads gerais
+   da page-decreto-apis. Mantém apenas o caminho-apis-c-completo. */
+html.print-mode[data-print-bloco="caminho-apis-c-completo"] #page-decreto-apis > .container > .disclaimer,
+html.print-mode[data-print-bloco="caminho-apis-c-completo"] #page-decreto-apis > .container > #decreto-apis-overview,
+html.print-mode[data-print-bloco="caminho-apis-c-completo"] #page-decreto-apis > .container > .resumo-executivo--apis,
+html.print-mode[data-print-bloco="caminho-apis-c-completo"] #page-decreto-apis > .container > .dec-section,
+html.print-mode[data-print-bloco="caminho-apis-c-completo"] #page-decreto-apis > .container > .caminho-divisor {
+  display: none !important;
+}
+
+/* Print do APIs A/B (regime ordinário): esconde o caminho-apis-c-completo + o divisor que precede,
+   garantindo que o PDF do APIs A/B saia limpo, sem contaminação do API-C novo. */
+html.print-mode[data-print-target="apis"] #caminho-apis-c-completo,
+html.print-mode[data-print-target="apis"] #page-decreto-apis .caminho-divisor {
+  display: none !important;
 }
 
 html.print-mode .caminho-completo,
@@ -8959,6 +8899,16 @@ html.print-mode .dec-incisos a {
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
   margin-bottom: 0.75rem;
+}
+
+.modelo--c .modelo__tag {
+  color: #a78bfa;
+  background: rgba(139, 92, 246, 0.1);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.modelo--c .modelo__header {
+  border-bottom-color: rgba(139, 92, 246, 0.25);
 }
 
 .modelo__titulo {

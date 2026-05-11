@@ -1,7 +1,8 @@
 """
-Gera os 2 documentos Word unificados limpos:
-  - decreto-unificado-rota-a.docx  (PII Rota A + APIs)
-  - decreto-unificado-rota-b.docx  (PII Rota B + APIs)
+Gera os documentos Word limpos do Decreto PII:
+  - Joinville - R-A - Decreto PII.docx
+  - Joinville - R-B - Decreto PII.docx
+  - Joinville - R-C - Decreto PII.docx
 
 Extrai diretamente do index.html (fonte autoritativa).
 Exclui: dec-nota-redacao, dec-section__subtitle, dec-section__num,
@@ -536,6 +537,8 @@ def gerar_documento(rota: str):
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    gerar_documento("a")
-    gerar_documento("b")
+    import sys
+    rotas = sys.argv[1:] if len(sys.argv) > 1 else ["a", "b", "c"]
+    for r in rotas:
+        gerar_documento(r)
     print("\nConcluído.")
