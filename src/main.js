@@ -836,6 +836,17 @@ function initPitchDeck() {
 /* ============================================
    Init
    ============================================ */
+function initDeepLink() {
+  const go = () => {
+    const id = (window.location.hash || '').replace('#', '').trim()
+    if (!id) return
+    const item = document.querySelector('.sidebar__item[data-page="' + id + '"]')
+    if (item) item.click()
+  }
+  go()
+  window.addEventListener('hashchange', go)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initPrintMode()
   initPitchDeck()
@@ -849,4 +860,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll()
   initModoDecretoLimpo()
   initDecretoTocDireito()
+  initDeepLink()
 })
